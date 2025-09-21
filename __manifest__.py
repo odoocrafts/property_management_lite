@@ -62,6 +62,9 @@ with features for:
         
         # Email Templates (must come after reports)
         'data/email_templates.xml',
+        
+        # Menus
+        'views/menu_views.xml',
     ],
     'installable': True,
     'auto_install': False,
