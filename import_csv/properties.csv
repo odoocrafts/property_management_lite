@@ -1,0 +1,9 @@
+external_id,name,address,property_type,total_flats,total_rooms
+property_adcb,ADCB,"Deira, Dubai, UAE",building,2,2
+property_al baker,AL BAKER,"Deira, Dubai, UAE",building,2,14
+property_al dar,AL DAR,"Deira, Dubai, UAE",building,17,81
+property_b.d,B.D,"Deira, Dubai, UAE",building,12,81
+property_deema,DEEMA,"Deira, Dubai, UAE",building,23,220
+property_js,JS,"Deira, Dubai, UAE",building,67,117
+property_s.p,S.P,"Deira, Dubai, UAE",building,8,61
+property_yahya,YAHYA,"Deira, Dubai, UAE",building,20,142

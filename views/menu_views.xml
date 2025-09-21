@@ -103,6 +103,18 @@
               parent="menu_property_management_root" 
               sequence="90"/>
 
+    <!-- Configuration Menu -->
+    <menuitem id="menu_property_configuration" 
+              name="Configuration" 
+              parent="menu_property_management_root" 
+              sequence="95"/>
+              
+    <menuitem id="menu_property_import_data" 
+              name="Import Data" 
+              parent="menu_property_configuration" 
+              action="action_property_data_import_wizard" 
+              sequence="10"/>
+
     <menuitem id="menu_property_collection_reports" 
               name="Collection Reports" 
               parent="menu_property_reports" 

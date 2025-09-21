@@ -62,6 +62,9 @@ with features for:
         # Invoice views (references email templates)
         'views/invoice_views.xml',
         
+        # Wizards
+        'wizards/property_data_import_wizard_views.xml',
+        
         # Menus (must come after all views that define actions)
         'views/menu_views.xml',
     ],

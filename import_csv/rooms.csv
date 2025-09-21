@@ -1,0 +1,742 @@
+external_id,name,flat_external_id,room_type_standard,room_type
+property_adcb_flat_105_room_105,Room 105,property_adcb_flat_105,attached_bathroom,ATTACH BAL.
+property_adcb_flat_105_room_105,Room 105,property_adcb_flat_105,attached_bathroom,S. ATTACH
+property_adcb_flat_105_room_105,Room 105,property_adcb_flat_105,maid_room,MAID ROOM
+property_adcb_flat_105_room_105,Room 105,property_adcb_flat_105,shared,SHARING
+property_adcb_flat_105_room_105,Room 105,property_adcb_flat_105,hall_partition,HALL PART. BAL
+property_adcb_flat_105_room_105,Room 105,property_adcb_flat_105,partition,1ST PART.
+property_adcb_flat_705_room_705,Room 705,property_adcb_flat_705,attached_bathroom,ATTACH BAL.
+property_adcb_flat_705_room_705,Room 705,property_adcb_flat_705,shared,SHARING
+property_adcb_flat_705_room_705,Room 705,property_adcb_flat_705,attached_bathroom,SMALL ATTACH
+property_adcb_flat_705_room_705,Room 705,property_adcb_flat_705,maid_room,MAID ROOM
+property_adcb_flat_705_room_705,Room 705,property_adcb_flat_705,partition,1ST PART.
+property_adcb_flat_705_room_705,Room 705,property_adcb_flat_705,partition,PART. BAL.
+property_deema_flat_103_room_PART. 1,Room PART. 1,property_deema_flat_103,hall_partition,HALL 1ST PART.
+property_deema_flat_103_room_PART. 2,Room PART. 2,property_deema_flat_103,hall_partition,HALL 2ND PART.
+property_deema_flat_103_room_PART. 3,Room PART. 3,property_deema_flat_103,other,HALL 3RD PART.
+property_deema_flat_103_room_PART. 4,Room PART. 4,property_deema_flat_103,other,HALL PART. 4
+property_deema_flat_103_room_BAL. HAL,Room BAL. HAL,property_deema_flat_103,other,K. HALL BAL.
+property_deema_flat_103_room_MAID. KITCHE,Room MAID. KITCHE,property_deema_flat_103,other,KITCHEN MAID
+property_deema_flat_103_room_MAID. 1,Room MAID. 1,property_deema_flat_103,other,1ST MAID
+property_deema_flat_103_room_MAID. 2,Room MAID. 2,property_deema_flat_103,other,2ND MAID
+property_deema_flat_103_room_ATTACH. 1,Room ATTACH. 1,property_deema_flat_103,other,1ST ATTACH
+property_deema_flat_103_room_ATTACH. LEFT A,Room ATTACH. LEFT A,property_deema_flat_103,other,LEFT ATTACH
+property_deema_flat_103_room_PART. A  ,Room PART. A  ,property_deema_flat_103,other,PART. WIND. A
+property_deema_flat_103_room_PART. B,Room PART. B,property_deema_flat_103,other,PART. WIND. B
+property_deema_flat_208_room_208,Room 208,property_deema_flat_208,other,1BHK
+property_deema_flat_208_room_ATTACH. MIDDLE,Room ATTACH. MIDDLE,property_deema_flat_208,other,MIDDLE ATTACH
+property_deema_flat_208_room_ATTACH. H,Room ATTACH. H,property_deema_flat_208,other,ATTACH
+property_deema_flat_208_room_208,Room 208,property_deema_flat_208,other,RIGHT MAID ROOM
+property_deema_flat_208_room_208,Room 208,property_deema_flat_208,other,LEFT MAID ROOM
+property_deema_flat_208_room_PART. 1,Room PART. 1,property_deema_flat_208,other,S.HALL PART. 1
+property_deema_flat_208_room_PART. 2,Room PART. 2,property_deema_flat_208,other,HALL PART. 2 WIND.
+property_deema_flat_208_room_PART. 3,Room PART. 3,property_deema_flat_208,other,HALL PART. 3 BAL.
+property_deema_flat_208_room_PART. 4,Room PART. 4,property_deema_flat_208,other,HALL PART. 4 BAL.
+property_deema_flat_208_room_PART. 5,Room PART. 5,property_deema_flat_208,other,HALL PART. 5
+property_deema_flat_208_room_PART. 6,Room PART. 6,property_deema_flat_208,other,HALL PART. 6
+property_deema_flat_301_room_301,Room 301,property_deema_flat_301,other,1BHK ATTACH ROOM
+property_deema_flat_301_room_1 BHK PART.,Room 1 BHK PART.,property_deema_flat_301,other,PART. ROOM
+property_deema_flat_301_room_ATTACH. MIDDLE,Room ATTACH. MIDDLE,property_deema_flat_301,other,MIDDLE ATTACH
+property_deema_flat_301_room_1ST ATTACH,Room 1ST ATTACH,property_deema_flat_301,other,1ST ATTACH
+property_deema_flat_301_room_301,Room 301,property_deema_flat_301,other,LEFT MAID ROOM
+property_deema_flat_301_room_301,Room 301,property_deema_flat_301,other,RIGHT MAID ROOM
+property_deema_flat_301_room_PART. 1,Room PART. 1,property_deema_flat_301,other,S. HALL PART. 1
+property_deema_flat_301_room_PART. 2,Room PART. 2,property_deema_flat_301,other,HALL PART. 2 WIND.
+property_deema_flat_301_room_PART. 3,Room PART. 3,property_deema_flat_301,other,HALL PART. 3 BAL.
+property_deema_flat_301_room_PART. 4,Room PART. 4,property_deema_flat_301,other,HALL PART. 4 BAL.
+property_deema_flat_301_room_PART. 5,Room PART. 5,property_deema_flat_301,other,HALL PART. 5
+property_deema_flat_301_room_PART. 6,Room PART. 6,property_deema_flat_301,other,HALL PART. 6
+property_deema_flat_302_room_PART. 1,Room PART. 1,property_deema_flat_302,other,HALL PART. 1
+property_deema_flat_302_room_PART. 2,Room PART. 2,property_deema_flat_302,other,HALL PART. 2
+property_deema_flat_302_room_PART. 3,Room PART. 3,property_deema_flat_302,other,HALL PART. 3
+property_deema_flat_302_room_PART. 4,Room PART. 4,property_deema_flat_302,other,K.HALL PART. 4 BAL.
+property_deema_flat_302_room_PART. 5,Room PART. 5,property_deema_flat_302,other,K.HALL PART. 5 WIND.
+property_deema_flat_302_room_ROOM. MA,Room ROOM. MA,property_deema_flat_302,other,BIG MAID ROOM
+property_deema_flat_302_room_1ST ATTACH,Room 1ST ATTACH,property_deema_flat_302,other,1ST ATTACH
+property_deema_flat_302_room_2ND ATTACH,Room 2ND ATTACH,property_deema_flat_302,other,2ND ATTACH
+property_deema_flat_302_room_ATTACH. RIGHT ,Room ATTACH. RIGHT ,property_deema_flat_302,other,RIGHT ATTACH
+property_deema_flat_302_room_ROOM. MAI,Room ROOM. MAI,property_deema_flat_302,other,K. MAID ROOM
+property_deema_flat_302_room_PART. A,Room PART. A,property_deema_flat_302,other,PART. WIND. A
+property_deema_flat_302_room_PART. B,Room PART. B,property_deema_flat_302,other,PART. WIND. B
+property_deema_flat_304_room_PART. 1,Room PART. 1,property_deema_flat_304,hall_partition,HALL 1ST PART.
+property_deema_flat_304_room_PART. 2,Room PART. 2,property_deema_flat_304,hall_partition,HALL 2ND PART.
+property_deema_flat_304_room_PART. 3,Room PART. 3,property_deema_flat_304,other,HALL PART. 3 WIND.
+property_deema_flat_304_room_PART. 4,Room PART. 4,property_deema_flat_304,other,HALL PART. 4
+property_deema_flat_304_room_K. HALL,Room K. HALL,property_deema_flat_304,other,K. HALL BAL.
+property_deema_flat_304_room_304,Room 304,property_deema_flat_304,other,KITCHEN MAID
+property_deema_flat_304_room_304,Room 304,property_deema_flat_304,maid_room,MAID ROOM
+property_deema_flat_304_room_304,Room 304,property_deema_flat_304,other,2ND MAID
+property_deema_flat_304_room_ATTACH. 1,Room ATTACH. 1,property_deema_flat_304,other,1ST ATTACH
+property_deema_flat_304_room_ATTACH. 2,Room ATTACH. 2,property_deema_flat_304,other,2ND ATTACH
+property_deema_flat_304_room_PART. 1,Room PART. 1,property_deema_flat_304,other,ATTACH BAL. PART.1
+property_deema_flat_304_room_PART. 2,Room PART. 2,property_deema_flat_304,other,ATTACH PART. 2
+property_deema_flat_304_room_ROOM. M,Room ROOM. M,property_deema_flat_304,other,ATTACH MAID ROOM
+property_deema_flat_304_room_304,Room 304,property_deema_flat_304,other,PART. BAL. A
+property_deema_flat_304_room_304,Room 304,property_deema_flat_304,other,PART. BAL. B
+property_deema_flat_307_room_PART. 1 BAL.,Room PART. 1 BAL.,property_deema_flat_307,hall_partition,HALL PART. BAL
+property_deema_flat_307_room_PART. 2 WIND,Room PART. 2 WIND,property_deema_flat_307,other,HALL PART. 2 WIND.
+property_deema_flat_307_room_PART. 3,Room PART. 3,property_deema_flat_307,other,K. HALL PART.3
+property_deema_flat_307_room_PART. 4,Room PART. 4,property_deema_flat_307,other,K. HALL PART.4
+property_deema_flat_307_room_PART. 5,Room PART. 5,property_deema_flat_307,other,K. HALL PART.5
+property_deema_flat_307_room_ATTACH. B. ATT,Room ATTACH. B. ATT,property_deema_flat_307,other,B. ATTACH
+property_deema_flat_307_room_ATTACH. S. ATT,Room ATTACH. S. ATT,property_deema_flat_307,attached_bathroom,S. ATTACH
+property_deema_flat_307_room_BAL. ATTACH,Room BAL. ATTACH,property_deema_flat_307,attached_bathroom,ATTACH BAL.
+property_deema_flat_307_room_BAL. PART. ,Room BAL. PART. ,property_deema_flat_307,partition,PART. BAL.
+property_deema_flat_307_room_ROOM. MAID R,Room ROOM. MAID R,property_deema_flat_307,maid_room,MAID ROOM
+property_deema_flat_307_room_ROOM. MAI,Room ROOM. MAI,property_deema_flat_307,other,K. MAID ROOM
+property_deema_flat_405_room_PART. 1,Room PART. 1,property_deema_flat_405,hall_partition,HALL 1ST PART.
+property_deema_flat_405_room_PART. 2,Room PART. 2,property_deema_flat_405,hall_partition,HALL 2ND PART.
+property_deema_flat_405_room_PART. 3,Room PART. 3,property_deema_flat_405,other,HALL PART.3 WIND.
+property_deema_flat_405_room_PART. 4,Room PART. 4,property_deema_flat_405,other,HALL PART.4
+property_deema_flat_405_room_BAL. HAL,Room BAL. HAL,property_deema_flat_405,other,K. HALL BAL.
+property_deema_flat_405_room_MAID. KITCHE,Room MAID. KITCHE,property_deema_flat_405,other,KITCHEN MAID
+property_deema_flat_405_room_MAID. 1,Room MAID. 1,property_deema_flat_405,other,1ST MAID
+property_deema_flat_405_room_MAID. 2,Room MAID. 2,property_deema_flat_405,other,2ND MAID
+property_deema_flat_405_room_1ST ATTACH,Room 1ST ATTACH,property_deema_flat_405,other,1ST ATTACH
+property_deema_flat_405_room_ATTACH PART. 1,Room ATTACH PART. 1,property_deema_flat_405,other,ATTACH BAL. PART.1
+property_deema_flat_405_room_ATTACH PART. 2,Room ATTACH PART. 2,property_deema_flat_405,other,ATTACH PART. 2
+property_deema_flat_405_room_ATTACH MAID,Room ATTACH MAID,property_deema_flat_405,other,ATTACH MAID ROOM
+property_deema_flat_405_room_2ND ATTACH,Room 2ND ATTACH,property_deema_flat_405,other,2ND ATTACH
+property_deema_flat_405_room_PART. A,Room PART. A,property_deema_flat_405,other,PART. BAL. A
+property_deema_flat_405_room_PART. B,Room PART. B,property_deema_flat_405,other,PART. BAL. B
+property_deema_flat_406_room_PART. 1,Room PART. 1,property_deema_flat_406,other,HALL PART. 1
+property_deema_flat_406_room_PART. 2,Room PART. 2,property_deema_flat_406,other,HALL PART. 2
+property_deema_flat_406_room_PART. 4,Room PART. 4,property_deema_flat_406,other,HALL PART. 4 BAL.
+property_deema_flat_406_room_K. HALL,Room K. HALL,property_deema_flat_406,other,K. HALL BAL.
+property_deema_flat_406_room_K. MAID ROOM,Room K. MAID ROOM,property_deema_flat_406,other,KITCHEN MAID
+property_deema_flat_406_room_MAID. 2,Room MAID. 2,property_deema_flat_406,other,2ND MAID
+property_deema_flat_406_room_406,Room 406,property_deema_flat_406,other,1ST MAID
+property_deema_flat_406_room_406,Room 406,property_deema_flat_406,other,1ST ATTACH
+property_deema_flat_406_room_2ND ATTACH,Room 2ND ATTACH,property_deema_flat_406,other,2ND ATTACH
+property_deema_flat_406_room_ATTACH BAL.,Room ATTACH BAL.,property_deema_flat_406,attached_bathroom,ATTACH BAL.
+property_deema_flat_406_room_PART. A,Room PART. A,property_deema_flat_406,other,PART. BAL. A
+property_deema_flat_406_room_PART. B,Room PART. B,property_deema_flat_406,other,PART. BAL. B
+property_deema_flat_407_room_407,Room 407,property_deema_flat_407,other,ATTACH
+property_deema_flat_407_room_WIND. ATTACH,Room WIND. ATTACH,property_deema_flat_407,other,ATTACH WIND.
+property_deema_flat_407_room_407,Room 407,property_deema_flat_407,other,1ST MAID ROOM
+property_deema_flat_407_room_K. MAID ROOM,Room K. MAID ROOM,property_deema_flat_407,other,K MAID ROOM
+property_deema_flat_407_room_PART. 1,Room PART. 1,property_deema_flat_407,hall_partition,HALL 1ST PART.
+property_deema_flat_407_room_PART. 2,Room PART. 2,property_deema_flat_407,hall_partition,HALL 2ND PART.
+property_deema_flat_407_room_PART. 3,Room PART. 3,property_deema_flat_407,other,HALL 3RD PART.
+property_deema_flat_407_room_PART. 4,Room PART. 4,property_deema_flat_407,other,K. HALL PART.4
+property_deema_flat_407_room_PART. 5,Room PART. 5,property_deema_flat_407,other,K. HALL 5TH PART.
+property_deema_flat_407_room_PART. 6,Room PART. 6,property_deema_flat_407,other,K. HALL 6TH PART.
+property_deema_flat_407_room_PART. 7,Room PART. 7,property_deema_flat_407,other,K. HALL PART NO.7
+property_deema_flat_407_room_PART. 8,Room PART. 8,property_deema_flat_407,other,K. HALL PART. 8
+property_deema_flat_503_room_PART. 1,Room PART. 1,property_deema_flat_503,other,HALL PART NO.1
+property_deema_flat_503_room_PART. 2,Room PART. 2,property_deema_flat_503,other,HALL PART. NO.2
+property_deema_flat_503_room_PART. 3,Room PART. 3,property_deema_flat_503,other,HALL PART. NO.3
+property_deema_flat_503_room_PART. 4,Room PART. 4,property_deema_flat_503,other,HALL PART NO. 4
+property_deema_flat_503_room_PART. 5,Room PART. 5,property_deema_flat_503,other,K. HALL PART NO. 5
+property_deema_flat_503_room_ROOM. 1,Room ROOM. 1,property_deema_flat_503,other,1ST MAID ROOM
+property_deema_flat_503_room_ROOM. 2,Room ROOM. 2,property_deema_flat_503,other,2ND MAID ROOM
+property_deema_flat_503_room_MAID. KITCHE,Room MAID. KITCHE,property_deema_flat_503,other,KITCHEN MAID
+property_deema_flat_503_room_ATTACH. 1,Room ATTACH. 1,property_deema_flat_503,other,1ST ATTACH
+property_deema_flat_503_room_ATTACH. 2,Room ATTACH. 2,property_deema_flat_503,other,2ND ATTACH
+property_deema_flat_503_room_ATTACH PART. 1,Room ATTACH PART. 1,property_deema_flat_503,other,LEFT ATTACH PART. WIND.
+property_deema_flat_503_room_ATTACH PART. 2,Room ATTACH PART. 2,property_deema_flat_503,other,LEFT ATTACH PART.2
+property_deema_flat_503_room_ATTACH MAID,Room ATTACH MAID,property_deema_flat_503,other,ATTACH MAID ROOM
+property_deema_flat_503_room_PART. A,Room PART. A,property_deema_flat_503,other,PART. A
+property_deema_flat_503_room_PART. B,Room PART. B,property_deema_flat_503,other,PART. B
+property_deema_flat_506_room_PART. 1,Room PART. 1,property_deema_flat_506,other,PART. 1
+property_deema_flat_506_room_PART. 2,Room PART. 2,property_deema_flat_506,other,PART. NO.2
+property_deema_flat_506_room_PART. 3,Room PART. 3,property_deema_flat_506,other,PART. NO. 3
+property_deema_flat_506_room_PART. 4,Room PART. 4,property_deema_flat_506,other,PART. NO. 4
+property_deema_flat_506_room_PART. HALL,Room PART. HALL,property_deema_flat_506,other,K HALL PART.
+property_deema_flat_506_room_MAID. KITCHE,Room MAID. KITCHE,property_deema_flat_506,other,KITCHEN MAID
+property_deema_flat_506_room_ROOM. 2,Room ROOM. 2,property_deema_flat_506,other,2ND MAID ROOM
+property_deema_flat_506_room_ROOM. 1,Room ROOM. 1,property_deema_flat_506,other,1ST MAID ROOM
+property_deema_flat_506_room_1ST ATTACH,Room 1ST ATTACH,property_deema_flat_506,other,1ST ATTACH
+property_deema_flat_506_room_2ND ATTACH,Room 2ND ATTACH,property_deema_flat_506,other,2ND ATTACH
+property_deema_flat_506_room_ATTACH BAL.,Room ATTACH BAL.,property_deema_flat_506,attached_bathroom,ATTACH BAL.
+property_deema_flat_506_room_PART. BAL.,Room PART. BAL.,property_deema_flat_506,other,PARTITION BAL.
+property_deema_flat_602_room_ATTACH. H,Room ATTACH. H,property_deema_flat_602,other,ATTACH
+property_deema_flat_602_room_PART. 1,Room PART. 1,property_deema_flat_602,other,HALL PART NO. 1
+property_deema_flat_602_room_PART. 2,Room PART. 2,property_deema_flat_602,other,HALL PART NO. 2
+property_deema_flat_602_room_PART. 3,Room PART. 3,property_deema_flat_602,other,HALL PART NO. 3
+property_deema_flat_602_room_PART. 4,Room PART. 4,property_deema_flat_602,other,HALL PART NO. 4 BAL
+property_deema_flat_602_room_PART. 5,Room PART. 5,property_deema_flat_602,other,K. HALL
+property_deema_flat_602_room_MAID ROOM 1,Room MAID ROOM 1,property_deema_flat_602,other,MAID ROOM 1
+property_deema_flat_602_room_MAID ROOM 2,Room MAID ROOM 2,property_deema_flat_602,other,MAID ROOM 2
+property_deema_flat_702_room_PART. NO. S1,Room PART. NO. S1,property_deema_flat_702,other,SH. PART. NO. S1
+property_deema_flat_702_room_PART. NO. A2,Room PART. NO. A2,property_deema_flat_702,other,ATT. PART. NO. A2 BAL.
+property_deema_flat_702_room_PART. NO. A1,Room PART. NO. A1,property_deema_flat_702,other,ATT. PART. NO. A1
+property_deema_flat_702_room_PART. P1,Room PART. P1,property_deema_flat_702,other,PART. P1
+property_deema_flat_702_room_PART. P2,Room PART. P2,property_deema_flat_702,other,PART. P2
+property_deema_flat_603_room_PART. 1,Room PART. 1,property_deema_flat_603,other,HALL PART. 1
+property_deema_flat_603_room_PART. 2,Room PART. 2,property_deema_flat_603,other,HALL PART. 2
+property_deema_flat_603_room_PART. 3,Room PART. 3,property_deema_flat_603,other,HALL PART. BAL. 3
+property_deema_flat_603_room_K. HALL,Room K. HALL,property_deema_flat_603,other,KITCHEN HALL
+property_deema_flat_603_room_K. MAID ROOM,Room K. MAID ROOM,property_deema_flat_603,other,K. MAID ROOM
+property_deema_flat_603_room_ATTACH PART. 1,Room ATTACH PART. 1,property_deema_flat_603,other,ATTACH PART. 1
+property_deema_flat_603_room_ATTACH PART. 2,Room ATTACH PART. 2,property_deema_flat_603,other,ATTACH PART. BAL. 2
+property_deema_flat_703_room_BIG ATTACH,Room BIG ATTACH,property_deema_flat_703,other,UPPER BIG ATTACH
+property_deema_flat_703_room_SH. PART. 1,Room SH. PART. 1,property_deema_flat_703,other,UPPER SH. PART. NO. 1
+property_deema_flat_703_room_SH PART. 2,Room SH PART. 2,property_deema_flat_703,other,UPPER SH. PART. NO. 2
+property_deema_flat_703_room_SH PART. 3,Room SH PART. 3,property_deema_flat_703,other,UPPER SH. PART. NO. 3 BAL
+property_deema_flat_703_room_ATTACH. ,Room ATTACH. ,property_deema_flat_703,other,UPPER CORNER ATTACH
+property_deema_flat_703_room_PARTITION. T,Room PARTITION. T,property_deema_flat_703,other,PARTITION
+property_deema_flat_703_room_MAID ROOM,Room MAID ROOM,property_deema_flat_703,maid_room,MAID ROOM
+property_deema_flat_604_room_ATTACH,Room ATTACH,property_deema_flat_604,other,ATTACH
+property_deema_flat_604_room_PART. 2,Room PART. 2,property_deema_flat_604,hall_partition,HALL 2ND PART.
+property_deema_flat_604_room_PART. 3,Room PART. 3,property_deema_flat_604,other,HALL 3RD PART. BAL.
+property_deema_flat_604_room_K. HALL,Room K. HALL,property_deema_flat_604,other,KITCHEN HALL
+property_deema_flat_604_room_K. MAID ROOM,Room K. MAID ROOM,property_deema_flat_604,other,KITCHEN MAID
+property_deema_flat_604_room_604,Room 604,property_deema_flat_604,maid_room,MAID ROOM
+property_deema_flat_704_room_BIG ATTACH,Room BIG ATTACH,property_deema_flat_704,other,B. ATTACH
+property_deema_flat_704_room_PART. WINDOW,Room PART. WINDOW,property_deema_flat_704,other,PART.
+property_deema_flat_704_room_MAID ROOM,Room MAID ROOM,property_deema_flat_704,maid_room,MAID ROOM
+property_deema_flat_704_room_SEP. PART.1,Room SEP. PART.1,property_deema_flat_704,other,SEP. PART. 1
+property_deema_flat_704_room_SEP PART. 2,Room SEP PART. 2,property_deema_flat_704,other,SEP. PART. 2
+property_deema_flat_704_room_SH PART. 4,Room SH PART. 4,property_deema_flat_704,other,SEP. PART. 4
+property_deema_flat_704_room_SEP PART. 3,Room SEP PART. 3,property_deema_flat_704,other,SH PART. 3
+property_deema_flat_704_room_SH PART. 5,Room SH PART. 5,property_deema_flat_704,other,SH PART. 5
+property_deema_flat_704_room_SH PART. 6,Room SH PART. 6,property_deema_flat_704,other,SH PART. 6
+property_deema_flat_606_room_ATTACH,Room ATTACH,property_deema_flat_606,other,DOWN ATTACH
+property_deema_flat_606_room_K. MAID ROOM,Room K. MAID ROOM,property_deema_flat_606,other,DOWN K. MAID ROOM
+property_deema_flat_606_room_K. HALL,Room K. HALL,property_deema_flat_606,other,DOWN K.HALL
+property_deema_flat_606_room_PART. 1,Room PART. 1,property_deema_flat_606,other,DOWN HALL 1ST PART
+property_deema_flat_606_room_PART. 2,Room PART. 2,property_deema_flat_606,other,DOWN HALL 2ND PART
+property_deema_flat_606_room_PART. 3,Room PART. 3,property_deema_flat_606,other,DOWN HALL 3RD PART
+property_deema_flat_606_room_WIND. 4,Room WIND. 4,property_deema_flat_606,other,DOWN HALL 4TH PART WIND.
+property_deema_flat_606_room_PART. 5,Room PART. 5,property_deema_flat_606,other,DOWN HALL 5TH PART
+property_deema_flat_606_room_WIND. 6,Room WIND. 6,property_deema_flat_606,other,DOWN HALL PART. 6 WIND
+property_deema_flat_706_room_MAID ROOM,Room MAID ROOM,property_deema_flat_706,maid_room,MAID ROOM
+property_deema_flat_706_room_PART. WINDOW,Room PART. WINDOW,property_deema_flat_706,other,BIG PART. WIND.
+property_deema_flat_706_room_ATTACH,Room ATTACH,property_deema_flat_706,other,ATTACH
+property_deema_flat_706_room_SH. PART. 1,Room SH. PART. 1,property_deema_flat_706,other,SH. 1ST PART.
+property_deema_flat_706_room_SH. PART. 2,Room SH. PART. 2,property_deema_flat_706,other,SH. 2ND PART.
+property_deema_flat_706_room_SH PART. 3,Room SH PART. 3,property_deema_flat_706,other,SH. 3RD PART. WIND.
+property_deema_flat_706_room_ATTACH PART. 1,Room ATTACH PART. 1,property_deema_flat_706,other,ATTACH PART. 1
+property_deema_flat_706_room_ATTACH PART. 2,Room ATTACH PART. 2,property_deema_flat_706,other,ATTACH PART. 2
+property_deema_flat_706_room_ATTACH PART. 3,Room ATTACH PART. 3,property_deema_flat_706,other,ATTACH PART. 3
+property_deema_flat_610_room_ATTACH PART. 1,Room ATTACH PART. 1,property_deema_flat_610,other,ATTACH PART.
+property_deema_flat_610_room_ATTACH PART. 2,Room ATTACH PART. 2,property_deema_flat_610,other,ATTACH PART. 2
+property_deema_flat_610_room_ATTACH PART. 3,Room ATTACH PART. 3,property_deema_flat_610,other,ATTACH PART. 3 WIND.
+property_deema_flat_610_room_PART. 1,Room PART. 1,property_deema_flat_610,other,HALL PART. 1
+property_deema_flat_610_room_PART. 2,Room PART. 2,property_deema_flat_610,other,HALL PART. 2
+property_deema_flat_610_room_PART. 3,Room PART. 3,property_deema_flat_610,other,HALL PART. 3 WIND.
+property_deema_flat_610_room_K. HALL,Room K. HALL,property_deema_flat_610,other,K. HALL
+property_deema_flat_610_room_BAL. R,Room BAL. R,property_deema_flat_610,other,MAID ROOM BAL.
+property_deema_flat_610_room_MAID ROOM BAL.,Room MAID ROOM BAL.,property_deema_flat_610,maid_room,MAID ROOM
+property_deema_flat_610_room_MAID ROOM,Room MAID ROOM,property_deema_flat_610,other,S. MAID ROOM
+property_deema_flat_710_room_ATTACH PART. 1,Room ATTACH PART. 1,property_deema_flat_710,other,ATTACH PART. 1
+property_deema_flat_710_room_ATTACH PART. 2,Room ATTACH PART. 2,property_deema_flat_710,other,ATTACH PART. 2
+property_deema_flat_710_room_ATTACH PART. 3,Room ATTACH PART. 3,property_deema_flat_710,other,ATTACH PART. 3
+property_deema_flat_710_room_SH. PART. 2,Room SH. PART. 2,property_deema_flat_710,other,SH. PART. 2 WIND
+property_deema_flat_710_room_SH PART. 1,Room SH PART. 1,property_deema_flat_710,other,SHARING PART. 1
+property_deema_flat_710_room_BIG ATTACH,Room BIG ATTACH,property_deema_flat_710,other,B. ATTACH
+property_deema_flat_710_room_PART. BAL.,Room PART. BAL.,property_deema_flat_710,partition,PART. BAL.
+property_deema_flat_710_room_PARITION ROOM,Room PARITION ROOM,property_deema_flat_710,other,PARTITION
+property_deema_flat_611_room_PART. 1,Room PART. 1,property_deema_flat_611,hall_partition,HALL 1ST PART.
+property_deema_flat_611_room_PART. 2,Room PART. 2,property_deema_flat_611,hall_partition,HALL 2ND PART.
+property_deema_flat_611_room_PART. 3,Room PART. 3,property_deema_flat_611,other,HALL PART. 3
+property_deema_flat_611_room_WIND. 4,Room WIND. 4,property_deema_flat_611,other,HALL 4TH PART. WIND.
+property_deema_flat_611_room_WIND. 5,Room WIND. 5,property_deema_flat_611,other,HALL 5TH PART. WIND
+property_deema_flat_611_room_PART. 6,Room PART. 6,property_deema_flat_611,other,HALL 6TH PART.
+property_deema_flat_611_room_PART. 7,Room PART. 7,property_deema_flat_611,other,HALL 7TH PART.
+property_deema_flat_611_room_MAID WINDOW,Room MAID WINDOW,property_deema_flat_611,other,MAID ROOM WIND.
+property_deema_flat_711_room_SH. PART. 1,Room SH. PART. 1,property_deema_flat_711,other,SH. BAL. PART. 1
+property_deema_flat_711_room_SH. PART. 2,Room SH. PART. 2,property_deema_flat_711,other,SH. WIND. PART. 2
+property_deema_flat_711_room_SHARING ROOM,Room SHARING ROOM,property_deema_flat_711,other,SHARING BAL.
+property_deema_flat_711_room_ATTACH BAL.,Room ATTACH BAL.,property_deema_flat_711,attached_bathroom,ATTACH BAL.
+property_deema_flat_711_room_ATTACH PART. 1,Room ATTACH PART. 1,property_deema_flat_711,other,ATTACH 1ST PART.
+property_deema_flat_711_room_ATTACH PART. 2,Room ATTACH PART. 2,property_deema_flat_711,other,ATTACH 2ND PART.
+property_deema_flat_711_room_ATTACH PART. 3,Room ATTACH PART. 3,property_deema_flat_711,other,ATTACH 3RD PART.
+property_yahya_flat_101_room_PARTITION ROOM,Room PARTITION ROOM,property_yahya_flat_101,other,PART.
+property_yahya_flat_101_room_HALL,Room HALL,property_yahya_flat_101,other,HALL
+property_yahya_flat_101_room_1ST SHARING ,Room 1ST SHARING ,property_yahya_flat_101,shared,SHARING
+property_yahya_flat_101_room_2ND SHARING,Room 2ND SHARING,property_yahya_flat_101,shared,SHARING
+property_yahya_flat_101_room_ATTACH,Room ATTACH,property_yahya_flat_101,other,ATTACH
+property_yahya_flat_101_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_101,maid_room,MAID ROOM
+property_yahya_flat_108_room_ATTACH ,Room ATTACH ,property_yahya_flat_108,other,ATTACH
+property_yahya_flat_108_room_SHARING ROOM,Room SHARING ROOM,property_yahya_flat_108,shared,SHARING
+property_yahya_flat_108_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_108,maid_room,MAID ROOM
+property_yahya_flat_108_room_PART. 1,Room PART. 1,property_yahya_flat_108,other,PART- 1
+property_yahya_flat_108_room_PART. 2,Room PART. 2,property_yahya_flat_108,other,PART- 2
+property_yahya_flat_108_room_PART. 3,Room PART. 3,property_yahya_flat_108,other,PART- 3
+property_yahya_flat_108_room_PART. 4,Room PART. 4,property_yahya_flat_108,other,PART- 4
+property_yahya_flat_108_room_PART.5 BALCONY,Room PART.5 BALCONY,property_yahya_flat_108,other,PART- 5 BALCONY
+property_yahya_flat_204_room_ATTACH ,Room ATTACH ,property_yahya_flat_204,other,ATTACH
+property_yahya_flat_204_room_SHARING ROOM,Room SHARING ROOM,property_yahya_flat_204,shared,SHARING
+property_yahya_flat_204_room_PART. 1,Room PART. 1,property_yahya_flat_204,hall_partition,HALL 1ST PART.
+property_yahya_flat_204_room_PART. 2,Room PART. 2,property_yahya_flat_204,hall_partition,HALL 2ND PART.
+property_yahya_flat_204_room_PART. 3,Room PART. 3,property_yahya_flat_204,other,HALL 3RD PART.
+property_yahya_flat_204_room_PART. BALCONY,Room PART. BALCONY,property_yahya_flat_204,other,PART. BALCONY
+property_yahya_flat_204_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_204,maid_room,MAID ROOM
+property_yahya_flat_207_room_ PART. 11,Room  PART. 11,property_yahya_flat_207,other,HALL PART. 11
+property_yahya_flat_207_room_PART. 1,Room PART. 1,property_yahya_flat_207,hall_partition,HALL 1ST PART.
+property_yahya_flat_207_room_PART. 2,Room PART. 2,property_yahya_flat_207,hall_partition,HALL 2ND PART.
+property_yahya_flat_207_room_PART. BALCONY,Room PART. BALCONY,property_yahya_flat_207,other,PART. BALCONY
+property_yahya_flat_207_room_PART. 4,Room PART. 4,property_yahya_flat_207,other,1ST SHARING PART. 4
+property_yahya_flat_207_room_PART. 5,Room PART. 5,property_yahya_flat_207,other,1ST SHARING PART. 5
+property_yahya_flat_207_room_PART. 6,Room PART. 6,property_yahya_flat_207,other,2ND SHARING PART. 6
+property_yahya_flat_207_room_PART. 7,Room PART. 7,property_yahya_flat_207,other,2ND SHARING PART. 7
+property_yahya_flat_207_room_PART. 8,Room PART. 8,property_yahya_flat_207,other,ATTACH PART. 8
+property_yahya_flat_207_room_PART. 9,Room PART. 9,property_yahya_flat_207,other,ATTACH PART. 9
+property_yahya_flat_207_room_PART. 10,Room PART. 10,property_yahya_flat_207,other,ATTACH PART. 10
+property_yahya_flat_207_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_207,maid_room,MAID ROOM
+property_yahya_flat_208_room_ATTACH,Room ATTACH,property_yahya_flat_208,other,ATTACH
+property_yahya_flat_208_room_SHARING ROOM,Room SHARING ROOM,property_yahya_flat_208,shared,SHARING
+property_yahya_flat_208_room_PART. ROOM,Room PART. ROOM,property_yahya_flat_208,other,PART.
+property_yahya_flat_208_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_208,maid_room,MAID ROOM
+property_yahya_flat_208_room_BIG HALL,Room BIG HALL,property_yahya_flat_208,other,HALL
+property_yahya_flat_301_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_301,maid_room,MAID ROOM
+property_yahya_flat_301_room_SHARING ROOM,Room SHARING ROOM,property_yahya_flat_301,shared,SHARING
+property_yahya_flat_301_room_HALL PART. 1,Room HALL PART. 1,property_yahya_flat_301,hall_partition,HALL 1ST PART.
+property_yahya_flat_301_room_HALL PART. 2,Room HALL PART. 2,property_yahya_flat_301,hall_partition,HALL 2ND PART.
+property_yahya_flat_301_room_HALL PART 3,Room HALL PART 3,property_yahya_flat_301,other,HALL 3RD PART.
+property_yahya_flat_301_room_HALL PART 4,Room HALL PART 4,property_yahya_flat_301,other,HALL 4TH PART. BAL.
+property_yahya_flat_301_room_ATTACH PART. 1,Room ATTACH PART. 1,property_yahya_flat_301,other,ATTACH 1ST PART.
+property_yahya_flat_301_room_ATTACH PART. 2,Room ATTACH PART. 2,property_yahya_flat_301,other,ATTACH 2ND PART.
+property_yahya_flat_301_room_ATTACH PART. 3,Room ATTACH PART. 3,property_yahya_flat_301,other,ATTACH 3RD PART.
+property_yahya_flat_307_room_307,Room 307,property_yahya_flat_307,other,ATTACH B.S
+property_yahya_flat_307_room_2ND SHARING,Room 2ND SHARING,property_yahya_flat_307,other,2ND SHARING
+property_yahya_flat_307_room_1ST SHARING ,Room 1ST SHARING ,property_yahya_flat_307,other,1ST SHARING
+property_yahya_flat_307_room_PARTITION ROOM,Room PARTITION ROOM,property_yahya_flat_307,other,PART.
+property_yahya_flat_307_room_307,Room 307,property_yahya_flat_307,other,HALL B.S
+property_yahya_flat_307_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_307,maid_room,MAID ROOM
+property_yahya_flat_308_room_ATTACH,Room ATTACH,property_yahya_flat_308,other,ATTACH
+property_yahya_flat_308_room_SHARING ROOM,Room SHARING ROOM,property_yahya_flat_308,shared,SHARING
+property_yahya_flat_308_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_308,maid_room,MAID ROOM
+property_yahya_flat_308_room_HALL PART. 1,Room HALL PART. 1,property_yahya_flat_308,hall_partition,HALL 1ST PART.
+property_yahya_flat_308_room_HALL PART.  2,Room HALL PART.  2,property_yahya_flat_308,hall_partition,HALL 2ND PART.
+property_yahya_flat_308_room_HALL PART. 3,Room HALL PART. 3,property_yahya_flat_308,other,HALL 3RD PART.
+property_yahya_flat_308_room_HALL PART. 4,Room HALL PART. 4,property_yahya_flat_308,other,HALL 4TH PART.
+property_yahya_flat_308_room_HALL PART. 5,Room HALL PART. 5,property_yahya_flat_308,other,HALL 5TH PART. BAL.
+property_yahya_flat_401_room_ATTACH,Room ATTACH,property_yahya_flat_401,other,ATTACH
+property_yahya_flat_401_room_SHARING ROOM,Room SHARING ROOM,property_yahya_flat_401,shared,SHARING
+property_yahya_flat_401_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_401,maid_room,MAID ROOM
+property_yahya_flat_401_room_HALL PART. 1,Room HALL PART. 1,property_yahya_flat_401,other,PART.1
+property_yahya_flat_401_room_HALL PART. 2,Room HALL PART. 2,property_yahya_flat_401,other,PART.2
+property_yahya_flat_401_room_HALL PART. 3,Room HALL PART. 3,property_yahya_flat_401,other,PART.3
+property_yahya_flat_401_room_HALL PART. 4,Room HALL PART. 4,property_yahya_flat_401,other,PART.4
+property_yahya_flat_401_room_HALL PART. 5,Room HALL PART. 5,property_yahya_flat_401,other,PART.5 BAL.
+property_yahya_flat_406_room_406,Room 406,property_yahya_flat_406,other,ATTACH B.S
+property_yahya_flat_406_room_SHARING ROOM,Room SHARING ROOM,property_yahya_flat_406,shared,SHARING
+property_yahya_flat_406_room_SHARING BS,Room SHARING BS,property_yahya_flat_406,shared,SHARING
+property_yahya_flat_406_room_PARTITION ROOM,Room PARTITION ROOM,property_yahya_flat_406,other,PART.
+property_yahya_flat_406_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_406,maid_room,MAID ROOM
+property_yahya_flat_407_room_1ST SHARING ,Room 1ST SHARING ,property_yahya_flat_407,other,1ST SHARING
+property_yahya_flat_407_room_2ND SHARING,Room 2ND SHARING,property_yahya_flat_407,other,2ND SHARING
+property_yahya_flat_407_room_ATTACH,Room ATTACH,property_yahya_flat_407,other,ATTACH
+property_yahya_flat_407_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_407,maid_room,MAID ROOM
+property_yahya_flat_407_room_PART. ROOM,Room PART. ROOM,property_yahya_flat_407,other,PART.
+property_yahya_flat_407_room_HALL B.S,Room HALL B.S,property_yahya_flat_407,other,HALL B.S
+property_yahya_flat_408_room_ATTACH ROOM,Room ATTACH ROOM,property_yahya_flat_408,other,ATTACH
+property_yahya_flat_408_room_1ST SHARING,Room 1ST SHARING,property_yahya_flat_408,other,1ST SHARING
+property_yahya_flat_408_room_SHARING,Room SHARING,property_yahya_flat_408,shared,SHARING
+property_yahya_flat_408_room_HALL,Room HALL,property_yahya_flat_408,other,HALL
+property_yahya_flat_408_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_408,maid_room,MAID ROOM
+property_yahya_flat_408_room_S. HALL PART.,Room S. HALL PART.,property_yahya_flat_408,other,S. HALL PART.
+property_yahya_flat_506_room_ATTACH,Room ATTACH,property_yahya_flat_506,other,ATTACH
+property_yahya_flat_506_room_SHARING,Room SHARING,property_yahya_flat_506,shared,SHARING
+property_yahya_flat_506_room_HALL B.S,Room HALL B.S,property_yahya_flat_506,other,HALL B.S
+property_yahya_flat_506_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_506,maid_room,MAID ROOM
+property_yahya_flat_506_room_PARTITION,Room PARTITION,property_yahya_flat_506,other,PARTITION
+property_yahya_flat_504_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_504,maid_room,MAID ROOM
+property_yahya_flat_504_room_HALL PART.1,Room HALL PART.1,property_yahya_flat_504,other,HALL PART.1
+property_yahya_flat_504_room_HALL PART.2,Room HALL PART.2,property_yahya_flat_504,other,HALL PART.2
+property_yahya_flat_504_room_HALL PART.3,Room HALL PART.3,property_yahya_flat_504,other,HALL PART.3
+property_yahya_flat_504_room_HALL PART.4 BAL.,Room HALL PART.4 BAL.,property_yahya_flat_504,other,HALL PART.4 BAL.
+property_yahya_flat_504_room_1ST SHARING,Room 1ST SHARING,property_yahya_flat_504,other,1ST SHARING
+property_yahya_flat_504_room_2ND SHARING,Room 2ND SHARING,property_yahya_flat_504,other,2ND SHARING
+property_yahya_flat_504_room_ATTACH PART. 8,Room ATTACH PART. 8,property_yahya_flat_504,other,ATTACH PART. 8
+property_yahya_flat_504_room_ATTACH PART. 9,Room ATTACH PART. 9,property_yahya_flat_504,other,ATTACH PART. 9
+property_yahya_flat_504_room_ATTACH PART. 10,Room ATTACH PART. 10,property_yahya_flat_504,other,ATTACH PART. 10
+property_yahya_flat_601_room_ATTACH,Room ATTACH,property_yahya_flat_601,other,ATTACH
+property_yahya_flat_601_room_1ST SHARING,Room 1ST SHARING,property_yahya_flat_601,other,1ST SHARING
+property_yahya_flat_601_room_2ND SHARING,Room 2ND SHARING,property_yahya_flat_601,other,2ND SHARING
+property_yahya_flat_601_room_BIG HALL,Room BIG HALL,property_yahya_flat_601,other,BIG HALL
+property_yahya_flat_601_room_S. HALL,Room S. HALL,property_yahya_flat_601,other,S. HALL
+property_yahya_flat_601_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_601,maid_room,MAID ROOM
+property_yahya_flat_604_room_ATTACH B.S,Room ATTACH B.S,property_yahya_flat_604,other,ATTACH B.S
+property_yahya_flat_604_room_1ST SHARING,Room 1ST SHARING,property_yahya_flat_604,other,1ST SHARING
+property_yahya_flat_604_room_2ND SHARING,Room 2ND SHARING,property_yahya_flat_604,shared,SHARING
+property_yahya_flat_604_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_604,maid_room,MAID ROOM
+property_yahya_flat_604_room_HALL 1ST PART.,Room HALL 1ST PART.,property_yahya_flat_604,hall_partition,HALL 1ST PART.
+property_yahya_flat_604_room_HALL 2ND PART.,Room HALL 2ND PART.,property_yahya_flat_604,hall_partition,HALL 2ND PART.
+property_yahya_flat_604_room_HALL 3RD PART.,Room HALL 3RD PART.,property_yahya_flat_604,other,HALL 3RD PART.
+property_yahya_flat_604_room_HALL PART. BAL.,Room HALL PART. BAL.,property_yahya_flat_604,other,HALL PART. BAL.
+property_yahya_flat_607_room_ATTACH,Room ATTACH,property_yahya_flat_607,other,NAN
+property_yahya_flat_607_room_1ST SHARING,Room 1ST SHARING,property_yahya_flat_607,other,1ST SHARING
+property_yahya_flat_607_room_2ND SHARING,Room 2ND SHARING,property_yahya_flat_607,other,2ND SHARING
+property_yahya_flat_607_room_PART.,Room PART.,property_yahya_flat_607,other,PART.
+property_yahya_flat_607_room_HALL,Room HALL,property_yahya_flat_607,other,HALL
+property_yahya_flat_607_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_607,maid_room,MAID ROOM
+property_yahya_flat_704_room_ATTACH B.S,Room ATTACH B.S,property_yahya_flat_704,other,ATTACH B.S
+property_yahya_flat_704_room_2ND SHARING,Room 2ND SHARING,property_yahya_flat_704,other,2ND SHARING
+property_yahya_flat_704_room_1ST SHARING,Room 1ST SHARING,property_yahya_flat_704,other,1ST SHARING
+property_yahya_flat_704_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_704,maid_room,MAID ROOM
+property_yahya_flat_704_room_HALL 1ST PART.,Room HALL 1ST PART.,property_yahya_flat_704,hall_partition,HALL 1ST PART.
+property_yahya_flat_704_room_HALL 2ND PART.,Room HALL 2ND PART.,property_yahya_flat_704,hall_partition,HALL 2ND PART.
+property_yahya_flat_704_room_HALL 3RD PART.,Room HALL 3RD PART.,property_yahya_flat_704,other,HALL 3RD PART.
+property_yahya_flat_704_room_HALL PART. BAL.,Room HALL PART. BAL.,property_yahya_flat_704,other,HALL PART. BAL.
+property_yahya_flat_705_room_BIG ATTACH,Room BIG ATTACH,property_yahya_flat_705,other,BIG ATTACH
+property_yahya_flat_705_room_SHARING,Room SHARING,property_yahya_flat_705,shared,SHARING
+property_yahya_flat_705_room_S. ATTACH ROOM,Room S. ATTACH ROOM,property_yahya_flat_705,attached_bathroom,S. ATTACH
+property_yahya_flat_705_room_HALL RIGHT PART.,Room HALL RIGHT PART.,property_yahya_flat_705,other,HALL RIGHT PART.
+property_yahya_flat_705_room_HALL LEFT PART.,Room HALL LEFT PART.,property_yahya_flat_705,other,HALL LEFT PART.
+property_yahya_flat_705_room_K. HALL LEFT PART.,Room K. HALL LEFT PART.,property_yahya_flat_705,other,K. HALL LEFT PART.
+property_yahya_flat_705_room_K. HALL RIGHT PART.,Room K. HALL RIGHT PART.,property_yahya_flat_705,other,K. HALL RIGHT PART.
+property_yahya_flat_705_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_705,maid_room,MAID ROOM
+property_yahya_flat_705_room_K. MAID ROOM,Room K. MAID ROOM,property_yahya_flat_705,other,K. MAID ROOM
+property_yahya_flat_708_room_ATTACH,Room ATTACH,property_yahya_flat_708,other,ATTACH
+property_yahya_flat_708_room_SHARING,Room SHARING,property_yahya_flat_708,shared,SHARING
+property_yahya_flat_708_room_B. HALL,Room B. HALL,property_yahya_flat_708,other,B. HALL
+property_yahya_flat_708_room_PART.,Room PART.,property_yahya_flat_708,other,PART.
+property_yahya_flat_708_room_MAID ROOM,Room MAID ROOM,property_yahya_flat_708,maid_room,MAID ROOM
+property_b.d_flat_105_room_HALL PART. WIND.,Room HALL PART. WIND.,property_b.d_flat_105,other,HALL PART.2 WIND.
+property_b.d_flat_105_room_HALL PART. 1,Room HALL PART. 1,property_b.d_flat_105,hall_partition,HALL 1ST PART.
+property_b.d_flat_105_room_K. HALL,Room K. HALL,property_b.d_flat_105,other,K. HALL
+property_b.d_flat_105_room_MAID ROOM,Room MAID ROOM,property_b.d_flat_105,maid_room,MAID ROOM
+property_b.d_flat_105_room_B. ATTACH,Room B. ATTACH,property_b.d_flat_105,other,B. ATTACH
+property_b.d_flat_105_room_S. ATTACH   ,Room S. ATTACH   ,property_b.d_flat_105,attached_bathroom,S. ATTACH
+property_b.d_flat_105_room_1ST SHARING,Room 1ST SHARING,property_b.d_flat_105,other,1ST SHARING
+property_b.d_flat_105_room_2ND SHARING,Room 2ND SHARING,property_b.d_flat_105,other,2ND SHARING
+property_b.d_flat_108_room_HALL PART. WIND.,Room HALL PART. WIND.,property_b.d_flat_108,other,HALL WIND.
+property_b.d_flat_108_room_HALL PART. 1,Room HALL PART. 1,property_b.d_flat_108,other,HALL PART.
+property_b.d_flat_108_room_K. HALL,Room K. HALL,property_b.d_flat_108,other,KITCHEN HALL
+property_b.d_flat_108_room_MAID ROOM,Room MAID ROOM,property_b.d_flat_108,maid_room,MAID ROOM
+property_b.d_flat_108_room_B. ATTACH,Room B. ATTACH,property_b.d_flat_108,other,BIG ATTACH
+property_b.d_flat_108_room_1ST SHARING,Room 1ST SHARING,property_b.d_flat_108,other,1ST SHARING
+property_b.d_flat_108_room_2ND SHARING,Room 2ND SHARING,property_b.d_flat_108,other,2ND SHARING
+property_b.d_flat_108_room_S. ATTACH,Room S. ATTACH,property_b.d_flat_108,attached_bathroom,S. ATTACH
+property_b.d_flat_305_room_B. ATTACH,Room B. ATTACH,property_b.d_flat_305,other,B. ATTACH
+property_b.d_flat_305_room_S. ATTACH,Room S. ATTACH,property_b.d_flat_305,attached_bathroom,S. ATTACH
+property_b.d_flat_305_room_2ND SHARING,Room 2ND SHARING,property_b.d_flat_305,shared,SHARING
+property_b.d_flat_305_room_1ST SHARING,Room 1ST SHARING,property_b.d_flat_305,shared,SHARING
+property_b.d_flat_305_room_HALLPART. WIND,Room HALLPART. WIND,property_b.d_flat_305,other,BIG HALL
+property_b.d_flat_305_room_PART. NO. 1,Room PART. NO. 1,property_b.d_flat_305,other,PART. NO. 1
+property_b.d_flat_305_room_KITCHEN HALL,Room KITCHEN HALL,property_b.d_flat_305,other,KITCHEN HALL
+property_b.d_flat_305_room_MAID ROOM,Room MAID ROOM,property_b.d_flat_305,maid_room,MAID ROOM
+property_b.d_flat_401_room_ATTACH,Room ATTACH,property_b.d_flat_401,other,ATTACH
+property_b.d_flat_401_room_2ND SHARING,Room 2ND SHARING,property_b.d_flat_401,other,2ND SHARING
+property_b.d_flat_401_room_1ST SHARING,Room 1ST SHARING,property_b.d_flat_401,other,1ST SHARING
+property_b.d_flat_401_room_1ST PART.,Room 1ST PART.,property_b.d_flat_401,other,PART.
+property_b.d_flat_401_room_PART. WIND.,Room PART. WIND.,property_b.d_flat_401,other,PART. WIND.
+property_b.d_flat_403_room_HALL PART. BAL.,Room HALL PART. BAL.,property_b.d_flat_403,other,HALL PART. BAL.
+property_b.d_flat_403_room_RIGHT PART. BAL.,Room RIGHT PART. BAL.,property_b.d_flat_403,other,RIGHT PART. BAL.
+property_b.d_flat_403_room_K. HALL,Room K. HALL,property_b.d_flat_403,other,K. HALL BAL.
+property_b.d_flat_403_room_K. MAID ROOM,Room K. MAID ROOM,property_b.d_flat_403,other,K. MAID ROOM
+property_b.d_flat_403_room_SHARING WIND.,Room SHARING WIND.,property_b.d_flat_403,other,SHARING WIND.
+property_b.d_flat_403_room_ATTACH BAL.,Room ATTACH BAL.,property_b.d_flat_403,attached_bathroom,ATTACH BAL.
+property_b.d_flat_408_room_K. HALL,Room K. HALL,property_b.d_flat_408,other,KITCHEN HALL
+property_b.d_flat_408_room_BIG HALL,Room BIG HALL,property_b.d_flat_408,other,HALL
+property_b.d_flat_408_room_SHARING,Room SHARING,property_b.d_flat_408,shared,SHARING
+property_b.d_flat_408_room_MAID ROOM,Room MAID ROOM,property_b.d_flat_408,maid_room,MAID ROOM
+property_b.d_flat_408_room_B. ATTACH,Room B. ATTACH,property_b.d_flat_408,other,B. ATTACH
+property_b.d_flat_408_room_1ST SHARING,Room 1ST SHARING,property_b.d_flat_408,other,1ST SHARING
+property_b.d_flat_408_room_S. ATTACH,Room S. ATTACH,property_b.d_flat_408,attached_bathroom,S. ATTACH
+property_b.d_flat_410_room_ATTACH,Room ATTACH,property_b.d_flat_410,other,ATTACH
+property_b.d_flat_410_room_SHARING,Room SHARING,property_b.d_flat_410,shared,SHARING
+property_b.d_flat_410_room_LEFT PART. BAL.,Room LEFT PART. BAL.,property_b.d_flat_410,other,LEFT PART. BAL.
+property_b.d_flat_410_room_PART. BAL.,Room PART. BAL.,property_b.d_flat_410,partition,PART. BAL.
+property_b.d_flat_410_room_MAID ROOM,Room MAID ROOM,property_b.d_flat_410,maid_room,MAID ROOM
+property_b.d_flat_410_room_K.HALL,Room K.HALL,property_b.d_flat_410,other,K.HALL
+property_b.d_flat_502_room_ATTACH,Room ATTACH,property_b.d_flat_502,other,ATTACH
+property_b.d_flat_502_room_SHARING,Room SHARING,property_b.d_flat_502,shared,SHARING
+property_b.d_flat_502_room_MAID ROOM,Room MAID ROOM,property_b.d_flat_502,maid_room,MAID ROOM
+property_b.d_flat_502_room_K. HALL,Room K. HALL,property_b.d_flat_502,other,KITCHEN HALL
+property_b.d_flat_502_room_HALL PART. WIND.,Room HALL PART. WIND.,property_b.d_flat_502,other,HALL PART. WIND.
+property_b.d_flat_502_room_HALL 1ST PART.,Room HALL 1ST PART.,property_b.d_flat_502,hall_partition,HALL 1ST PART.
+property_b.d_flat_504_room_LEFT HALL,Room LEFT HALL,property_b.d_flat_504,other,LEFT HALL PART.
+property_b.d_flat_504_room_RIGHT HALL,Room RIGHT HALL,property_b.d_flat_504,other,RIGHT HALL
+property_b.d_flat_504_room_K. HALL,Room K. HALL,property_b.d_flat_504,other,KITCHEN HALL
+property_b.d_flat_504_room_MAID ROOM,Room MAID ROOM,property_b.d_flat_504,maid_room,MAID ROOM
+property_b.d_flat_504_room_ATTACH,Room ATTACH,property_b.d_flat_504,other,ATTACH
+property_b.d_flat_504_room_SHARING,Room SHARING,property_b.d_flat_504,shared,SHARING
+property_b.d_flat_605_room_HALL WIND. PART.,Room HALL WIND. PART.,property_b.d_flat_605,other,HALL WIND. PART.
+property_b.d_flat_605_room_HALL PART. 1,Room HALL PART. 1,property_b.d_flat_605,other,HALL PART. 1
+property_b.d_flat_605_room_K. HALL,Room K. HALL,property_b.d_flat_605,other,KITCHEN HALL
+property_b.d_flat_605_room_MAID ROOM,Room MAID ROOM,property_b.d_flat_605,maid_room,MAID ROOM
+property_b.d_flat_605_room_B. ATTACH,Room B. ATTACH,property_b.d_flat_605,other,B. ATTACH
+property_b.d_flat_605_room_SHARING,Room SHARING,property_b.d_flat_605,shared,SHARING
+property_b.d_flat_605_room_S. ATTACH,Room S. ATTACH,property_b.d_flat_605,attached_bathroom,S. ATTACH
+property_b.d_flat_608_room_S. ATTACH,Room S. ATTACH,property_b.d_flat_608,attached_bathroom,S. ATTACH
+property_b.d_flat_608_room_B. ATTACH,Room B. ATTACH,property_b.d_flat_608,other,B. ATTACH
+property_b.d_flat_608_room_MAID ROOM,Room MAID ROOM,property_b.d_flat_608,maid_room,MAID ROOM
+property_b.d_flat_608_room_1ST SHARING,Room 1ST SHARING,property_b.d_flat_608,other,1ST SHARING
+property_b.d_flat_608_room_2ND SHARING,Room 2ND SHARING,property_b.d_flat_608,other,2ND SHARING
+property_b.d_flat_608_room_HALL PART. WIND.,Room HALL PART. WIND.,property_b.d_flat_608,other,HALL PART. WIND.
+property_b.d_flat_608_room_HALL PART. 1,Room HALL PART. 1,property_b.d_flat_608,other,HALL PART. 1
+property_b.d_flat_608_room_KITCHEN HALL,Room KITCHEN HALL,property_b.d_flat_608,other,KITCHEN HALL
+property_b.d_flat_609_room_ATTACH,Room ATTACH,property_b.d_flat_609,other,ATTACH
+property_b.d_flat_609_room_SHARING,Room SHARING,property_b.d_flat_609,shared,SHARING
+property_b.d_flat_609_room_1ST PART. BAL.,Room 1ST PART. BAL.,property_b.d_flat_609,other,1ST PART. BAL.
+property_b.d_flat_609_room_2ND HALL PART. BAL.,Room 2ND HALL PART. BAL.,property_b.d_flat_609,other,2ND HALL PART. BAL.
+property_b.d_flat_609_room_K. HALL,Room K. HALL,property_b.d_flat_609,other,K. HALL
+property_b.d_flat_609_room_MAID ROOM,Room MAID ROOM,property_b.d_flat_609,maid_room,MAID ROOM
+property_s.p_flat_104_room_ATTACH,Room ATTACH,property_s.p_flat_104,other,ATTACH
+property_s.p_flat_104_room_SEPRATE,Room SEPRATE,property_s.p_flat_104,other,SEPRATE
+property_s.p_flat_104_room_1ST SHARING,Room 1ST SHARING,property_s.p_flat_104,other,1ST SHARING
+property_s.p_flat_104_room_2ND SHARING,Room 2ND SHARING,property_s.p_flat_104,other,2ND SHARING
+property_s.p_flat_104_room_MAID ROOM,Room MAID ROOM,property_s.p_flat_104,maid_room,MAID ROOM
+property_s.p_flat_104_room_KITCHEN HALL,Room KITCHEN HALL,property_s.p_flat_104,other,KITCHEN HALL
+property_s.p_flat_104_room_1ST PART.,Room 1ST PART.,property_s.p_flat_104,partition,1ST PART.
+property_s.p_flat_104_room_MIDDLE PART.,Room MIDDLE PART.,property_s.p_flat_104,other,MIDDLE PART.
+property_s.p_flat_104_room_PART. WIND.,Room PART. WIND.,property_s.p_flat_104,other,PART. WIND.
+property_s.p_flat_203_room_RIGHT ATTACH,Room RIGHT ATTACH,property_s.p_flat_203,other,RIGHT ATTACH
+property_s.p_flat_203_room_LEFT ATTACH,Room LEFT ATTACH,property_s.p_flat_203,other,LEFT ATTACH
+property_s.p_flat_203_room_SHARING,Room SHARING,property_s.p_flat_203,shared,SHARING
+property_s.p_flat_203_room_SEPRATE ROOM,Room SEPRATE ROOM,property_s.p_flat_203,other,SEPRATE
+property_s.p_flat_203_room_MAID ROOM,Room MAID ROOM,property_s.p_flat_203,maid_room,MAID ROOM
+property_s.p_flat_203_room_1ST PART.,Room 1ST PART.,property_s.p_flat_203,partition,1ST PART.
+property_s.p_flat_203_room_2ND PART.,Room 2ND PART.,property_s.p_flat_203,other,2ND PART.
+property_s.p_flat_203_room_3RD PART.,Room 3RD PART.,property_s.p_flat_203,other,3RD PART.
+property_s.p_flat_203_room_RIGHT PART.,Room RIGHT PART.,property_s.p_flat_203,other,RIGHT PART.
+property_s.p_flat_304_room_ATTACH,Room ATTACH,property_s.p_flat_304,other,ATTACH
+property_s.p_flat_304_room_SEPRATE,Room SEPRATE,property_s.p_flat_304,other,SEPRATE
+property_s.p_flat_304_room_2ND SHARING,Room 2ND SHARING,property_s.p_flat_304,other,2ND SHARING
+property_s.p_flat_304_room_1ST SHARING,Room 1ST SHARING,property_s.p_flat_304,other,1ST SHARING
+property_s.p_flat_304_room_HALL 1ST PART.,Room HALL 1ST PART.,property_s.p_flat_304,hall_partition,HALL 1ST PART.
+property_s.p_flat_304_room_MIDDLE PART.,Room MIDDLE PART.,property_s.p_flat_304,other,MIDDLE PART.
+property_s.p_flat_304_room_LAST PART. WIND.,Room LAST PART. WIND.,property_s.p_flat_304,other,LAST PART. WIND.
+property_s.p_flat_304_room_KITCHEN HALL,Room KITCHEN HALL,property_s.p_flat_304,other,KITCHEN HALL
+property_s.p_flat_304_room_MAID ROOM,Room MAID ROOM,property_s.p_flat_304,maid_room,MAID ROOM
+property_s.p_flat_401_room_ATTACH,Room ATTACH,property_s.p_flat_401,other,ATTACH
+property_s.p_flat_401_room_SHARING,Room SHARING,property_s.p_flat_401,shared,SHARING
+property_s.p_flat_401_room_MAID ROOM,Room MAID ROOM,property_s.p_flat_401,maid_room,MAID ROOM
+property_s.p_flat_401_room_PART. 3 WIND.,Room PART. 3 WIND.,property_s.p_flat_401,other,PART. 3 WIND.
+property_s.p_flat_401_room_HALL PART. 2,Room HALL PART. 2,property_s.p_flat_401,other,HALL PART. 2
+property_s.p_flat_404_room_ATTACH,Room ATTACH,property_s.p_flat_404,other,ATTACH
+property_s.p_flat_404_room_SEPRATE,Room SEPRATE,property_s.p_flat_404,other,SEPRATE
+property_s.p_flat_404_room_2ND SHARING,Room 2ND SHARING,property_s.p_flat_404,other,2ND SHARING
+property_s.p_flat_404_room_1ST SHARING,Room 1ST SHARING,property_s.p_flat_404,other,1ST SHARING
+property_s.p_flat_404_room_KITCHEN HALL,Room KITCHEN HALL,property_s.p_flat_404,other,KITCHEN HALL
+property_s.p_flat_404_room_HALL 1ST PART.,Room HALL 1ST PART.,property_s.p_flat_404,hall_partition,HALL 1ST PART.
+property_s.p_flat_404_room_HALL PART. 2 ,Room HALL PART. 2 ,property_s.p_flat_404,other,PART 2
+property_s.p_flat_404_room_3RD PART.,Room 3RD PART.,property_s.p_flat_404,other,3RD PART.
+property_s.p_flat_506_room_ATTACH,Room ATTACH,property_s.p_flat_506,other,ATTACH
+property_s.p_flat_506_room_SHARING,Room SHARING,property_s.p_flat_506,shared,SHARING
+property_s.p_flat_506_room_MAID ROOM,Room MAID ROOM,property_s.p_flat_506,maid_room,MAID ROOM
+property_s.p_flat_506_room_2ND PART.,Room 2ND PART.,property_s.p_flat_506,other,2ND PART.
+property_s.p_flat_506_room_3RD PART.,Room 3RD PART.,property_s.p_flat_506,other,3RD PART.
+property_s.p_flat_704_room_ATTACH,Room ATTACH,property_s.p_flat_704,other,ATTACH
+property_s.p_flat_704_room_SEPRATE,Room SEPRATE,property_s.p_flat_704,other,SEPRATE
+property_s.p_flat_704_room_1ST SHARING,Room 1ST SHARING,property_s.p_flat_704,other,1ST SHARING
+property_s.p_flat_704_room_2ND SHARING,Room 2ND SHARING,property_s.p_flat_704,other,2ND SHARING
+property_s.p_flat_704_room_KITCHEN HALL,Room KITCHEN HALL,property_s.p_flat_704,other,KITCHEN HALL
+property_s.p_flat_704_room_MAID ROOM,Room MAID ROOM,property_s.p_flat_704,maid_room,MAID ROOM
+property_s.p_flat_704_room_1ST PART.,Room 1ST PART.,property_s.p_flat_704,partition,1ST PART.
+property_s.p_flat_704_room_2ND PART.,Room 2ND PART.,property_s.p_flat_704,other,2ND PART.
+property_s.p_flat_704_room_3RD PART.,Room 3RD PART.,property_s.p_flat_704,other,3RD PART.
+property_s.p_flat_706_room_ATTACH,Room ATTACH,property_s.p_flat_706,other,ATTACH
+property_s.p_flat_706_room_1ST SHARING,Room 1ST SHARING,property_s.p_flat_706,other,1ST SHARING
+property_s.p_flat_706_room_2ND SHARING,Room 2ND SHARING,property_s.p_flat_706,other,2ND SHARING
+property_s.p_flat_706_room_MAID ROOM,Room MAID ROOM,property_s.p_flat_706,maid_room,MAID ROOM
+property_s.p_flat_706_room_1ST PART.,Room 1ST PART.,property_s.p_flat_706,partition,1ST PART.
+property_s.p_flat_706_room_2ND PART.,Room 2ND PART.,property_s.p_flat_706,other,2ND PART.
+property_s.p_flat_706_room_3RD PART.,Room 3RD PART.,property_s.p_flat_706,other,3RD PART.
+property_al baker_flat_206_room_B. ATTACH,Room B. ATTACH,property_al baker_flat_206,other,B. ATTACH
+property_al baker_flat_206_room_S. ATTACH,Room S. ATTACH,property_al baker_flat_206,attached_bathroom,S. ATTACH
+property_al baker_flat_206_room_SHARING WIND.,Room SHARING WIND.,property_al baker_flat_206,other,SHARING WIND.
+property_al baker_flat_206_room_SHARING BAL.,Room SHARING BAL.,property_al baker_flat_206,other,SHARING BAL.
+property_al baker_flat_206_room_MAID ROOM,Room MAID ROOM,property_al baker_flat_206,maid_room,MAID ROOM
+property_al baker_flat_206_room_S. HALL,Room S. HALL,property_al baker_flat_206,other,S. HALL
+property_al baker_flat_206_room_HALL WIND.,Room HALL WIND.,property_al baker_flat_206,other,HALL WIND.
+property_al baker_flat_207_room_B. ATTACH,Room B. ATTACH,property_al baker_flat_207,other,B. ATTACH
+property_al baker_flat_207_room_S. ATTACH,Room S. ATTACH,property_al baker_flat_207,attached_bathroom,S. ATTACH
+property_al baker_flat_207_room_SHARING BAL.,Room SHARING BAL.,property_al baker_flat_207,other,SHARING BAL.
+property_al baker_flat_207_room_SHARING WIND.,Room SHARING WIND.,property_al baker_flat_207,other,SHARING WIND.
+property_al baker_flat_207_room_MAID ROOM,Room MAID ROOM,property_al baker_flat_207,maid_room,MAID ROOM
+property_al baker_flat_207_room_HALL. PART. WIND.,Room HALL. PART. WIND.,property_al baker_flat_207,other,HALL. PART. WIND.
+property_al baker_flat_207_room_HALL 1ST PART.,Room HALL 1ST PART.,property_al baker_flat_207,hall_partition,HALL 1ST PART.
+property_al dar_flat_101_room_ATTACH,Room ATTACH,property_al dar_flat_101,other,ATTACH
+property_al dar_flat_101_room_2ND SHARING,Room 2ND SHARING,property_al dar_flat_101,other,2ND SHARING
+property_al dar_flat_101_room_1ST SHARING,Room 1ST SHARING,property_al dar_flat_101,other,1ST SHARING
+property_al dar_flat_101_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_101,maid_room,MAID ROOM
+property_al dar_flat_101_room_BIG HALL,Room BIG HALL,property_al dar_flat_101,other,BIG HALL
+property_al dar_flat_102_room_ATTACH,Room ATTACH,property_al dar_flat_102,other,ATTACH
+property_al dar_flat_102_room_1ST SHARING,Room 1ST SHARING,property_al dar_flat_102,other,1ST SHARING
+property_al dar_flat_102_room_SHARING,Room SHARING,property_al dar_flat_102,shared,SHARING
+property_al dar_flat_102_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_102,maid_room,MAID ROOM
+property_al dar_flat_102_room_HALL,Room HALL,property_al dar_flat_102,other,HALL
+property_al dar_flat_103_room_ATTACH,Room ATTACH,property_al dar_flat_103,other,ATTACH
+property_al dar_flat_103_room_SHARING,Room SHARING,property_al dar_flat_103,shared,SHARING
+property_al dar_flat_103_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_103,maid_room,MAID ROOM
+property_al dar_flat_103_room_BIG HALL BAL.,Room BIG HALL BAL.,property_al dar_flat_103,other,BIG HALL BAL.
+property_al dar_flat_104_room_ATTACH,Room ATTACH,property_al dar_flat_104,other,ATTACH
+property_al dar_flat_104_room_2ND SHARING,Room 2ND SHARING,property_al dar_flat_104,other,2ND SHARING
+property_al dar_flat_104_room_1ST SHARING,Room 1ST SHARING,property_al dar_flat_104,other,1ST SHARING
+property_al dar_flat_104_room_HALL BAL.,Room HALL BAL.,property_al dar_flat_104,other,HALL BAL.
+property_al dar_flat_104_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_104,maid_room,MAID ROOM
+property_al dar_flat_105_room_SHARING,Room SHARING,property_al dar_flat_105,shared,SHARING
+property_al dar_flat_105_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_105,maid_room,MAID ROOM
+property_al dar_flat_105_room_HALL,Room HALL,property_al dar_flat_105,other,HALL
+property_al dar_flat_106_room_BIG HALL,Room BIG HALL,property_al dar_flat_106,other,BIG HALL
+property_al dar_flat_106_room_KITCHEN HALL,Room KITCHEN HALL,property_al dar_flat_106,other,KITCHEN HALL
+property_al dar_flat_106_room_S. ATTACH,Room S. ATTACH,property_al dar_flat_106,attached_bathroom,S. ATTACH
+property_al dar_flat_106_room_1ST SHARING,Room 1ST SHARING,property_al dar_flat_106,other,1ST SHARING
+property_al dar_flat_106_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_106,maid_room,MAID ROOM
+property_al dar_flat_106_room_2ND SHARING,Room 2ND SHARING,property_al dar_flat_106,other,2ND SHARING
+property_al dar_flat_106_room_BIG ATTACH BAL.,Room BIG ATTACH BAL.,property_al dar_flat_106,other,BIG ATTACH BAL.
+property_al dar_flat_201_room_ATTACH,Room ATTACH,property_al dar_flat_201,other,ATTACH
+property_al dar_flat_201_room_1ST SHARING,Room 1ST SHARING,property_al dar_flat_201,other,1ST SHARING
+property_al dar_flat_201_room_2ND SHARING,Room 2ND SHARING,property_al dar_flat_201,other,2ND SHARING
+property_al dar_flat_201_room_BIG HALL,Room BIG HALL,property_al dar_flat_201,other,BIG HALL
+property_al dar_flat_201_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_201,maid_room,MAID ROOM
+property_al dar_flat_202_room_ATTACH,Room ATTACH,property_al dar_flat_202,other,ATTACH
+property_al dar_flat_202_room_1ST SHARING,Room 1ST SHARING,property_al dar_flat_202,other,1ST SHARING
+property_al dar_flat_202_room_2ND SHARING,Room 2ND SHARING,property_al dar_flat_202,other,2ND SHARING
+property_al dar_flat_202_room_HALL,Room HALL,property_al dar_flat_202,other,HALL
+property_al dar_flat_202_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_202,maid_room,MAID ROOM
+property_al dar_flat_206_room_B. ATTACH,Room B. ATTACH,property_al dar_flat_206,other,B. ATTACH
+property_al dar_flat_206_room_SHARING,Room SHARING,property_al dar_flat_206,shared,SHARING
+property_al dar_flat_206_room_S. ATTACH,Room S. ATTACH,property_al dar_flat_206,attached_bathroom,S. ATTACH
+property_al dar_flat_206_room_HALL,Room HALL,property_al dar_flat_206,other,HALL
+property_al dar_flat_206_room_KITCHEN HALL,Room KITCHEN HALL,property_al dar_flat_206,other,KITCHEN HALL
+property_al dar_flat_206_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_206,maid_room,MAID ROOM
+property_al dar_flat_301_room_ATTACH,Room ATTACH,property_al dar_flat_301,other,ATTACH
+property_al dar_flat_301_room_2ND SHARING,Room 2ND SHARING,property_al dar_flat_301,other,2ND SHARING
+property_al dar_flat_301_room_1ST SHARING,Room 1ST SHARING,property_al dar_flat_301,other,1ST SHARING
+property_al dar_flat_301_room_HALL,Room HALL,property_al dar_flat_301,other,HALL
+property_al dar_flat_301_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_301,maid_room,MAID ROOM
+property_al dar_flat_303_room_ATTACH,Room ATTACH,property_al dar_flat_303,other,ATTACH
+property_al dar_flat_303_room_SHARING,Room SHARING,property_al dar_flat_303,shared,SHARING
+property_al dar_flat_303_room_HALL,Room HALL,property_al dar_flat_303,other,HALL
+property_al dar_flat_303_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_303,maid_room,MAID ROOM
+property_al dar_flat_501_room_ATTACH,Room ATTACH,property_al dar_flat_501,other,ATTACH
+property_al dar_flat_501_room_2ND SHARING,Room 2ND SHARING,property_al dar_flat_501,other,2ND SHARING
+property_al dar_flat_501_room_1ST SHARING,Room 1ST SHARING,property_al dar_flat_501,other,1ST SHARING
+property_al dar_flat_501_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_501,maid_room,MAID ROOM
+property_al dar_flat_501_room_HALL,Room HALL,property_al dar_flat_501,other,HALL
+property_al dar_flat_502_room_ATTACH,Room ATTACH,property_al dar_flat_502,other,ATTACH
+property_al dar_flat_502_room_SHARING,Room SHARING,property_al dar_flat_502,shared,SHARING
+property_al dar_flat_502_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_502,maid_room,MAID ROOM
+property_al dar_flat_502_room_HALL,Room HALL,property_al dar_flat_502,other,HALL
+property_al dar_flat_503_room_ATTACH,Room ATTACH,property_al dar_flat_503,other,ATTACH
+property_al dar_flat_503_room_SHARING,Room SHARING,property_al dar_flat_503,shared,SHARING
+property_al dar_flat_503_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_503,maid_room,MAID ROOM
+property_al dar_flat_503_room_HALL,Room HALL,property_al dar_flat_503,other,HALL
+property_al dar_flat_504_room_ATTACH,Room ATTACH,property_al dar_flat_504,other,ATTACH
+property_al dar_flat_504_room_1ST SHARING,Room 1ST SHARING,property_al dar_flat_504,other,1ST SHARING
+property_al dar_flat_504_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_504,maid_room,MAID ROOM
+property_al dar_flat_504_room_HALL,Room HALL,property_al dar_flat_504,other,HALL
+property_al dar_flat_602_room_ATTACH,Room ATTACH,property_al dar_flat_602,other,ATTACH
+property_al dar_flat_602_room_1ST SHARING,Room 1ST SHARING,property_al dar_flat_602,other,1ST SHARING
+property_al dar_flat_602_room_2ND SHARING,Room 2ND SHARING,property_al dar_flat_602,other,2ND SHARING
+property_al dar_flat_602_room_HALL,Room HALL,property_al dar_flat_602,other,HALL
+property_al dar_flat_602_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_602,maid_room,MAID ROOM
+property_al dar_flat_702_room_ATTACH,Room ATTACH,property_al dar_flat_702,other,ATTACH
+property_al dar_flat_702_room_1ST SHARING,Room 1ST SHARING,property_al dar_flat_702,other,1ST SHARING
+property_al dar_flat_702_room_2ND SHARING,Room 2ND SHARING,property_al dar_flat_702,other,2ND SHARING
+property_al dar_flat_702_room_HALL,Room HALL,property_al dar_flat_702,other,HALL
+property_al dar_flat_702_room_MAID ROOM,Room MAID ROOM,property_al dar_flat_702,maid_room,MAID ROOM
+property_js_flat_102_room_ATTACH,Room ATTACH,property_js_flat_102,other,ATTACH
+property_js_flat_102_room_HALL,Room HALL,property_js_flat_102,other,HALL
+property_js_flat_104_room_1BHK,Room 1BHK,property_js_flat_104,other,1BHK
+property_js_flat_105_room_ATTACH,Room ATTACH,property_js_flat_105,other,ATTACH
+property_js_flat_105_room_HALL,Room HALL,property_js_flat_105,other,HALL
+property_js_flat_106_room_1BHK,Room 1BHK,property_js_flat_106,other,1BHK
+property_js_flat_107_room_1BHK,Room 1BHK,property_js_flat_107,other,1BHK
+property_js_flat_110_room_ATTACH,Room ATTACH,property_js_flat_110,other,ATTACH
+property_js_flat_110_room_SEPRATE,Room SEPRATE,property_js_flat_110,other,SEPRATE
+property_js_flat_110_room_HALL,Room HALL,property_js_flat_110,other,HALL
+property_js_flat_111_room_1BHK,Room 1BHK,property_js_flat_111,other,1BHK
+property_js_flat_112_room_ATTACH,Room ATTACH,property_js_flat_112,other,ATTACH
+property_js_flat_112_room_HALL,Room HALL,property_js_flat_112,other,HALL
+property_js_flat_113_room_ATTACH,Room ATTACH,property_js_flat_113,other,ATTACH
+property_js_flat_113_room_HALL,Room HALL,property_js_flat_113,other,HALL
+property_js_flat_114_room_1BHK,Room 1BHK,property_js_flat_114,other,1BHK
+property_js_flat_201_room_ATTACH,Room ATTACH,property_js_flat_201,other,ATTACH
+property_js_flat_201_room_SEPRATE,Room SEPRATE,property_js_flat_201,other,SEPRATE
+property_js_flat_201_room_HALL,Room HALL,property_js_flat_201,other,HALL
+property_js_flat_202_room_ATTACH,Room ATTACH,property_js_flat_202,other,ATTACH
+property_js_flat_202_room_SEPRATE,Room SEPRATE,property_js_flat_202,other,SEPRATE
+property_js_flat_202_room_HALL,Room HALL,property_js_flat_202,other,HALL
+property_js_flat_203_room_1BHK,Room 1BHK,property_js_flat_203,other,1BHK
+property_js_flat_204_room_1BHK,Room 1BHK,property_js_flat_204,other,1BHK
+property_js_flat_208_room_1BHK,Room 1BHK,property_js_flat_208,other,1BHK
+property_js_flat_209_room_ATTACH,Room ATTACH,property_js_flat_209,other,ATTACH
+property_js_flat_209_room_SEPRATE,Room SEPRATE,property_js_flat_209,other,SEPRATE
+property_js_flat_209_room_HALL,Room HALL,property_js_flat_209,other,HALL
+property_js_flat_212_room_1BHK,Room 1BHK,property_js_flat_212,other,1BHK
+property_js_flat_213_room_ATTACH,Room ATTACH,property_js_flat_213,other,ATTACH
+property_js_flat_213_room_HALL,Room HALL,property_js_flat_213,other,HALL
+property_js_flat_214_room_1BHK,Room 1BHK,property_js_flat_214,other,1BHK
+property_js_flat_301_room_ATTACH,Room ATTACH,property_js_flat_301,other,ATTACH
+property_js_flat_301_room_SEPRATE,Room SEPRATE,property_js_flat_301,other,SEPRATE
+property_js_flat_302_room_ATTACH,Room ATTACH,property_js_flat_302,other,ATTACH
+property_js_flat_302_room_SEPRATE,Room SEPRATE,property_js_flat_302,other,SEPRATE
+property_js_flat_304_room_1BHK,Room 1BHK,property_js_flat_304,other,1BHK
+property_js_flat_305_room_ATTACH,Room ATTACH,property_js_flat_305,other,ATTACH
+property_js_flat_305_room_HALL,Room HALL,property_js_flat_305,other,HALL
+property_js_flat_307_room_ATTACH,Room ATTACH,property_js_flat_307,other,ATTACH
+property_js_flat_307_room_HALL,Room HALL,property_js_flat_307,other,HALL
+property_js_flat_309_room_ATTACH,Room ATTACH,property_js_flat_309,other,ATTACH
+property_js_flat_309_room_SEPRATE,Room SEPRATE,property_js_flat_309,other,SEPRATE
+property_js_flat_309_room_HALL,Room HALL,property_js_flat_309,other,HALL
+property_js_flat_310_room_ATTACH,Room ATTACH,property_js_flat_310,other,ATTACH
+property_js_flat_310_room_SEPRATE,Room SEPRATE,property_js_flat_310,other,SEPRATE
+property_js_flat_310_room_HALL,Room HALL,property_js_flat_310,other,HALL
+property_js_flat_312_room_ATTACH,Room ATTACH,property_js_flat_312,other,ATTACH
+property_js_flat_312_room_HALL,Room HALL,property_js_flat_312,other,HALL
+property_js_flat_313_room_1BHK,Room 1BHK,property_js_flat_313,other,1BHK
+property_js_flat_314_room_ATTACH,Room ATTACH,property_js_flat_314,other,ATTACH
+property_js_flat_314_room_HALL,Room HALL,property_js_flat_314,other,HALL
+property_js_flat_401_room_ATTACH,Room ATTACH,property_js_flat_401,other,ATTACH
+property_js_flat_401_room_SEPRATE,Room SEPRATE,property_js_flat_401,other,SEPRATE
+property_js_flat_401_room_HALL,Room HALL,property_js_flat_401,other,HALL
+property_js_flat_402_room_BIG HALL,Room BIG HALL,property_js_flat_402,other,BIG HALL
+property_js_flat_402_room_SEPRATE,Room SEPRATE,property_js_flat_402,other,SEPRATE
+property_js_flat_402_room_ATTACH,Room ATTACH,property_js_flat_402,other,ATTACH
+property_js_flat_403_room_1BHK,Room 1BHK,property_js_flat_403,other,1BHK
+property_js_flat_404_room_1BHK,Room 1BHK,property_js_flat_404,other,1BHK
+property_js_flat_405_room_ATTACH,Room ATTACH,property_js_flat_405,other,ATTACH
+property_js_flat_405_room_HALL,Room HALL,property_js_flat_405,other,HALL
+property_js_flat_406_room_1BHK,Room 1BHK,property_js_flat_406,other,1BHK
+property_js_flat_407_room_ATTACH,Room ATTACH,property_js_flat_407,other,ATTACH
+property_js_flat_409_room_ATTACH,Room ATTACH,property_js_flat_409,other,ATTACH
+property_js_flat_409_room_SEPRATE,Room SEPRATE,property_js_flat_409,other,SEPRATE
+property_js_flat_409_room_HALL,Room HALL,property_js_flat_409,other,HALL
+property_js_flat_410_room_SEPRATE,Room SEPRATE,property_js_flat_410,other,SEPRATE
+property_js_flat_410_room_HALL,Room HALL,property_js_flat_410,other,HALL
+property_js_flat_411_room_1BHK,Room 1BHK,property_js_flat_411,other,1BHK
+property_js_flat_412_room_1BHK,Room 1BHK,property_js_flat_412,other,1BHK
+property_js_flat_413_room_1BHK,Room 1BHK,property_js_flat_413,other,1BHK
+property_js_flat_414_room_ATTACH,Room ATTACH,property_js_flat_414,other,ATTACH
+property_js_flat_414_room_HALL,Room HALL,property_js_flat_414,other,HALL
+property_js_flat_502_room_ATTACH,Room ATTACH,property_js_flat_502,other,ATTACH
+property_js_flat_502_room_SEPRATE,Room SEPRATE,property_js_flat_502,other,SEPRATE
+property_js_flat_504_room_1BHK,Room 1BHK,property_js_flat_504,other,1BHK
+property_js_flat_506_room_1BHK,Room 1BHK,property_js_flat_506,other,1BHK
+property_js_flat_509_room_2BHK,Room 2BHK,property_js_flat_509,other,2BHK
+property_js_flat_510_room_ATTACH,Room ATTACH,property_js_flat_510,other,ATTACH
+property_js_flat_510_room_SEPRATE,Room SEPRATE,property_js_flat_510,other,SEPRATE
+property_js_flat_511_room_ATTACH,Room ATTACH,property_js_flat_511,other,ATTACH
+property_js_flat_511_room_HALL,Room HALL,property_js_flat_511,other,HALL
+property_js_flat_513_room_ATTACH,Room ATTACH,property_js_flat_513,other,ATTACH
+property_js_flat_513_room_HALL,Room HALL,property_js_flat_513,other,HALL
+property_js_flat_601_room_ATTACH,Room ATTACH,property_js_flat_601,other,ATTACH
+property_js_flat_601_room_SEPRATE,Room SEPRATE,property_js_flat_601,other,SEPRATE
+property_js_flat_601_room_HALL,Room HALL,property_js_flat_601,other,HALL
+property_js_flat_603_room_1BHK,Room 1BHK,property_js_flat_603,other,1BHK
+property_js_flat_604_room_1BHK,Room 1BHK,property_js_flat_604,other,1BHK
+property_js_flat_606_room_ATTACH,Room ATTACH,property_js_flat_606,other,ATTACH
+property_js_flat_606_room_HALL,Room HALL,property_js_flat_606,other,HALL
+property_js_flat_608_room_1BHK,Room 1BHK,property_js_flat_608,other,1BHK
+property_js_flat_610_room_ATTACH,Room ATTACH,property_js_flat_610,other,ATTACH
+property_js_flat_610_room_SEPRATE,Room SEPRATE,property_js_flat_610,other,SEPRATE
+property_js_flat_610_room_HALL,Room HALL,property_js_flat_610,other,HALL
+property_js_flat_611_room_1BHK,Room 1BHK,property_js_flat_611,other,1BHK
+property_js_flat_613_room_1BHK,Room 1BHK,property_js_flat_613,other,1BHK
+property_js_flat_614_room_1BHK,Room 1BHK,property_js_flat_614,other,1BHK
+property_js_flat_701_room_ATTACH,Room ATTACH,property_js_flat_701,other,ATTACH
+property_js_flat_701_room_SEPRATE,Room SEPRATE,property_js_flat_701,other,SEPRATE
+property_js_flat_701_room_HALL,Room HALL,property_js_flat_701,other,HALL
+property_js_flat_704_room_ATTACH,Room ATTACH,property_js_flat_704,other,ATTACH
+property_js_flat_704_room_HALL,Room HALL,property_js_flat_704,other,HALL
+property_js_flat_705_room_ATTACH,Room ATTACH,property_js_flat_705,other,ATTACH
+property_js_flat_705_room_HALL,Room HALL,property_js_flat_705,other,HALL
+property_js_flat_706_room_1BHK,Room 1BHK,property_js_flat_706,other,1BHK
+property_js_flat_707_room_ATTACH,Room ATTACH,property_js_flat_707,other,ATTACH
+property_js_flat_707_room_HALL,Room HALL,property_js_flat_707,other,HALL
+property_js_flat_708_room_1BHK,Room 1BHK,property_js_flat_708,other,1BHK
+property_js_flat_710_room_ATTACH,Room ATTACH,property_js_flat_710,other,ATTACH
+property_js_flat_710_room_SEPRATE,Room SEPRATE,property_js_flat_710,other,SEPRATE
+property_js_flat_710_room_HALL,Room HALL,property_js_flat_710,other,HALL
+property_js_flat_712_room_ATTACH,Room ATTACH,property_js_flat_712,other,ATTACH
+property_js_flat_712_room_HALL,Room HALL,property_js_flat_712,other,HALL
+property_js_flat_713_room_ATTACH,Room ATTACH,property_js_flat_713,other,ATTACH
+property_js_flat_713_room_HALL,Room HALL,property_js_flat_713,other,HALL

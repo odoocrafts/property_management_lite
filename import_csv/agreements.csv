@@ -1,0 +1,786 @@
+external_id,name,tenant_external_id,room_external_id,rent_amount,deposit_amount,state,start_date,end_date
+tenant_ganesan_property_adcb_flat_105_room_105,Agreement - Ganesan - Room 105,tenant_ganesan,property_adcb_flat_105_room_105,3850.0,0.0,active,2025-08-01,2026-07-31
+tenant_priyanka_property_adcb_flat_105_room_105,Agreement - Priyanka - Room 105,tenant_priyanka,property_adcb_flat_105_room_105,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_nepali_property_adcb_flat_105_room_105,Agreement - Nepali - Room 105,tenant_nepali,property_adcb_flat_105_room_105,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_priya_property_adcb_flat_105_room_105,Agreement - Priya - Room 105,tenant_priya,property_adcb_flat_105_room_105,2700.0,0.0,active,2025-08-01,2026-07-31
+tenant_akshay_property_adcb_flat_105_room_105,Agreement - Akshay - Room 105,tenant_akshay,property_adcb_flat_105_room_105,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_sunil_property_adcb_flat_105_room_105,Agreement - Sunil - Room 105,tenant_sunil,property_adcb_flat_105_room_105,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_asim_property_adcb_flat_705_room_705,Agreement - Asim - Room 705,tenant_asim,property_adcb_flat_705_room_705,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_vishal_property_adcb_flat_705_room_705,Agreement - Vishal - Room 705,tenant_vishal,property_adcb_flat_705_room_705,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_henal_property_adcb_flat_705_room_705,Agreement - Henal - Room 705,tenant_henal,property_adcb_flat_705_room_705,3400.0,0.0,active,2025-08-01,2026-07-31
+tenant_harsh_property_adcb_flat_705_room_705,Agreement - Harsh - Room 705,tenant_harsh,property_adcb_flat_705_room_705,2350.0,0.0,active,2025-08-01,2026-07-31
+tenant_archna_property_adcb_flat_705_room_705,Agreement - Archna - Room 705,tenant_archna,property_adcb_flat_705_room_705,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_shishta_property_adcb_flat_705_room_705,Agreement - Shishta - Room 705,tenant_shishta,property_adcb_flat_705_room_705,3000.0,500.0,active,2025-08-01,2026-07-31
+tenant_rashid_property_deema_flat_103_room_PART. 1,Agreement - Rashid - Room PART. 1,tenant_rashid,property_deema_flat_103_room_PART. 1,1800.0,500.0,active,2025-08-01,2026-07-31
+tenant_sayeem_property_deema_flat_103_room_PART. 2,Agreement - Sayeem - Room PART. 2,tenant_sayeem,property_deema_flat_103_room_PART. 2,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_shibu_property_deema_flat_103_room_PART. 3,Agreement - Shibu - Room PART. 3,tenant_shibu,property_deema_flat_103_room_PART. 3,2500.0,500.0,active,2025-08-01,2026-07-31
+tenant_hardik_property_deema_flat_103_room_PART. 4,Agreement - Hardik - Room PART. 4,tenant_hardik,property_deema_flat_103_room_PART. 4,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_sunny_property_deema_flat_103_room_BAL. HAL,Agreement - Sunny - Room BAL. HAL,tenant_sunny,property_deema_flat_103_room_BAL. HAL,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_hardik_property_deema_flat_103_room_MAID. KITCHE,Agreement - Hardik - Room MAID. KITCHE,tenant_hardik,property_deema_flat_103_room_MAID. KITCHE,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_sager_property_deema_flat_103_room_MAID. 1,Agreement - Sager - Room MAID. 1,tenant_sager,property_deema_flat_103_room_MAID. 1,1400.0,0.0,active,2025-08-01,2026-07-31
+tenant_kishan_property_deema_flat_103_room_MAID. 2,Agreement - Kishan - Room MAID. 2,tenant_kishan,property_deema_flat_103_room_MAID. 2,1250.0,0.0,active,2025-08-01,2026-07-31
+tenant_avntikaanjali_property_deema_flat_103_room_ATTACH. 1,Agreement - Avntika/Anjali - Room ATTACH. 1,tenant_avntikaanjali,property_deema_flat_103_room_ATTACH. 1,4200.0,0.0,active,2025-08-01,2026-07-31
+tenant_zeenat_property_deema_flat_103_room_ATTACH. LEFT A,Agreement - Zeenat - Room ATTACH. LEFT A,tenant_zeenat,property_deema_flat_103_room_ATTACH. LEFT A,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_rohit_property_deema_flat_103_room_PART. A  ,Agreement - Rohit - Room PART. A  ,tenant_rohit,property_deema_flat_103_room_PART. A  ,1800.0,500.0,active,2025-08-01,2026-07-31
+tenant_gaberial_property_deema_flat_103_room_PART. B,Agreement - Gaberial - Room PART. B,tenant_gaberial,property_deema_flat_103_room_PART. B,1900.0,500.0,active,2025-08-01,2026-07-31
+tenant_ganesh_property_deema_flat_208_room_208,Agreement - Ganesh - Room 208,tenant_ganesh,property_deema_flat_208_room_208,6500.0,0.0,active,2025-08-01,2026-07-31
+tenant_mahek_property_deema_flat_208_room_ATTACH. MIDDLE,Agreement - Mahek - Room ATTACH. MIDDLE,tenant_mahek,property_deema_flat_208_room_ATTACH. MIDDLE,4350.0,0.0,active,2025-08-01,2026-07-31
+tenant_deepakriya_property_deema_flat_208_room_ATTACH. H,Agreement - Deepak/Riya - Room ATTACH. H,tenant_deepakriya,property_deema_flat_208_room_ATTACH. H,4250.0,0.0,active,2025-08-01,2026-07-31
+tenant_leyo_property_deema_flat_208_room_208,Agreement - Leyo - Room 208,tenant_leyo,property_deema_flat_208_room_208,1400.0,500.0,active,2025-08-01,2026-07-31
+tenant_akshay_property_deema_flat_208_room_208,Agreement - Akshay - Room 208,tenant_akshay,property_deema_flat_208_room_208,1400.0,0.0,active,2025-08-01,2026-07-31
+tenant_tharani_property_deema_flat_208_room_PART. 1,Agreement - Tharani - Room PART. 1,tenant_tharani,property_deema_flat_208_room_PART. 1,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_aditya_property_deema_flat_208_room_PART. 2,Agreement - Aditya - Room PART. 2,tenant_aditya,property_deema_flat_208_room_PART. 2,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_sujith_property_deema_flat_208_room_PART. 3,Agreement - Sujith - Room PART. 3,tenant_sujith,property_deema_flat_208_room_PART. 3,2250.0,0.0,active,2025-08-01,2026-07-31
+tenant_sarah_property_deema_flat_208_room_PART. 4,Agreement - Sarah - Room PART. 4,tenant_sarah,property_deema_flat_208_room_PART. 4,2450.0,0.0,active,2025-08-01,2026-07-31
+tenant_george_property_deema_flat_208_room_PART. 5,Agreement - George - Room PART. 5,tenant_george,property_deema_flat_208_room_PART. 5,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_ashwin_property_deema_flat_208_room_PART. 6,Agreement - Ashwin - Room PART. 6,tenant_ashwin,property_deema_flat_208_room_PART. 6,2300.0,500.0,active,2025-08-01,2026-07-31
+tenant_mayur_property_deema_flat_301_room_301,Agreement - Mayur - Room 301,tenant_mayur,property_deema_flat_301_room_301,4150.0,0.0,active,2025-08-01,2026-07-31
+tenant_kirti_property_deema_flat_301_room_1 BHK PART.,Agreement - Kirti - Room 1 BHK PART.,tenant_kirti,property_deema_flat_301_room_1 BHK PART.,2400.0,0.0,active,2025-08-01,2026-07-31
+tenant_bishesh_property_deema_flat_301_room_ATTACH. MIDDLE,Agreement - Bishesh - Room ATTACH. MIDDLE,tenant_bishesh,property_deema_flat_301_room_ATTACH. MIDDLE,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_nikhil_property_deema_flat_301_room_1ST ATTACH,Agreement - Nikhil - Room 1ST ATTACH,tenant_nikhil,property_deema_flat_301_room_1ST ATTACH,4400.0,0.0,active,2025-08-01,2026-07-31
+tenant_anita_property_deema_flat_301_room_301,Agreement - Anita - Room 301,tenant_anita,property_deema_flat_301_room_301,1400.0,0.0,active,2025-08-01,2026-07-31
+tenant_reshma_property_deema_flat_301_room_301,Agreement - Reshma - Room 301,tenant_reshma,property_deema_flat_301_room_301,1400.0,0.0,active,2025-08-01,2026-07-31
+tenant_siraj_property_deema_flat_301_room_PART. 1,Agreement - Siraj - Room PART. 1,tenant_siraj,property_deema_flat_301_room_PART. 1,2300.0,500.0,active,2025-08-01,2026-07-31
+tenant_vinay_property_deema_flat_301_room_PART. 2,Agreement - Vinay - Room PART. 2,tenant_vinay,property_deema_flat_301_room_PART. 2,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_diksha_property_deema_flat_301_room_PART. 3,Agreement - Diksha - Room PART. 3,tenant_diksha,property_deema_flat_301_room_PART. 3,2250.0,1000.0,active,2025-08-01,2026-07-31
+tenant_manish_property_deema_flat_301_room_PART. 4,Agreement - Manish - Room PART. 4,tenant_manish,property_deema_flat_301_room_PART. 4,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_haider_property_deema_flat_301_room_PART. 5,Agreement - Haider - Room PART. 5,tenant_haider,property_deema_flat_301_room_PART. 5,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_praydani_property_deema_flat_301_room_PART. 6,Agreement - Praydani - Room PART. 6,tenant_praydani,property_deema_flat_301_room_PART. 6,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_ahmed_property_deema_flat_302_room_PART. 1,Agreement - Ahmed - Room PART. 1,tenant_ahmed,property_deema_flat_302_room_PART. 1,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_lenin_property_deema_flat_302_room_PART. 2,Agreement - Lenin - Room PART. 2,tenant_lenin,property_deema_flat_302_room_PART. 2,2500.0,1000.0,active,2025-08-01,2026-07-31
+tenant_chanchal_property_deema_flat_302_room_PART. 3,Agreement - Chanchal - Room PART. 3,tenant_chanchal,property_deema_flat_302_room_PART. 3,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_fransis_property_deema_flat_302_room_PART. 4,Agreement - Fransis - Room PART. 4,tenant_fransis,property_deema_flat_302_room_PART. 4,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_suraj_property_deema_flat_302_room_PART. 5,Agreement - Suraj - Room PART. 5,tenant_suraj,property_deema_flat_302_room_PART. 5,2600.0,0.0,active,2025-08-01,2026-07-31
+tenant_rahul_property_deema_flat_302_room_ROOM. MA,Agreement - Rahul - Room ROOM. MA,tenant_rahul,property_deema_flat_302_room_ROOM. MA,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_lakshan_property_deema_flat_302_room_1ST ATTACH,Agreement - Lakshan - Room 1ST ATTACH,tenant_lakshan,property_deema_flat_302_room_1ST ATTACH,4400.0,0.0,active,2025-08-01,2026-07-31
+tenant_heera_property_deema_flat_302_room_2ND ATTACH,Agreement - Heera - Room 2ND ATTACH,tenant_heera,property_deema_flat_302_room_2ND ATTACH,4800.0,1000.0,active,2025-08-01,2026-07-31
+tenant_kartik_property_deema_flat_302_room_ATTACH. RIGHT ,Agreement - Kartik - Room ATTACH. RIGHT ,tenant_kartik,property_deema_flat_302_room_ATTACH. RIGHT ,4200.0,0.0,active,2025-08-01,2026-07-31
+tenant_shriti_property_deema_flat_302_room_ROOM. MAI,Agreement - Shriti - Room ROOM. MAI,tenant_shriti,property_deema_flat_302_room_ROOM. MAI,1600.0,0.0,active,2025-08-01,2026-07-31
+tenant_tilak_property_deema_flat_302_room_PART. A,Agreement - Tilak - Room PART. A,tenant_tilak,property_deema_flat_302_room_PART. A,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_love_property_deema_flat_302_room_PART. B,Agreement - Love - Room PART. B,tenant_love,property_deema_flat_302_room_PART. B,1900.0,500.0,active,2025-08-01,2026-07-31
+tenant_tanweer_property_deema_flat_304_room_PART. 1,Agreement - Tanweer - Room PART. 1,tenant_tanweer,property_deema_flat_304_room_PART. 1,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_tasleen_property_deema_flat_304_room_PART. 2,Agreement - Tasleen - Room PART. 2,tenant_tasleen,property_deema_flat_304_room_PART. 2,2200.0,500.0,active,2025-08-01,2026-07-31
+tenant_hussain_property_deema_flat_304_room_PART. 3,Agreement - Hussain - Room PART. 3,tenant_hussain,property_deema_flat_304_room_PART. 3,2500.0,1000.0,active,2025-08-01,2026-07-31
+tenant_omer_property_deema_flat_304_room_PART. 4,Agreement - Omer - Room PART. 4,tenant_omer,property_deema_flat_304_room_PART. 4,2600.0,0.0,active,2025-08-01,2026-07-31
+tenant_mahender_property_deema_flat_304_room_K. HALL,Agreement - Mahender - Room K. HALL,tenant_mahender,property_deema_flat_304_room_K. HALL,2500.0,500.0,active,2025-08-01,2026-07-31
+tenant_shrutika_property_deema_flat_304_room_304,Agreement - Shrutika - Room 304,tenant_shrutika,property_deema_flat_304_room_304,1700.0,0.0,active,2025-08-01,2026-07-31
+tenant_amita_property_deema_flat_304_room_304,Agreement - Amita - Room 304,tenant_amita,property_deema_flat_304_room_304,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_hashim_property_deema_flat_304_room_304,Agreement - Hashim - Room 304,tenant_hashim,property_deema_flat_304_room_304,1200.0,500.0,active,2025-08-01,2026-07-31
+tenant_shubashish_sam_property_deema_flat_304_room_ATTACH. 1,Agreement - Shubashish/ Sam - Room ATTACH. 1,tenant_shubashish_sam,property_deema_flat_304_room_ATTACH. 1,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_joemonamrita_property_deema_flat_304_room_ATTACH. 2,Agreement - Joemon/Amrita - Room ATTACH. 2,tenant_joemonamrita,property_deema_flat_304_room_ATTACH. 2,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_venktesh_property_deema_flat_304_room_PART. 1,Agreement - Venktesh - Room PART. 1,tenant_venktesh,property_deema_flat_304_room_PART. 1,2000.0,500.0,active,2025-08-01,2026-07-31
+tenant_sabri_property_deema_flat_304_room_PART. 2,Agreement - Sabri - Room PART. 2,tenant_sabri,property_deema_flat_304_room_PART. 2,1800.0,500.0,active,2025-08-01,2026-07-31
+tenant_raghu_property_deema_flat_304_room_ROOM. M,Agreement - Raghu - Room ROOM. M,tenant_raghu,property_deema_flat_304_room_ROOM. M,1250.0,0.0,active,2025-08-01,2026-07-31
+tenant_sheikh_property_deema_flat_304_room_304,Agreement - Sheikh - Room 304,tenant_sheikh,property_deema_flat_304_room_304,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_dinesh_property_deema_flat_304_room_304,Agreement - Dinesh - Room 304,tenant_dinesh,property_deema_flat_304_room_304,1900.0,500.0,active,2025-08-01,2026-07-31
+tenant_disha_property_deema_flat_307_room_PART. 1 BAL.,Agreement - Disha - Room PART. 1 BAL.,tenant_disha,property_deema_flat_307_room_PART. 1 BAL.,2700.0,0.0,active,2025-08-01,2026-07-31
+tenant_lohitanil_property_deema_flat_307_room_PART. 2 WIND,Agreement - Lohit/Anil - Room PART. 2 WIND,tenant_lohitanil,property_deema_flat_307_room_PART. 2 WIND,2400.0,500.0,active,2025-08-01,2026-07-31
+tenant_jismi_property_deema_flat_307_room_PART. 3,Agreement - Jismi - Room PART. 3,tenant_jismi,property_deema_flat_307_room_PART. 3,1400.0,0.0,active,2025-08-01,2026-07-31
+tenant_ali_property_deema_flat_307_room_PART. 4,Agreement - Ali - Room PART. 4,tenant_ali,property_deema_flat_307_room_PART. 4,1400.0,0.0,active,2025-08-01,2026-07-31
+tenant_bhagya_property_deema_flat_307_room_PART. 5,Agreement - Bhagya - Room PART. 5,tenant_bhagya,property_deema_flat_307_room_PART. 5,1700.0,0.0,active,2025-08-01,2026-07-31
+tenant_ved_property_deema_flat_307_room_ATTACH. B. ATT,Agreement - Ved - Room ATTACH. B. ATT,tenant_ved,property_deema_flat_307_room_ATTACH. B. ATT,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_paresh_property_deema_flat_307_room_ATTACH. S. ATT,Agreement - Paresh - Room ATTACH. S. ATT,tenant_paresh,property_deema_flat_307_room_ATTACH. S. ATT,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_wilber_property_deema_flat_307_room_BAL. ATTACH,Agreement - Wilber - Room BAL. ATTACH,tenant_wilber,property_deema_flat_307_room_BAL. ATTACH,4500.0,0.0,active,2025-08-01,2026-07-31
+tenant_vishal_property_deema_flat_307_room_BAL. PART. ,Agreement - Vishal - Room BAL. PART. ,tenant_vishal,property_deema_flat_307_room_BAL. PART. ,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_dinesh_property_deema_flat_307_room_ROOM. MAID R,Agreement - Dinesh - Room ROOM. MAID R,tenant_dinesh,property_deema_flat_307_room_ROOM. MAID R,2000.0,1000.0,active,2025-08-01,2026-07-31
+tenant_rupika_property_deema_flat_307_room_ROOM. MAI,Agreement - Rupika - Room ROOM. MAI,tenant_rupika,property_deema_flat_307_room_ROOM. MAI,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_nadem_property_deema_flat_405_room_PART. 1,Agreement - Nadem - Room PART. 1,tenant_nadem,property_deema_flat_405_room_PART. 1,1700.0,500.0,active,2025-08-01,2026-07-31
+tenant_sager_property_deema_flat_405_room_PART. 2,Agreement - Sager - Room PART. 2,tenant_sager,property_deema_flat_405_room_PART. 2,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_subin_property_deema_flat_405_room_PART. 3,Agreement - Subin - Room PART. 3,tenant_subin,property_deema_flat_405_room_PART. 3,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_yogesh_property_deema_flat_405_room_PART. 4,Agreement - Yogesh - Room PART. 4,tenant_yogesh,property_deema_flat_405_room_PART. 4,2550.0,0.0,active,2025-08-01,2026-07-31
+tenant_sai_property_deema_flat_405_room_BAL. HAL,Agreement - Sai - Room BAL. HAL,tenant_sai,property_deema_flat_405_room_BAL. HAL,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_amal_property_deema_flat_405_room_MAID. KITCHE,Agreement - Amal - Room MAID. KITCHE,tenant_amal,property_deema_flat_405_room_MAID. KITCHE,1900.0,500.0,active,2025-08-01,2026-07-31
+tenant_divya_property_deema_flat_405_room_MAID. 1,Agreement - Divya - Room MAID. 1,tenant_divya,property_deema_flat_405_room_MAID. 1,1400.0,0.0,active,2025-08-01,2026-07-31
+tenant_dygender_property_deema_flat_405_room_MAID. 2,Agreement - Dygender - Room MAID. 2,tenant_dygender,property_deema_flat_405_room_MAID. 2,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_pritesh_property_deema_flat_405_room_1ST ATTACH,Agreement - Pritesh - Room 1ST ATTACH,tenant_pritesh,property_deema_flat_405_room_1ST ATTACH,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_gargi_property_deema_flat_405_room_ATTACH PART. 1,Agreement - Gargi - Room ATTACH PART. 1,tenant_gargi,property_deema_flat_405_room_ATTACH PART. 1,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_mohan_property_deema_flat_405_room_ATTACH PART. 2,Agreement - Mohan - Room ATTACH PART. 2,tenant_mohan,property_deema_flat_405_room_ATTACH PART. 2,1850.0,0.0,active,2025-08-01,2026-07-31
+tenant_salim_property_deema_flat_405_room_ATTACH MAID,Agreement - Salim - Room ATTACH MAID,tenant_salim,property_deema_flat_405_room_ATTACH MAID,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_anshul_property_deema_flat_405_room_2ND ATTACH,Agreement - Anshul - Room 2ND ATTACH,tenant_anshul,property_deema_flat_405_room_2ND ATTACH,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_amiya_property_deema_flat_405_room_PART. A,Agreement - Amiya - Room PART. A,tenant_amiya,property_deema_flat_405_room_PART. A,2100.0,1000.0,active,2025-08-01,2026-07-31
+tenant_aqeel_property_deema_flat_405_room_PART. B,Agreement - Aqeel - Room PART. B,tenant_aqeel,property_deema_flat_405_room_PART. B,2100.0,1000.0,active,2025-08-01,2026-07-31
+tenant_candy_property_deema_flat_406_room_PART. 1,Agreement - Candy - Room PART. 1,tenant_candy,property_deema_flat_406_room_PART. 1,1600.0,0.0,active,2025-08-01,2026-07-31
+tenant_nishant_property_deema_flat_406_room_PART. 2,Agreement - Nishant - Room PART. 2,tenant_nishant,property_deema_flat_406_room_PART. 2,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_dinin_property_deema_flat_406_room_PART. 4,Agreement - Dinin - Room PART. 4,tenant_dinin,property_deema_flat_406_room_PART. 4,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_deepak_property_deema_flat_406_room_K. HALL,Agreement - Deepak - Room K. HALL,tenant_deepak,property_deema_flat_406_room_K. HALL,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_lavita_property_deema_flat_406_room_K. MAID ROOM,Agreement - Lavita - Room K. MAID ROOM,tenant_lavita,property_deema_flat_406_room_K. MAID ROOM,1900.0,500.0,active,2025-08-01,2026-07-31
+tenant_sara_property_deema_flat_406_room_MAID. 2,Agreement - Sara - Room MAID. 2,tenant_sara,property_deema_flat_406_room_MAID. 2,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_ruth_pi_property_deema_flat_406_room_406,Agreement - Ruth Pi - Room 406,tenant_ruth_pi,property_deema_flat_406_room_406,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_roy_property_deema_flat_406_room_406,Agreement - Roy - Room 406,tenant_roy,property_deema_flat_406_room_406,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_deepak_property_deema_flat_406_room_2ND ATTACH,Agreement - Deepak - Room 2ND ATTACH,tenant_deepak,property_deema_flat_406_room_2ND ATTACH,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_noil_property_deema_flat_406_room_ATTACH BAL.,Agreement - Noil - Room ATTACH BAL.,tenant_noil,property_deema_flat_406_room_ATTACH BAL.,4100.0,0.0,active,2025-08-01,2026-07-31
+tenant_rohit_property_deema_flat_406_room_PART. A,Agreement - Rohit - Room PART. A,tenant_rohit,property_deema_flat_406_room_PART. A,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_ankit_property_deema_flat_406_room_PART. B,Agreement - Ankit - Room PART. B,tenant_ankit,property_deema_flat_406_room_PART. B,2100.0,500.0,active,2025-08-01,2026-07-31
+tenant_nidin_property_deema_flat_407_room_407,Agreement - Nidin - Room 407,tenant_nidin,property_deema_flat_407_room_407,4300.0,0.0,active,2025-08-01,2026-07-31
+tenant_arthur_property_deema_flat_407_room_WIND. ATTACH,Agreement - Arthur - Room WIND. ATTACH,tenant_arthur,property_deema_flat_407_room_WIND. ATTACH,3850.0,1000.0,active,2025-08-01,2026-07-31
+tenant_ravi_property_deema_flat_407_room_407,Agreement - Ravi - Room 407,tenant_ravi,property_deema_flat_407_room_407,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_sllvee_property_deema_flat_407_room_K. MAID ROOM,Agreement - Sllvee - Room K. MAID ROOM,tenant_sllvee,property_deema_flat_407_room_K. MAID ROOM,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_roshni_property_deema_flat_407_room_PART. 1,Agreement - Roshni - Room PART. 1,tenant_roshni,property_deema_flat_407_room_PART. 1,500.0,500.0,active,2025-08-01,2026-07-31
+tenant_tulsi_property_deema_flat_407_room_PART. 2,Agreement - Tulsi - Room PART. 2,tenant_tulsi,property_deema_flat_407_room_PART. 2,1600.0,0.0,active,2025-08-01,2026-07-31
+tenant_prem_property_deema_flat_407_room_PART. 3,Agreement - Prem - Room PART. 3,tenant_prem,property_deema_flat_407_room_PART. 3,1700.0,0.0,active,2025-08-01,2026-07-31
+tenant_venkat_property_deema_flat_407_room_PART. 4,Agreement - Venkat - Room PART. 4,tenant_venkat,property_deema_flat_407_room_PART. 4,1400.0,500.0,active,2025-08-01,2026-07-31
+tenant_jayesh_property_deema_flat_407_room_PART. 5,Agreement - Jayesh - Room PART. 5,tenant_jayesh,property_deema_flat_407_room_PART. 5,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_jay_property_deema_flat_407_room_PART. 6,Agreement - Jay - Room PART. 6,tenant_jay,property_deema_flat_407_room_PART. 6,1700.0,0.0,active,2025-08-01,2026-07-31
+tenant_amiya_property_deema_flat_407_room_PART. 7,Agreement - Amiya - Room PART. 7,tenant_amiya,property_deema_flat_407_room_PART. 7,1650.0,500.0,active,2025-08-01,2026-07-31
+tenant_satish_property_deema_flat_407_room_PART. 8,Agreement - Satish - Room PART. 8,tenant_satish,property_deema_flat_407_room_PART. 8,1500.0,500.0,active,2025-08-01,2026-07-31
+tenant_divansu_property_deema_flat_503_room_PART. 1,Agreement - Divansu - Room PART. 1,tenant_divansu,property_deema_flat_503_room_PART. 1,1900.0,500.0,active,2025-08-01,2026-07-31
+tenant_ismail_property_deema_flat_503_room_PART. 2,Agreement - Ismail - Room PART. 2,tenant_ismail,property_deema_flat_503_room_PART. 2,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_rajesh_property_deema_flat_503_room_PART. 3,Agreement - Rajesh - Room PART. 3,tenant_rajesh,property_deema_flat_503_room_PART. 3,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_parshant_property_deema_flat_503_room_PART. 4,Agreement - Parshant - Room PART. 4,tenant_parshant,property_deema_flat_503_room_PART. 4,2500.0,500.0,active,2025-08-01,2026-07-31
+tenant_yakesh_property_deema_flat_503_room_PART. 5,Agreement - Yakesh - Room PART. 5,tenant_yakesh,property_deema_flat_503_room_PART. 5,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_shivani_property_deema_flat_503_room_ROOM. 1,Agreement - Shivani - Room ROOM. 1,tenant_shivani,property_deema_flat_503_room_ROOM. 1,1450.0,500.0,active,2025-08-01,2026-07-31
+tenant_everligh_property_deema_flat_503_room_ROOM. 2,Agreement - Everligh - Room ROOM. 2,tenant_everligh,property_deema_flat_503_room_ROOM. 2,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_sapna_property_deema_flat_503_room_MAID. KITCHE,Agreement - Sapna - Room MAID. KITCHE,tenant_sapna,property_deema_flat_503_room_MAID. KITCHE,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_shivagi_property_deema_flat_503_room_ATTACH. 1,Agreement - Shivagi - Room ATTACH. 1,tenant_shivagi,property_deema_flat_503_room_ATTACH. 1,4200.0,0.0,active,2025-08-01,2026-07-31
+tenant_manpret_property_deema_flat_503_room_ATTACH. 2,Agreement - Manpret - Room ATTACH. 2,tenant_manpret,property_deema_flat_503_room_ATTACH. 2,3700.0,0.0,active,2025-08-01,2026-07-31
+tenant_nikhil_property_deema_flat_503_room_ATTACH PART. 1,Agreement - Nikhil - Room ATTACH PART. 1,tenant_nikhil,property_deema_flat_503_room_ATTACH PART. 1,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_arun_property_deema_flat_503_room_ATTACH PART. 2,Agreement - Arun - Room ATTACH PART. 2,tenant_arun,property_deema_flat_503_room_ATTACH PART. 2,1700.0,500.0,active,2025-08-01,2026-07-31
+tenant_payal_property_deema_flat_503_room_ATTACH MAID,Agreement - Payal - Room ATTACH MAID,tenant_payal,property_deema_flat_503_room_ATTACH MAID,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_nidhiparita_property_deema_flat_503_room_PART. A,Agreement - Nidhi/Parita - Room PART. A,tenant_nidhiparita,property_deema_flat_503_room_PART. A,1850.0,0.0,active,2025-08-01,2026-07-31
+tenant_critina_property_deema_flat_503_room_PART. B,Agreement - Critina - Room PART. B,tenant_critina,property_deema_flat_503_room_PART. B,1900.0,500.0,active,2025-08-01,2026-07-31
+tenant_shashwati_property_deema_flat_506_room_PART. 1,Agreement - Shashwati - Room PART. 1,tenant_shashwati,property_deema_flat_506_room_PART. 1,1900.0,500.0,active,2025-08-01,2026-07-31
+tenant_audamber_vinayak_property_deema_flat_506_room_PART. 2,Agreement - Audamber Vinayak - Room PART. 2,tenant_audamber_vinayak,property_deema_flat_506_room_PART. 2,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_charanjeet_property_deema_flat_506_room_PART. 3,Agreement - Charanjeet - Room PART. 3,tenant_charanjeet,property_deema_flat_506_room_PART. 3,2500.0,1000.0,active,2025-08-01,2026-07-31
+tenant_roldin_property_deema_flat_506_room_PART. 4,Agreement - Roldin - Room PART. 4,tenant_roldin,property_deema_flat_506_room_PART. 4,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_reshma_property_deema_flat_506_room_PART. HALL,Agreement - Reshma - Room PART. HALL,tenant_reshma,property_deema_flat_506_room_PART. HALL,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_joseph_property_deema_flat_506_room_MAID. KITCHE,Agreement - Joseph - Room MAID. KITCHE,tenant_joseph,property_deema_flat_506_room_MAID. KITCHE,1700.0,0.0,active,2025-08-01,2026-07-31
+tenant_surekha_property_deema_flat_506_room_ROOM. 2,Agreement - Surekha - Room ROOM. 2,tenant_surekha,property_deema_flat_506_room_ROOM. 2,1100.0,0.0,active,2025-08-01,2026-07-31
+tenant_deeshant_property_deema_flat_506_room_ROOM. 1,Agreement - Deeshant - Room ROOM. 1,tenant_deeshant,property_deema_flat_506_room_ROOM. 1,1400.0,0.0,active,2025-08-01,2026-07-31
+tenant_amol_property_deema_flat_506_room_1ST ATTACH,Agreement - Amol - Room 1ST ATTACH,tenant_amol,property_deema_flat_506_room_1ST ATTACH,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_leela_bangali_property_deema_flat_506_room_2ND ATTACH,Agreement - Leela Bangali - Room 2ND ATTACH,tenant_leela_bangali,property_deema_flat_506_room_2ND ATTACH,4200.0,0.0,active,2025-08-01,2026-07-31
+tenant_jitender_property_deema_flat_506_room_ATTACH BAL.,Agreement - Jitender - Room ATTACH BAL.,tenant_jitender,property_deema_flat_506_room_ATTACH BAL.,4500.0,0.0,active,2025-08-01,2026-07-31
+tenant_yuvraj_property_deema_flat_506_room_PART. BAL.,Agreement - Yuvraj - Room PART. BAL.,tenant_yuvraj,property_deema_flat_506_room_PART. BAL.,2700.0,0.0,active,2025-08-01,2026-07-31
+tenant_goutam_property_deema_flat_602_room_ATTACH. H,Agreement - Goutam - Room ATTACH. H,tenant_goutam,property_deema_flat_602_room_ATTACH. H,4500.0,0.0,active,2025-08-01,2026-07-31
+tenant_ujjwal_property_deema_flat_602_room_PART. 1,Agreement - Ujjwal - Room PART. 1,tenant_ujjwal,property_deema_flat_602_room_PART. 1,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_rohit_property_deema_flat_602_room_PART. 2,Agreement - Rohit - Room PART. 2,tenant_rohit,property_deema_flat_602_room_PART. 2,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_malik_property_deema_flat_602_room_PART. 3,Agreement - Malik - Room PART. 3,tenant_malik,property_deema_flat_602_room_PART. 3,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_gravit_property_deema_flat_602_room_PART. 4,Agreement - Gravit - Room PART. 4,tenant_gravit,property_deema_flat_602_room_PART. 4,2400.0,0.0,active,2025-08-01,2026-07-31
+tenant_nepali_marry_property_deema_flat_602_room_PART. 5,Agreement - Nepali Marry - Room PART. 5,tenant_nepali_marry,property_deema_flat_602_room_PART. 5,2200.0,1000.0,active,2025-08-01,2026-07-31
+tenant_yogel_property_deema_flat_602_room_MAID ROOM 1,Agreement - Yogel - Room MAID ROOM 1,tenant_yogel,property_deema_flat_602_room_MAID ROOM 1,1400.0,0.0,active,2025-08-01,2026-07-31
+tenant_inaytullah_property_deema_flat_602_room_MAID ROOM 2,Agreement - Inaytullah - Room MAID ROOM 2,tenant_inaytullah,property_deema_flat_602_room_MAID ROOM 2,1200.0,0.0,active,2025-08-01,2026-07-31
+tenant_ankit_property_deema_flat_702_room_PART. NO. S1,Agreement - Ankit - Room PART. NO. S1,tenant_ankit,property_deema_flat_702_room_PART. NO. S1,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_joyal_property_deema_flat_702_room_PART. NO. A2,Agreement - Joyal - Room PART. NO. A2,tenant_joyal,property_deema_flat_702_room_PART. NO. A2,2800.0,1000.0,active,2025-08-01,2026-07-31
+tenant_sayed_property_deema_flat_702_room_PART. NO. A1,Agreement - Sayed - Room PART. NO. A1,tenant_sayed,property_deema_flat_702_room_PART. NO. A1,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_razik_property_deema_flat_702_room_PART. P1,Agreement - Razik - Room PART. P1,tenant_razik,property_deema_flat_702_room_PART. P1,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_anju_property_deema_flat_702_room_PART. P2,Agreement - Anju - Room PART. P2,tenant_anju,property_deema_flat_702_room_PART. P2,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_pritam_property_deema_flat_603_room_PART. 1,Agreement - Pritam - Room PART. 1,tenant_pritam,property_deema_flat_603_room_PART. 1,2250.0,0.0,active,2025-08-01,2026-07-31
+tenant_ajas_property_deema_flat_603_room_PART. 2,Agreement - Ajas - Room PART. 2,tenant_ajas,property_deema_flat_603_room_PART. 2,2250.0,1000.0,active,2025-08-01,2026-07-31
+tenant_anchal_property_deema_flat_603_room_PART. 3,Agreement - Anchal - Room PART. 3,tenant_anchal,property_deema_flat_603_room_PART. 3,2250.0,0.0,active,2025-08-01,2026-07-31
+tenant_luckyyuvraj_property_deema_flat_603_room_K. HALL,Agreement - Lucky/Yuvraj - Room K. HALL,tenant_luckyyuvraj,property_deema_flat_603_room_K. HALL,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_vinay_property_deema_flat_603_room_K. MAID ROOM,Agreement - Vinay - Room K. MAID ROOM,tenant_vinay,property_deema_flat_603_room_K. MAID ROOM,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_abhishek_property_deema_flat_603_room_ATTACH PART. 1,Agreement - Abhishek - Room ATTACH PART. 1,tenant_abhishek,property_deema_flat_603_room_ATTACH PART. 1,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_naven_property_deema_flat_603_room_ATTACH PART. 2,Agreement - Naven - Room ATTACH PART. 2,tenant_naven,property_deema_flat_603_room_ATTACH PART. 2,2500.0,1000.0,active,2025-08-01,2026-07-31
+tenant_shivam_property_deema_flat_703_room_BIG ATTACH,Agreement - Shivam - Room BIG ATTACH,tenant_shivam,property_deema_flat_703_room_BIG ATTACH,4800.0,0.0,active,2025-08-01,2026-07-31
+tenant_aishwarya_property_deema_flat_703_room_SH. PART. 1,Agreement - Aishwarya - Room SH. PART. 1,tenant_aishwarya,property_deema_flat_703_room_SH. PART. 1,1600.0,0.0,active,2025-08-01,2026-07-31
+tenant_ritesh_property_deema_flat_703_room_SH PART. 2,Agreement - Ritesh - Room SH PART. 2,tenant_ritesh,property_deema_flat_703_room_SH PART. 2,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_bumika_property_deema_flat_703_room_SH PART. 3,Agreement - Bumika - Room SH PART. 3,tenant_bumika,property_deema_flat_703_room_SH PART. 3,2400.0,1000.0,active,2025-08-01,2026-07-31
+tenant_marina_property_deema_flat_703_room_ATTACH. ,Agreement - Marina - Room ATTACH. ,tenant_marina,property_deema_flat_703_room_ATTACH. ,4400.0,0.0,active,2025-08-01,2026-07-31
+tenant_karan_property_deema_flat_703_room_PARTITION. T,Agreement - Karan - Room PARTITION. T,tenant_karan,property_deema_flat_703_room_PARTITION. T,2750.0,0.0,active,2025-08-01,2026-07-31
+tenant_chandra_property_deema_flat_703_room_MAID ROOM,Agreement - Chandra - Room MAID ROOM,tenant_chandra,property_deema_flat_703_room_MAID ROOM,1100.0,0.0,active,2025-08-01,2026-07-31
+tenant_roy_property_deema_flat_604_room_ATTACH,Agreement - Roy - Room ATTACH,tenant_roy,property_deema_flat_604_room_ATTACH,4500.0,0.0,active,2025-08-01,2026-07-31
+tenant_jeeshan_property_deema_flat_604_room_PART. 2,Agreement - Jeeshan - Room PART. 2,tenant_jeeshan,property_deema_flat_604_room_PART. 2,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_aadi_property_deema_flat_604_room_PART. 3,Agreement - Aadi - Room PART. 3,tenant_aadi,property_deema_flat_604_room_PART. 3,2400.0,0.0,active,2025-08-01,2026-07-31
+tenant_anas_property_deema_flat_604_room_K. HALL,Agreement - Anas - Room K. HALL,tenant_anas,property_deema_flat_604_room_K. HALL,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_vijith_property_deema_flat_604_room_K. MAID ROOM,Agreement - Vijith - Room K. MAID ROOM,tenant_vijith,property_deema_flat_604_room_K. MAID ROOM,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_priya_property_deema_flat_604_room_604,Agreement - Priya - Room 604,tenant_priya,property_deema_flat_604_room_604,1400.0,0.0,active,2025-08-01,2026-07-31
+tenant_kamran_property_deema_flat_604_room_604,Agreement - Kamran - Room 604,tenant_kamran,property_deema_flat_604_room_604,1300.0,500.0,active,2025-08-01,2026-07-31
+tenant_ayushi_property_deema_flat_704_room_BIG ATTACH,Agreement - Ayushi - Room BIG ATTACH,tenant_ayushi,property_deema_flat_704_room_BIG ATTACH,4800.0,0.0,active,2025-08-01,2026-07-31
+tenant_reemaruchi_property_deema_flat_704_room_PART. WINDOW,Agreement - Reema/Ruchi - Room PART. WINDOW,tenant_reemaruchi,property_deema_flat_704_room_PART. WINDOW,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_shushmita_property_deema_flat_704_room_MAID ROOM,Agreement - Shushmita - Room MAID ROOM,tenant_shushmita,property_deema_flat_704_room_MAID ROOM,1200.0,0.0,active,2025-08-01,2026-07-31
+tenant_miraj_property_deema_flat_704_room_SEP. PART.1,Agreement - Miraj - Room SEP. PART.1,tenant_miraj,property_deema_flat_704_room_SEP. PART.1,1600.0,500.0,active,2025-08-01,2026-07-31
+tenant_pankaj_property_deema_flat_704_room_SEP PART. 2,Agreement - Pankaj - Room SEP PART. 2,tenant_pankaj,property_deema_flat_704_room_SEP PART. 2,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_rishi_property_deema_flat_704_room_SH PART. 4,Agreement - Rishi - Room SH PART. 4,tenant_rishi,property_deema_flat_704_room_SH PART. 4,1900.0,0.0,active,2025-08-01,2026-07-31
+tenant_mashkur_property_deema_flat_704_room_SEP PART. 3,Agreement - Mashkur - Room SEP PART. 3,tenant_mashkur,property_deema_flat_704_room_SEP PART. 3,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_vimal_property_deema_flat_704_room_SH PART. 5,Agreement - Vimal - Room SH PART. 5,tenant_vimal,property_deema_flat_704_room_SH PART. 5,1550.0,0.0,active,2025-08-01,2026-07-31
+tenant_pravan_property_deema_flat_704_room_SH PART. 6,Agreement - Pravan - Room SH PART. 6,tenant_pravan,property_deema_flat_704_room_SH PART. 6,2300.0,500.0,active,2025-08-01,2026-07-31
+tenant_sriniwas_property_deema_flat_606_room_ATTACH,Agreement - Sriniwas - Room ATTACH,tenant_sriniwas,property_deema_flat_606_room_ATTACH,4500.0,0.0,active,2025-08-01,2026-07-31
+tenant_amit_property_deema_flat_606_room_K. MAID ROOM,Agreement - Amit - Room K. MAID ROOM,tenant_amit,property_deema_flat_606_room_K. MAID ROOM,2500.0,500.0,active,2025-08-01,2026-07-31
+tenant_ravi_property_deema_flat_606_room_K. HALL,Agreement - Ravi - Room K. HALL,tenant_ravi,property_deema_flat_606_room_K. HALL,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_akash_property_deema_flat_606_room_PART. 1,Agreement - Akash - Room PART. 1,tenant_akash,property_deema_flat_606_room_PART. 1,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_nallin_property_deema_flat_606_room_PART. 2,Agreement - Nallin - Room PART. 2,tenant_nallin,property_deema_flat_606_room_PART. 2,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_sriniwasan_property_deema_flat_606_room_PART. 3,Agreement - Sriniwasan - Room PART. 3,tenant_sriniwasan,property_deema_flat_606_room_PART. 3,1600.0,0.0,active,2025-08-01,2026-07-31
+tenant_nikhil_property_deema_flat_606_room_WIND. 4,Agreement - Nikhil - Room WIND. 4,tenant_nikhil,property_deema_flat_606_room_WIND. 4,1600.0,0.0,active,2025-08-01,2026-07-31
+tenant_shivam_property_deema_flat_606_room_PART. 5,Agreement - Shivam - Room PART. 5,tenant_shivam,property_deema_flat_606_room_PART. 5,1800.0,1000.0,active,2025-08-01,2026-07-31
+tenant_shifa_property_deema_flat_606_room_WIND. 6,Agreement - Shifa - Room WIND. 6,tenant_shifa,property_deema_flat_606_room_WIND. 6,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_nallid_property_deema_flat_706_room_MAID ROOM,Agreement - Nallid - Room MAID ROOM,tenant_nallid,property_deema_flat_706_room_MAID ROOM,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_rohit_property_deema_flat_706_room_PART. WINDOW,Agreement - Rohit - Room PART. WINDOW,tenant_rohit,property_deema_flat_706_room_PART. WINDOW,2900.0,0.0,active,2025-08-01,2026-07-31
+tenant_avinashakshay_property_deema_flat_706_room_ATTACH,Agreement - Avinash/Akshay - Room ATTACH,tenant_avinashakshay,property_deema_flat_706_room_ATTACH,4500.0,0.0,active,2025-08-01,2026-07-31
+tenant_sabah_property_deema_flat_706_room_SH. PART. 1,Agreement - Sabah - Room SH. PART. 1,tenant_sabah,property_deema_flat_706_room_SH. PART. 1,1650.0,0.0,active,2025-08-01,2026-07-31
+tenant_bhargav_property_deema_flat_706_room_SH. PART. 2,Agreement - Bhargav - Room SH. PART. 2,tenant_bhargav,property_deema_flat_706_room_SH. PART. 2,1600.0,500.0,active,2025-08-01,2026-07-31
+tenant_bavya_property_deema_flat_706_room_SH PART. 3,Agreement - Bavya - Room SH PART. 3,tenant_bavya,property_deema_flat_706_room_SH PART. 3,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_deepa_property_deema_flat_706_room_ATTACH PART. 1,Agreement - Deepa - Room ATTACH PART. 1,tenant_deepa,property_deema_flat_706_room_ATTACH PART. 1,1700.0,0.0,active,2025-08-01,2026-07-31
+tenant_vishal_property_deema_flat_706_room_ATTACH PART. 2,Agreement - Vishal - Room ATTACH PART. 2,tenant_vishal,property_deema_flat_706_room_ATTACH PART. 2,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_gourav_property_deema_flat_706_room_ATTACH PART. 3,Agreement - Gourav - Room ATTACH PART. 3,tenant_gourav,property_deema_flat_706_room_ATTACH PART. 3,1900.0,0.0,active,2025-08-01,2026-07-31
+tenant_hero_raja_property_deema_flat_610_room_ATTACH PART. 1,Agreement - Hero Raja - Room ATTACH PART. 1,tenant_hero_raja,property_deema_flat_610_room_ATTACH PART. 1,1650.0,0.0,active,2025-08-01,2026-07-31
+tenant_kanchan_property_deema_flat_610_room_ATTACH PART. 2,Agreement - Kanchan - Room ATTACH PART. 2,tenant_kanchan,property_deema_flat_610_room_ATTACH PART. 2,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_jhuma_property_deema_flat_610_room_ATTACH PART. 3,Agreement - Jhuma - Room ATTACH PART. 3,tenant_jhuma,property_deema_flat_610_room_ATTACH PART. 3,1900.0,0.0,active,2025-08-01,2026-07-31
+tenant_vishal_property_deema_flat_610_room_PART. 1,Agreement - Vishal - Room PART. 1,tenant_vishal,property_deema_flat_610_room_PART. 1,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_priyanka_property_deema_flat_610_room_PART. 2,Agreement - Priyanka - Room PART. 2,tenant_priyanka,property_deema_flat_610_room_PART. 2,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_sanjay_property_deema_flat_610_room_PART. 3,Agreement - Sanjay - Room PART. 3,tenant_sanjay,property_deema_flat_610_room_PART. 3,2650.0,0.0,active,2025-08-01,2026-07-31
+tenant_hari_property_deema_flat_610_room_K. HALL,Agreement - Hari - Room K. HALL,tenant_hari,property_deema_flat_610_room_K. HALL,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_reshma_property_deema_flat_610_room_BAL. R,Agreement - Reshma - Room BAL. R,tenant_reshma,property_deema_flat_610_room_BAL. R,1900.0,500.0,active,2025-08-01,2026-07-31
+tenant_alex_property_deema_flat_610_room_MAID ROOM BAL.,Agreement - Alex - Room MAID ROOM BAL.,tenant_alex,property_deema_flat_610_room_MAID ROOM BAL.,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_sachin_property_deema_flat_610_room_MAID ROOM,Agreement - Sachin - Room MAID ROOM,tenant_sachin,property_deema_flat_610_room_MAID ROOM,1200.0,0.0,active,2025-08-01,2026-07-31
+tenant_vishalgeeta_property_deema_flat_710_room_ATTACH PART. 1,Agreement - Vishal/Geeta - Room ATTACH PART. 1,tenant_vishalgeeta,property_deema_flat_710_room_ATTACH PART. 1,1700.0,500.0,active,2025-08-01,2026-07-31
+tenant_maruska_property_deema_flat_710_room_ATTACH PART. 2,Agreement - Maruska - Room ATTACH PART. 2,tenant_maruska,property_deema_flat_710_room_ATTACH PART. 2,1450.0,0.0,active,2025-08-01,2026-07-31
+tenant_ashpreet_property_deema_flat_710_room_ATTACH PART. 3,Agreement - Ashpreet - Room ATTACH PART. 3,tenant_ashpreet,property_deema_flat_710_room_ATTACH PART. 3,1700.0,0.0,active,2025-08-01,2026-07-31
+tenant_parshnt_property_deema_flat_710_room_SH. PART. 2,Agreement - Parshnt - Room SH. PART. 2,tenant_parshnt,property_deema_flat_710_room_SH. PART. 2,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_irish_property_deema_flat_710_room_SH PART. 1,Agreement - Irish - Room SH PART. 1,tenant_irish,property_deema_flat_710_room_SH PART. 1,1950.0,0.0,active,2025-08-01,2026-07-31
+tenant_tharindu_property_deema_flat_710_room_BIG ATTACH,Agreement - Tharindu - Room BIG ATTACH,tenant_tharindu,property_deema_flat_710_room_BIG ATTACH,5400.0,0.0,active,2025-08-01,2026-07-31
+tenant_aishwarya_property_deema_flat_710_room_PART. BAL.,Agreement - Aishwarya - Room PART. BAL.,tenant_aishwarya,property_deema_flat_710_room_PART. BAL.,2500.0,500.0,active,2025-08-01,2026-07-31
+tenant_hejal_property_deema_flat_710_room_PARITION ROOM,Agreement - Hejal - Room PARITION ROOM,tenant_hejal,property_deema_flat_710_room_PARITION ROOM,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_karishma_property_deema_flat_611_room_PART. 1,Agreement - Karishma - Room PART. 1,tenant_karishma,property_deema_flat_611_room_PART. 1,1420.0,0.0,active,2025-08-01,2026-07-31
+tenant_vijay_property_deema_flat_611_room_PART. 2,Agreement - Vijay - Room PART. 2,tenant_vijay,property_deema_flat_611_room_PART. 2,2000.0,500.0,active,2025-08-01,2026-07-31
+tenant_shoaib_property_deema_flat_611_room_PART. 3,Agreement - Shoaib - Room PART. 3,tenant_shoaib,property_deema_flat_611_room_PART. 3,2200.0,1000.0,active,2025-08-01,2026-07-31
+tenant_guru_property_deema_flat_611_room_WIND. 4,Agreement - Guru - Room WIND. 4,tenant_guru,property_deema_flat_611_room_WIND. 4,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_ravi_property_deema_flat_611_room_WIND. 5,Agreement - Ravi - Room WIND. 5,tenant_ravi,property_deema_flat_611_room_WIND. 5,2200.0,500.0,active,2025-08-01,2026-07-31
+tenant_yashpal_property_deema_flat_611_room_PART. 6,Agreement - Yashpal - Room PART. 6,tenant_yashpal,property_deema_flat_611_room_PART. 6,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_riya_property_deema_flat_611_room_PART. 7,Agreement - Riya - Room PART. 7,tenant_riya,property_deema_flat_611_room_PART. 7,1600.0,0.0,active,2025-08-01,2026-07-31
+tenant_nirosha_property_deema_flat_611_room_MAID WINDOW,Agreement - Nirosha - Room MAID WINDOW,tenant_nirosha,property_deema_flat_611_room_MAID WINDOW,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_sabra_property_deema_flat_711_room_SH. PART. 1,Agreement - Sabra - Room SH. PART. 1,tenant_sabra,property_deema_flat_711_room_SH. PART. 1,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_leyo_property_deema_flat_711_room_SH. PART. 2,Agreement - Leyo - Room SH. PART. 2,tenant_leyo,property_deema_flat_711_room_SH. PART. 2,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_manuraj_property_deema_flat_711_room_SHARING ROOM,Agreement - Manuraj - Room SHARING ROOM,tenant_manuraj,property_deema_flat_711_room_SHARING ROOM,4000.0,1000.0,active,2025-08-01,2026-07-31
+tenant_rameshwar_property_deema_flat_711_room_ATTACH BAL.,Agreement - Rameshwar - Room ATTACH BAL.,tenant_rameshwar,property_deema_flat_711_room_ATTACH BAL.,4300.0,1000.0,active,2025-08-01,2026-07-31
+tenant_sharma_property_deema_flat_711_room_ATTACH PART. 1,Agreement - Sharma - Room ATTACH PART. 1,tenant_sharma,property_deema_flat_711_room_ATTACH PART. 1,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_zain_property_deema_flat_711_room_ATTACH PART. 2,Agreement - Zain - Room ATTACH PART. 2,tenant_zain,property_deema_flat_711_room_ATTACH PART. 2,1600.0,0.0,active,2025-08-01,2026-07-31
+tenant_manpret_property_deema_flat_711_room_ATTACH PART. 3,Agreement - Manpret - Room ATTACH PART. 3,tenant_manpret,property_deema_flat_711_room_ATTACH PART. 3,2000.0,500.0,active,2025-08-01,2026-07-31
+tenant_alex_property_yahya_flat_101_room_PARTITION ROOM,Agreement - Alex - Room PARTITION ROOM,tenant_alex,property_yahya_flat_101_room_PARTITION ROOM,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_roshan_property_yahya_flat_101_room_HALL,Agreement - Roshan - Room HALL,tenant_roshan,property_yahya_flat_101_room_HALL,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_neha_property_yahya_flat_101_room_1ST SHARING ,Agreement - Neha - Room 1ST SHARING ,tenant_neha,property_yahya_flat_101_room_1ST SHARING ,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_pritesh_property_yahya_flat_101_room_2ND SHARING,Agreement - Pritesh - Room 2ND SHARING,tenant_pritesh,property_yahya_flat_101_room_2ND SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_bahu_property_yahya_flat_101_room_ATTACH,Agreement - Bahu - Room ATTACH,tenant_bahu,property_yahya_flat_101_room_ATTACH,4400.0,0.0,active,2025-08-01,2026-07-31
+tenant_srilanka_property_yahya_flat_101_room_MAID ROOM,Agreement - Srilanka - Room MAID ROOM,tenant_srilanka,property_yahya_flat_101_room_MAID ROOM,2400.0,0.0,active,2025-08-01,2026-07-31
+tenant_sumit_property_yahya_flat_108_room_ATTACH ,Agreement - Sumit - Room ATTACH ,tenant_sumit,property_yahya_flat_108_room_ATTACH ,4800.0,0.0,active,2025-08-01,2026-07-31
+tenant_sreethu_property_yahya_flat_108_room_SHARING ROOM,Agreement - Sreethu - Room SHARING ROOM,tenant_sreethu,property_yahya_flat_108_room_SHARING ROOM,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_mahika_property_yahya_flat_108_room_SHARING ROOM,Agreement - Mahika - Room SHARING ROOM,tenant_mahika,property_yahya_flat_108_room_SHARING ROOM,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_daxesh_property_yahya_flat_108_room_MAID ROOM,Agreement - Daxesh - Room MAID ROOM,tenant_daxesh,property_yahya_flat_108_room_MAID ROOM,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_heeruma_property_yahya_flat_108_room_PART. 1,Agreement - Heeruma - Room PART. 1,tenant_heeruma,property_yahya_flat_108_room_PART. 1,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_moti_singh_property_yahya_flat_108_room_PART. 2,Agreement - Moti Singh - Room PART. 2,tenant_moti_singh,property_yahya_flat_108_room_PART. 2,1600.0,0.0,active,2025-08-01,2026-07-31
+tenant_hameer_singh_property_yahya_flat_108_room_PART. 3,Agreement - Hameer Singh - Room PART. 3,tenant_hameer_singh,property_yahya_flat_108_room_PART. 3,1600.0,0.0,active,2025-08-01,2026-07-31
+tenant_vinay_property_yahya_flat_108_room_PART. 4,Agreement - Vinay - Room PART. 4,tenant_vinay,property_yahya_flat_108_room_PART. 4,1600.0,0.0,active,2025-08-01,2026-07-31
+tenant_bhasker_property_yahya_flat_108_room_PART.5 BALCONY,Agreement - Bhasker - Room PART.5 BALCONY,tenant_bhasker,property_yahya_flat_108_room_PART.5 BALCONY,1900.0,0.0,active,2025-08-01,2026-07-31
+tenant_hamza_property_yahya_flat_204_room_ATTACH ,Agreement - Hamza - Room ATTACH ,tenant_hamza,property_yahya_flat_204_room_ATTACH ,4400.0,0.0,active,2025-08-01,2026-07-31
+tenant_amrita_property_yahya_flat_204_room_SHARING ROOM,Agreement - Amrita - Room SHARING ROOM,tenant_amrita,property_yahya_flat_204_room_SHARING ROOM,3300.0,500.0,active,2025-08-01,2026-07-31
+tenant_yogesh_property_yahya_flat_204_room_SHARING ROOM,Agreement - Yogesh - Room SHARING ROOM,tenant_yogesh,property_yahya_flat_204_room_SHARING ROOM,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_hemant_property_yahya_flat_204_room_PART. 1,Agreement - Hemant - Room PART. 1,tenant_hemant,property_yahya_flat_204_room_PART. 1,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_sithumani_property_yahya_flat_204_room_PART. 2,Agreement - Sithumani - Room PART. 2,tenant_sithumani,property_yahya_flat_204_room_PART. 2,1700.0,0.0,active,2025-08-01,2026-07-31
+tenant_grayta_aunty_property_yahya_flat_204_room_PART. 3,Agreement - Grayta Aunty - Room PART. 3,tenant_grayta_aunty,property_yahya_flat_204_room_PART. 3,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_sherin_property_yahya_flat_204_room_PART. BALCONY,Agreement - Sherin - Room PART. BALCONY,tenant_sherin,property_yahya_flat_204_room_PART. BALCONY,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_heena_property_yahya_flat_204_room_MAID ROOM,Agreement - Heena - Room MAID ROOM,tenant_heena,property_yahya_flat_204_room_MAID ROOM,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_reema_property_yahya_flat_207_room_ PART. 11,Agreement - Reema - Room  PART. 11,tenant_reema,property_yahya_flat_207_room_ PART. 11,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_abihilash_property_yahya_flat_207_room_PART. 1,Agreement - Abihilash - Room PART. 1,tenant_abihilash,property_yahya_flat_207_room_PART. 1,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_diksha_property_yahya_flat_207_room_PART. 2,Agreement - Diksha - Room PART. 2,tenant_diksha,property_yahya_flat_207_room_PART. 2,1900.0,500.0,active,2025-08-01,2026-07-31
+tenant_amol_property_yahya_flat_207_room_PART. BALCONY,Agreement - Amol - Room PART. BALCONY,tenant_amol,property_yahya_flat_207_room_PART. BALCONY,2150.0,500.0,active,2025-08-01,2026-07-31
+tenant_ravi_property_yahya_flat_207_room_PART. 4,Agreement - Ravi - Room PART. 4,tenant_ravi,property_yahya_flat_207_room_PART. 4,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_sandeep_property_yahya_flat_207_room_PART. 5,Agreement - Sandeep - Room PART. 5,tenant_sandeep,property_yahya_flat_207_room_PART. 5,2600.0,500.0,active,2025-08-01,2026-07-31
+tenant_sara_property_yahya_flat_207_room_PART. 6,Agreement - Sara - Room PART. 6,tenant_sara,property_yahya_flat_207_room_PART. 6,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_tanuja_property_yahya_flat_207_room_PART. 7,Agreement - Tanuja - Room PART. 7,tenant_tanuja,property_yahya_flat_207_room_PART. 7,2200.0,500.0,active,2025-08-01,2026-07-31
+tenant_pi_property_yahya_flat_207_room_PART. 8,Agreement - Pi - Room PART. 8,tenant_pi,property_yahya_flat_207_room_PART. 8,2000.0,500.0,active,2025-08-01,2026-07-31
+tenant_jabir_property_yahya_flat_207_room_PART. 9,Agreement - Jabir - Room PART. 9,tenant_jabir,property_yahya_flat_207_room_PART. 9,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_johnson_property_yahya_flat_207_room_PART. 10,Agreement - Johnson - Room PART. 10,tenant_johnson,property_yahya_flat_207_room_PART. 10,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_ram_property_yahya_flat_207_room_MAID ROOM,Agreement - Ram - Room MAID ROOM,tenant_ram,property_yahya_flat_207_room_MAID ROOM,2300.0,500.0,active,2025-08-01,2026-07-31
+tenant_gautam_property_yahya_flat_208_room_ATTACH,Agreement - Gautam - Room ATTACH,tenant_gautam,property_yahya_flat_208_room_ATTACH,5800.0,0.0,active,2025-08-01,2026-07-31
+tenant_srikant_property_yahya_flat_208_room_SHARING ROOM,Agreement - Srikant - Room SHARING ROOM,tenant_srikant,property_yahya_flat_208_room_SHARING ROOM,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_manoj_property_yahya_flat_208_room_SHARING ROOM,Agreement - Manoj - Room SHARING ROOM,tenant_manoj,property_yahya_flat_208_room_SHARING ROOM,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_rahul_property_yahya_flat_208_room_PART. ROOM,Agreement - Rahul - Room PART. ROOM,tenant_rahul,property_yahya_flat_208_room_PART. ROOM,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_gracy_property_yahya_flat_208_room_MAID ROOM,Agreement - Gracy - Room MAID ROOM,tenant_gracy,property_yahya_flat_208_room_MAID ROOM,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_jithin_property_yahya_flat_208_room_BIG HALL,Agreement - Jithin - Room BIG HALL,tenant_jithin,property_yahya_flat_208_room_BIG HALL,4200.0,0.0,active,2025-08-01,2026-07-31
+tenant_avlon_property_yahya_flat_301_room_MAID ROOM,Agreement - Avlon - Room MAID ROOM,tenant_avlon,property_yahya_flat_301_room_MAID ROOM,2400.0,0.0,active,2025-08-01,2026-07-31
+tenant_krishan_property_yahya_flat_301_room_SHARING ROOM,Agreement - Krishan - Room SHARING ROOM,tenant_krishan,property_yahya_flat_301_room_SHARING ROOM,3400.0,0.0,active,2025-08-01,2026-07-31
+tenant_rhea_property_yahya_flat_301_room_SHARING ROOM,Agreement - Rhea - Room SHARING ROOM,tenant_rhea,property_yahya_flat_301_room_SHARING ROOM,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_rahul_property_yahya_flat_301_room_HALL PART. 1,Agreement - Rahul - Room HALL PART. 1,tenant_rahul,property_yahya_flat_301_room_HALL PART. 1,2400.0,0.0,active,2025-08-01,2026-07-31
+tenant_arslan_property_yahya_flat_301_room_HALL PART. 2,Agreement - Arslan - Room HALL PART. 2,tenant_arslan,property_yahya_flat_301_room_HALL PART. 2,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_shailesh_property_yahya_flat_301_room_HALL PART 3,Agreement - Shailesh - Room HALL PART 3,tenant_shailesh,property_yahya_flat_301_room_HALL PART 3,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_robin_property_yahya_flat_301_room_HALL PART 4,Agreement - Robin - Room HALL PART 4,tenant_robin,property_yahya_flat_301_room_HALL PART 4,2700.0,0.0,active,2025-08-01,2026-07-31
+tenant_akhil_property_yahya_flat_301_room_ATTACH PART. 1,Agreement - Akhil - Room ATTACH PART. 1,tenant_akhil,property_yahya_flat_301_room_ATTACH PART. 1,2400.0,0.0,active,2025-08-01,2026-07-31
+tenant_vijay_property_yahya_flat_301_room_ATTACH PART. 2,Agreement - Vijay - Room ATTACH PART. 2,tenant_vijay,property_yahya_flat_301_room_ATTACH PART. 2,2200.0,1000.0,active,2025-08-01,2026-07-31
+tenant_saba_property_yahya_flat_301_room_ATTACH PART. 3,Agreement - Saba - Room ATTACH PART. 3,tenant_saba,property_yahya_flat_301_room_ATTACH PART. 3,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_wasim_property_yahya_flat_307_room_307,Agreement - Wasim - Room 307,tenant_wasim,property_yahya_flat_307_room_307,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_sharan_property_yahya_flat_307_room_307,Agreement - Sharan - Room 307,tenant_sharan,property_yahya_flat_307_room_307,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_vishal_property_yahya_flat_307_room_307,Agreement - Vishal - Room 307,tenant_vishal,property_yahya_flat_307_room_307,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_arslan_property_yahya_flat_307_room_307,Agreement - Arslan - Room 307,tenant_arslan,property_yahya_flat_307_room_307,1300.0,500.0,active,2025-08-01,2026-07-31
+tenant_teenasamitha_property_yahya_flat_307_room_2ND SHARING,Agreement - Teena/Samitha - Room 2ND SHARING,tenant_teenasamitha,property_yahya_flat_307_room_2ND SHARING,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_trupti_property_yahya_flat_307_room_1ST SHARING ,Agreement - Trupti - Room 1ST SHARING ,tenant_trupti,property_yahya_flat_307_room_1ST SHARING ,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_purvi_property_yahya_flat_307_room_PARTITION ROOM,Agreement - Purvi - Room PARTITION ROOM,tenant_purvi,property_yahya_flat_307_room_PARTITION ROOM,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_ashish_property_yahya_flat_307_room_307,Agreement - Ashish - Room 307,tenant_ashish,property_yahya_flat_307_room_307,1350.0,0.0,active,2025-08-01,2026-07-31
+tenant_salman_property_yahya_flat_307_room_307,Agreement - Salman - Room 307,tenant_salman,property_yahya_flat_307_room_307,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_nilesh_property_yahya_flat_307_room_307,Agreement - Nilesh - Room 307,tenant_nilesh,property_yahya_flat_307_room_307,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_nafees_property_yahya_flat_307_room_MAID ROOM,Agreement - Nafees - Room MAID ROOM,tenant_nafees,property_yahya_flat_307_room_MAID ROOM,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_dhairya_property_yahya_flat_308_room_ATTACH,Agreement - Dhairya - Room ATTACH,tenant_dhairya,property_yahya_flat_308_room_ATTACH,5200.0,1500.0,active,2025-08-01,2026-07-31
+tenant_zehra_property_yahya_flat_308_room_SHARING ROOM,Agreement - Zehra - Room SHARING ROOM,tenant_zehra,property_yahya_flat_308_room_SHARING ROOM,4200.0,1000.0,active,2025-08-01,2026-07-31
+tenant_kabindra_property_yahya_flat_308_room_SHARING ROOM,Agreement - Kabindra - Room SHARING ROOM,tenant_kabindra,property_yahya_flat_308_room_SHARING ROOM,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_anam_property_yahya_flat_308_room_MAID ROOM,Agreement - Anam - Room MAID ROOM,tenant_anam,property_yahya_flat_308_room_MAID ROOM,2400.0,0.0,active,2025-08-01,2026-07-31
+tenant_vineet_property_yahya_flat_308_room_HALL PART. 1,Agreement - Vineet - Room HALL PART. 1,tenant_vineet,property_yahya_flat_308_room_HALL PART. 1,1900.0,0.0,active,2025-08-01,2026-07-31
+tenant_afiya_property_yahya_flat_308_room_HALL PART.  2,Agreement - Afiya - Room HALL PART.  2,tenant_afiya,property_yahya_flat_308_room_HALL PART.  2,1650.0,0.0,active,2025-08-01,2026-07-31
+tenant_chgandershaker_property_yahya_flat_308_room_HALL PART. 3,Agreement - Chgandershaker - Room HALL PART. 3,tenant_chgandershaker,property_yahya_flat_308_room_HALL PART. 3,1650.0,0.0,active,2025-08-01,2026-07-31
+tenant_dhiya_property_yahya_flat_308_room_HALL PART. 4,Agreement - Dhiya - Room HALL PART. 4,tenant_dhiya,property_yahya_flat_308_room_HALL PART. 4,1650.0,500.0,active,2025-08-01,2026-07-31
+tenant_lovlina_property_yahya_flat_308_room_HALL PART. 5,Agreement - Lovlina - Room HALL PART. 5,tenant_lovlina,property_yahya_flat_308_room_HALL PART. 5,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_swaroop_property_yahya_flat_401_room_ATTACH,Agreement - Swaroop - Room ATTACH,tenant_swaroop,property_yahya_flat_401_room_ATTACH,4500.0,0.0,active,2025-08-01,2026-07-31
+tenant_jayesh_property_yahya_flat_401_room_SHARING ROOM,Agreement - Jayesh - Room SHARING ROOM,tenant_jayesh,property_yahya_flat_401_room_SHARING ROOM,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_dharmesh_property_yahya_flat_401_room_SHARING ROOM,Agreement - Dharmesh - Room SHARING ROOM,tenant_dharmesh,property_yahya_flat_401_room_SHARING ROOM,3300.0,1000.0,active,2025-08-01,2026-07-31
+tenant_vikas_property_yahya_flat_401_room_MAID ROOM,Agreement - Vikas - Room MAID ROOM,tenant_vikas,property_yahya_flat_401_room_MAID ROOM,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_chairag_property_yahya_flat_401_room_HALL PART. 1,Agreement - Chairag - Room HALL PART. 1,tenant_chairag,property_yahya_flat_401_room_HALL PART. 1,2000.0,500.0,active,2025-08-01,2026-07-31
+tenant_jay_soni_property_yahya_flat_401_room_HALL PART. 2,Agreement - Jay Soni - Room HALL PART. 2,tenant_jay_soni,property_yahya_flat_401_room_HALL PART. 2,2000.0,500.0,active,2025-08-01,2026-07-31
+tenant_vinoth_property_yahya_flat_401_room_HALL PART. 3,Agreement - Vinoth - Room HALL PART. 3,tenant_vinoth,property_yahya_flat_401_room_HALL PART. 3,1600.0,0.0,active,2025-08-01,2026-07-31
+tenant_aishwarya_property_yahya_flat_401_room_HALL PART. 4,Agreement - Aishwarya - Room HALL PART. 4,tenant_aishwarya,property_yahya_flat_401_room_HALL PART. 4,1700.0,500.0,active,2025-08-01,2026-07-31
+tenant_adnan_property_yahya_flat_401_room_HALL PART. 5,Agreement - Adnan - Room HALL PART. 5,tenant_adnan,property_yahya_flat_401_room_HALL PART. 5,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_daisy_property_yahya_flat_406_room_406,Agreement - Daisy - Room 406,tenant_daisy,property_yahya_flat_406_room_406,1200.0,0.0,active,2025-08-01,2026-07-31
+tenant_karishma_property_yahya_flat_406_room_406,Agreement - Karishma - Room 406,tenant_karishma,property_yahya_flat_406_room_406,1200.0,0.0,active,2025-08-01,2026-07-31
+tenant_shreya_property_yahya_flat_406_room_406,Agreement - Shreya - Room 406,tenant_shreya,property_yahya_flat_406_room_406,1200.0,0.0,active,2025-08-01,2026-07-31
+tenant_amanpreet_property_yahya_flat_406_room_406,Agreement - Amanpreet - Room 406,tenant_amanpreet,property_yahya_flat_406_room_406,1250.0,500.0,active,2025-08-01,2026-07-31
+tenant_raj_property_yahya_flat_406_room_SHARING ROOM,Agreement - Raj - Room SHARING ROOM,tenant_raj,property_yahya_flat_406_room_SHARING ROOM,3800.0,500.0,active,2025-08-01,2026-07-31
+tenant_kahkasha_property_yahya_flat_406_room_SHARING ROOM,Agreement - Kahkasha - Room SHARING ROOM,tenant_kahkasha,property_yahya_flat_406_room_SHARING ROOM,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_ashwini_property_yahya_flat_406_room_SHARING BS,Agreement - Ashwini - Room SHARING BS,tenant_ashwini,property_yahya_flat_406_room_SHARING BS,1250.0,0.0,active,2025-08-01,2026-07-31
+tenant_pooja_property_yahya_flat_406_room_SHARING BS,Agreement - Pooja - Room SHARING BS,tenant_pooja,property_yahya_flat_406_room_SHARING BS,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_disha_property_yahya_flat_406_room_SHARING BS,Agreement - Disha - Room SHARING BS,tenant_disha,property_yahya_flat_406_room_SHARING BS,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_kushal_property_yahya_flat_406_room_PARTITION ROOM,Agreement - Kushal - Room PARTITION ROOM,tenant_kushal,property_yahya_flat_406_room_PARTITION ROOM,2500.0,1000.0,active,2025-08-01,2026-07-31
+tenant_adnan_property_yahya_flat_406_room_MAID ROOM,Agreement - Adnan - Room MAID ROOM,tenant_adnan,property_yahya_flat_406_room_MAID ROOM,2300.0,500.0,active,2025-08-01,2026-07-31
+tenant_anilgokul_property_yahya_flat_407_room_1ST SHARING ,Agreement - Anil/Gokul - Room 1ST SHARING ,tenant_anilgokul,property_yahya_flat_407_room_1ST SHARING ,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_unais_property_yahya_flat_407_room_2ND SHARING,Agreement - Unais - Room 2ND SHARING,tenant_unais,property_yahya_flat_407_room_2ND SHARING,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_dinesh_property_yahya_flat_407_room_ATTACH,Agreement - Dinesh - Room ATTACH,tenant_dinesh,property_yahya_flat_407_room_ATTACH,5200.0,0.0,active,2025-08-01,2026-07-31
+tenant_rajesh_property_yahya_flat_407_room_MAID ROOM,Agreement - Rajesh - Room MAID ROOM,tenant_rajesh,property_yahya_flat_407_room_MAID ROOM,2400.0,1000.0,active,2025-08-01,2026-07-31
+tenant_azeemvivek_property_yahya_flat_407_room_PART. ROOM,Agreement - Azeem/Vivek - Room PART. ROOM,tenant_azeemvivek,property_yahya_flat_407_room_PART. ROOM,2700.0,0.0,active,2025-08-01,2026-07-31
+tenant_narayan_property_yahya_flat_407_room_HALL B.S,Agreement - Narayan - Room HALL B.S,tenant_narayan,property_yahya_flat_407_room_HALL B.S,1200.0,0.0,active,2025-08-01,2026-07-31
+tenant_shrider_property_yahya_flat_407_room_HALL B.S,Agreement - Shrider - Room HALL B.S,tenant_shrider,property_yahya_flat_407_room_HALL B.S,1200.0,0.0,active,2025-08-01,2026-07-31
+tenant_jayesh_property_yahya_flat_407_room_HALL B.S,Agreement - Jayesh - Room HALL B.S,tenant_jayesh,property_yahya_flat_407_room_HALL B.S,1350.0,0.0,active,2025-08-01,2026-07-31
+tenant_vijitteju_property_yahya_flat_408_room_ATTACH ROOM,Agreement - Vijit/Teju - Room ATTACH ROOM,tenant_vijitteju,property_yahya_flat_408_room_ATTACH ROOM,5200.0,0.0,active,2025-08-01,2026-07-31
+tenant_rajendra_property_yahya_flat_408_room_1ST SHARING,Agreement - Rajendra - Room 1ST SHARING,tenant_rajendra,property_yahya_flat_408_room_1ST SHARING,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_zeraasijiakza_property_yahya_flat_408_room_SHARING,Agreement - Zeraa/Siji/Akza - Room SHARING,tenant_zeraasijiakza,property_yahya_flat_408_room_SHARING,3750.0,0.0,active,2025-08-01,2026-07-31
+tenant_nazir_property_yahya_flat_408_room_HALL,Agreement - Nazir - Room HALL,tenant_nazir,property_yahya_flat_408_room_HALL,4100.0,0.0,active,2025-08-01,2026-07-31
+tenant_akash_property_yahya_flat_408_room_MAID ROOM,Agreement - Akash - Room MAID ROOM,tenant_akash,property_yahya_flat_408_room_MAID ROOM,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_arvind_property_yahya_flat_408_room_S. HALL PART.,Agreement - Arvind - Room S. HALL PART.,tenant_arvind,property_yahya_flat_408_room_S. HALL PART.,2500.0,500.0,active,2025-08-01,2026-07-31
+tenant_parnav_property_yahya_flat_506_room_ATTACH,Agreement - Parnav - Room ATTACH,tenant_parnav,property_yahya_flat_506_room_ATTACH,4300.0,0.0,active,2025-08-01,2026-07-31
+tenant_swaroop_property_yahya_flat_506_room_SHARING,Agreement - Swaroop - Room SHARING,tenant_swaroop,property_yahya_flat_506_room_SHARING,3700.0,0.0,active,2025-08-01,2026-07-31
+tenant_krishna_property_yahya_flat_506_room_HALL B.S,Agreement - Krishna - Room HALL B.S,tenant_krishna,property_yahya_flat_506_room_HALL B.S,1300.0,500.0,active,2025-08-01,2026-07-31
+tenant_tejus_property_yahya_flat_506_room_HALL B.S,Agreement - Tejus - Room HALL B.S,tenant_tejus,property_yahya_flat_506_room_HALL B.S,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_pavan_property_yahya_flat_506_room_HALL B.S,Agreement - Pavan - Room HALL B.S,tenant_pavan,property_yahya_flat_506_room_HALL B.S,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_candy_property_yahya_flat_506_room_MAID ROOM,Agreement - Candy - Room MAID ROOM,tenant_candy,property_yahya_flat_506_room_MAID ROOM,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_bhupesh_property_yahya_flat_506_room_PARTITION,Agreement - Bhupesh - Room PARTITION,tenant_bhupesh,property_yahya_flat_506_room_PARTITION,2600.0,0.0,active,2025-08-01,2026-07-31
+tenant_jabbar_property_yahya_flat_504_room_MAID ROOM,Agreement - Jabbar - Room MAID ROOM,tenant_jabbar,property_yahya_flat_504_room_MAID ROOM,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_najia_property_yahya_flat_504_room_HALL PART.1,Agreement - Najia - Room HALL PART.1,tenant_najia,property_yahya_flat_504_room_HALL PART.1,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_punit_property_yahya_flat_504_room_HALL PART.2,Agreement - Punit - Room HALL PART.2,tenant_punit,property_yahya_flat_504_room_HALL PART.2,1650.0,0.0,active,2025-08-01,2026-07-31
+tenant_sabitra_property_yahya_flat_504_room_HALL PART.3,Agreement - Sabitra - Room HALL PART.3,tenant_sabitra,property_yahya_flat_504_room_HALL PART.3,1800.0,500.0,active,2025-08-01,2026-07-31
+tenant_jeet_property_yahya_flat_504_room_HALL PART.4 BAL.,Agreement - Jeet - Room HALL PART.4 BAL.,tenant_jeet,property_yahya_flat_504_room_HALL PART.4 BAL.,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_nitin_property_yahya_flat_504_room_1ST SHARING,Agreement - Nitin - Room 1ST SHARING,tenant_nitin,property_yahya_flat_504_room_1ST SHARING,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_nishant_property_yahya_flat_504_room_2ND SHARING,Agreement - Nishant - Room 2ND SHARING,tenant_nishant,property_yahya_flat_504_room_2ND SHARING,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_reshma_property_yahya_flat_504_room_ATTACH PART. 8,Agreement - Reshma - Room ATTACH PART. 8,tenant_reshma,property_yahya_flat_504_room_ATTACH PART. 8,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_sylivia_property_yahya_flat_504_room_ATTACH PART. 9,Agreement - Sylivia - Room ATTACH PART. 9,tenant_sylivia,property_yahya_flat_504_room_ATTACH PART. 9,1600.0,0.0,active,2025-08-01,2026-07-31
+tenant_zainab_property_yahya_flat_504_room_ATTACH PART. 10,Agreement - Zainab - Room ATTACH PART. 10,tenant_zainab,property_yahya_flat_504_room_ATTACH PART. 10,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_sai_property_yahya_flat_601_room_ATTACH,Agreement - Sai - Room ATTACH,tenant_sai,property_yahya_flat_601_room_ATTACH,4400.0,0.0,active,2025-08-01,2026-07-31
+tenant_kalim_property_yahya_flat_601_room_1ST SHARING,Agreement - Kalim - Room 1ST SHARING,tenant_kalim,property_yahya_flat_601_room_1ST SHARING,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_meenakshi_property_yahya_flat_601_room_2ND SHARING,Agreement - Meenakshi - Room 2ND SHARING,tenant_meenakshi,property_yahya_flat_601_room_2ND SHARING,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_tarun_property_yahya_flat_601_room_BIG HALL,Agreement - Tarun - Room BIG HALL,tenant_tarun,property_yahya_flat_601_room_BIG HALL,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_veedish_property_yahya_flat_601_room_S. HALL,Agreement - Veedish - Room S. HALL,tenant_veedish,property_yahya_flat_601_room_S. HALL,2400.0,0.0,active,2025-08-01,2026-07-31
+tenant_griffin_property_yahya_flat_601_room_MAID ROOM,Agreement - Griffin - Room MAID ROOM,tenant_griffin,property_yahya_flat_601_room_MAID ROOM,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_nilesh_property_yahya_flat_604_room_ATTACH B.S,Agreement - Nilesh - Room ATTACH B.S,tenant_nilesh,property_yahya_flat_604_room_ATTACH B.S,1100.0,0.0,active,2025-08-01,2026-07-31
+tenant_kamaal_property_yahya_flat_604_room_ATTACH B.S,Agreement - Kamaal - Room ATTACH B.S,tenant_kamaal,property_yahya_flat_604_room_ATTACH B.S,1300.0,500.0,active,2025-08-01,2026-07-31
+tenant_vikalp_property_yahya_flat_604_room_ATTACH B.S,Agreement - Vikalp - Room ATTACH B.S,tenant_vikalp,property_yahya_flat_604_room_ATTACH B.S,1100.0,0.0,active,2025-08-01,2026-07-31
+tenant_dileep_property_yahya_flat_604_room_ATTACH B.S,Agreement - Dileep - Room ATTACH B.S,tenant_dileep,property_yahya_flat_604_room_ATTACH B.S,1200.0,500.0,active,2025-08-01,2026-07-31
+tenant_reshma_property_yahya_flat_604_room_1ST SHARING,Agreement - Reshma - Room 1ST SHARING,tenant_reshma,property_yahya_flat_604_room_1ST SHARING,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_nitesh_property_yahya_flat_604_room_2ND SHARING,Agreement - Nitesh - Room 2ND SHARING,tenant_nitesh,property_yahya_flat_604_room_2ND SHARING,3400.0,0.0,active,2025-08-01,2026-07-31
+tenant_vinod_property_yahya_flat_604_room_MAID ROOM,Agreement - Vinod - Room MAID ROOM,tenant_vinod,property_yahya_flat_604_room_MAID ROOM,2200.0,200.0,active,2025-08-01,2026-07-31
+tenant_sidra_property_yahya_flat_604_room_HALL 1ST PART.,Agreement - Sidra - Room HALL 1ST PART.,tenant_sidra,property_yahya_flat_604_room_HALL 1ST PART.,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_natasha_property_yahya_flat_604_room_HALL 2ND PART.,Agreement - Natasha - Room HALL 2ND PART.,tenant_natasha,property_yahya_flat_604_room_HALL 2ND PART.,1700.0,0.0,active,2025-08-01,2026-07-31
+tenant_pawan_property_yahya_flat_604_room_HALL 3RD PART.,Agreement - Pawan - Room HALL 3RD PART.,tenant_pawan,property_yahya_flat_604_room_HALL 3RD PART.,1700.0,0.0,active,2025-08-01,2026-07-31
+tenant_prashant_property_yahya_flat_604_room_HALL PART. BAL.,Agreement - Prashant - Room HALL PART. BAL.,tenant_prashant,property_yahya_flat_604_room_HALL PART. BAL.,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_kaushik_property_yahya_flat_607_room_ATTACH,Agreement - Kaushik - Room ATTACH,tenant_kaushik,property_yahya_flat_607_room_ATTACH,4800.0,0.0,active,2025-08-01,2026-07-31
+tenant_laxman_property_yahya_flat_607_room_1ST SHARING,Agreement - Laxman - Room 1ST SHARING,tenant_laxman,property_yahya_flat_607_room_1ST SHARING,3400.0,0.0,active,2025-08-01,2026-07-31
+tenant_jasim_property_yahya_flat_607_room_2ND SHARING,Agreement - Jasim - Room 2ND SHARING,tenant_jasim,property_yahya_flat_607_room_2ND SHARING,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_roshan_property_yahya_flat_607_room_PART.,Agreement - Roshan - Room PART.,tenant_roshan,property_yahya_flat_607_room_PART.,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_roshan_property_yahya_flat_607_room_HALL,Agreement - Roshan - Room HALL,tenant_roshan,property_yahya_flat_607_room_HALL,4500.0,0.0,active,2025-08-01,2026-07-31
+tenant_dimple_property_yahya_flat_607_room_MAID ROOM,Agreement - Dimple - Room MAID ROOM,tenant_dimple,property_yahya_flat_607_room_MAID ROOM,2350.0,1000.0,active,2025-08-01,2026-07-31
+tenant_kunal_property_yahya_flat_704_room_ATTACH B.S,Agreement - Kunal - Room ATTACH B.S,tenant_kunal,property_yahya_flat_704_room_ATTACH B.S,1100.0,0.0,active,2025-08-01,2026-07-31
+tenant_suraj_property_yahya_flat_704_room_ATTACH B.S,Agreement - Suraj - Room ATTACH B.S,tenant_suraj,property_yahya_flat_704_room_ATTACH B.S,1100.0,150.0,active,2025-08-01,2026-07-31
+tenant_rishabh_property_yahya_flat_704_room_ATTACH B.S,Agreement - Rishabh - Room ATTACH B.S,tenant_rishabh,property_yahya_flat_704_room_ATTACH B.S,1100.0,0.0,active,2025-08-01,2026-07-31
+tenant_kamal_property_yahya_flat_704_room_ATTACH B.S,Agreement - Kamal - Room ATTACH B.S,tenant_kamal,property_yahya_flat_704_room_ATTACH B.S,1100.0,0.0,active,2025-08-01,2026-07-31
+tenant_surajit_property_yahya_flat_704_room_2ND SHARING,Agreement - Surajit - Room 2ND SHARING,tenant_surajit,property_yahya_flat_704_room_2ND SHARING,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_kavita_property_yahya_flat_704_room_1ST SHARING,Agreement - Kavita - Room 1ST SHARING,tenant_kavita,property_yahya_flat_704_room_1ST SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_noor_property_yahya_flat_704_room_MAID ROOM,Agreement - Noor - Room MAID ROOM,tenant_noor,property_yahya_flat_704_room_MAID ROOM,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_shelmy_property_yahya_flat_704_room_HALL 1ST PART.,Agreement - Shelmy - Room HALL 1ST PART.,tenant_shelmy,property_yahya_flat_704_room_HALL 1ST PART.,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_deeksha_property_yahya_flat_704_room_HALL 2ND PART.,Agreement - Deeksha - Room HALL 2ND PART.,tenant_deeksha,property_yahya_flat_704_room_HALL 2ND PART.,1600.0,0.0,active,2025-08-01,2026-07-31
+tenant_aril_property_yahya_flat_704_room_HALL 3RD PART.,Agreement - Aril - Room HALL 3RD PART.,tenant_aril,property_yahya_flat_704_room_HALL 3RD PART.,1650.0,0.0,active,2025-08-01,2026-07-31
+tenant_shubham_property_yahya_flat_704_room_HALL PART. BAL.,Agreement - Shubham - Room HALL PART. BAL.,tenant_shubham,property_yahya_flat_704_room_HALL PART. BAL.,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_abid_property_yahya_flat_705_room_BIG ATTACH,Agreement - Abid - Room BIG ATTACH,tenant_abid,property_yahya_flat_705_room_BIG ATTACH,4500.0,0.0,active,2025-08-01,2026-07-31
+tenant_deepthy_property_yahya_flat_705_room_SHARING,Agreement - Deepthy - Room SHARING,tenant_deepthy,property_yahya_flat_705_room_SHARING,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_sumit_property_yahya_flat_705_room_SHARING,Agreement - Sumit - Room SHARING,tenant_sumit,property_yahya_flat_705_room_SHARING,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_abul_hanil_property_yahya_flat_705_room_S. ATTACH ROOM,Agreement - Abul Hanil - Room S. ATTACH ROOM,tenant_abul_hanil,property_yahya_flat_705_room_S. ATTACH ROOM,4200.0,0.0,active,2025-08-01,2026-07-31
+tenant_harish_property_yahya_flat_705_room_HALL RIGHT PART.,Agreement - Harish - Room HALL RIGHT PART.,tenant_harish,property_yahya_flat_705_room_HALL RIGHT PART.,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_anirudh_property_yahya_flat_705_room_HALL LEFT PART.,Agreement - Anirudh - Room HALL LEFT PART.,tenant_anirudh,property_yahya_flat_705_room_HALL LEFT PART.,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_dev_property_yahya_flat_705_room_K. HALL LEFT PART.,Agreement - Dev - Room K. HALL LEFT PART.,tenant_dev,property_yahya_flat_705_room_K. HALL LEFT PART.,2900.0,1000.0,active,2025-08-01,2026-07-31
+tenant_avinash_property_yahya_flat_705_room_K. HALL RIGHT PART.,Agreement - Avinash - Room K. HALL RIGHT PART.,tenant_avinash,property_yahya_flat_705_room_K. HALL RIGHT PART.,2800.0,500.0,active,2025-08-01,2026-07-31
+tenant_elsa_property_yahya_flat_705_room_MAID ROOM,Agreement - Elsa - Room MAID ROOM,tenant_elsa,property_yahya_flat_705_room_MAID ROOM,2000.0,1000.0,active,2025-08-01,2026-07-31
+tenant_nirav_property_yahya_flat_705_room_K. MAID ROOM,Agreement - Nirav - Room K. MAID ROOM,tenant_nirav,property_yahya_flat_705_room_K. MAID ROOM,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_vidhu_5_pax_property_yahya_flat_708_room_ATTACH,Agreement - Vidhu (5 Pax) - Room ATTACH,tenant_vidhu_5_pax,property_yahya_flat_708_room_ATTACH,5700.0,0.0,active,2025-08-01,2026-07-31
+tenant_nikhil_property_yahya_flat_708_room_SHARING,Agreement - Nikhil - Room SHARING,tenant_nikhil,property_yahya_flat_708_room_SHARING,3400.0,0.0,active,2025-08-01,2026-07-31
+tenant_aruna_property_yahya_flat_708_room_SHARING,Agreement - Aruna - Room SHARING,tenant_aruna,property_yahya_flat_708_room_SHARING,3400.0,500.0,active,2025-08-01,2026-07-31
+tenant_swapnil_property_yahya_flat_708_room_B. HALL,Agreement - Swapnil - Room B. HALL,tenant_swapnil,property_yahya_flat_708_room_B. HALL,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_rajendra_property_yahya_flat_708_room_PART.,Agreement - Rajendra - Room PART.,tenant_rajendra,property_yahya_flat_708_room_PART.,2500.0,1000.0,active,2025-08-01,2026-07-31
+tenant_ashish_property_yahya_flat_708_room_MAID ROOM,Agreement - Ashish - Room MAID ROOM,tenant_ashish,property_yahya_flat_708_room_MAID ROOM,2400.0,0.0,active,2025-08-01,2026-07-31
+tenant_anita_property_b.d_flat_105_room_HALL PART. WIND.,Agreement - Anita - Room HALL PART. WIND.,tenant_anita,property_b.d_flat_105_room_HALL PART. WIND.,2900.0,0.0,active,2025-08-01,2026-07-31
+tenant_gracy_property_b.d_flat_105_room_HALL PART. 1,Agreement - Gracy - Room HALL PART. 1,tenant_gracy,property_b.d_flat_105_room_HALL PART. 1,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_shashi_property_b.d_flat_105_room_K. HALL,Agreement - Shashi - Room K. HALL,tenant_shashi,property_b.d_flat_105_room_K. HALL,2850.0,0.0,active,2025-08-01,2026-07-31
+tenant_ankit_property_b.d_flat_105_room_MAID ROOM,Agreement - Ankit - Room MAID ROOM,tenant_ankit,property_b.d_flat_105_room_MAID ROOM,2400.0,0.0,active,2025-08-01,2026-07-31
+tenant_monisha_property_b.d_flat_105_room_B. ATTACH,Agreement - Monisha - Room B. ATTACH,tenant_monisha,property_b.d_flat_105_room_B. ATTACH,4400.0,0.0,active,2025-08-01,2026-07-31
+tenant_ramesh_property_b.d_flat_105_room_S. ATTACH   ,Agreement - Ramesh - Room S. ATTACH   ,tenant_ramesh,property_b.d_flat_105_room_S. ATTACH   ,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_navin_property_b.d_flat_105_room_1ST SHARING,Agreement - Navin - Room 1ST SHARING,tenant_navin,property_b.d_flat_105_room_1ST SHARING,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_justin_property_b.d_flat_105_room_2ND SHARING,Agreement - Justin - Room 2ND SHARING,tenant_justin,property_b.d_flat_105_room_2ND SHARING,2900.0,0.0,active,2025-08-01,2026-07-31
+tenant_sandesh_property_b.d_flat_108_room_HALL PART. WIND.,Agreement - Sandesh - Room HALL PART. WIND.,tenant_sandesh,property_b.d_flat_108_room_HALL PART. WIND.,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_shinu_property_b.d_flat_108_room_HALL PART. 1,Agreement - Shinu - Room HALL PART. 1,tenant_shinu,property_b.d_flat_108_room_HALL PART. 1,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_carol_property_b.d_flat_108_room_K. HALL,Agreement - Carol - Room K. HALL,tenant_carol,property_b.d_flat_108_room_K. HALL,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_safwan_property_b.d_flat_108_room_MAID ROOM,Agreement - Safwan - Room MAID ROOM,tenant_safwan,property_b.d_flat_108_room_MAID ROOM,2400.0,0.0,active,2025-08-01,2026-07-31
+tenant_ayush_property_b.d_flat_108_room_B. ATTACH,Agreement - Ayush - Room B. ATTACH,tenant_ayush,property_b.d_flat_108_room_B. ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_mahi_property_b.d_flat_108_room_1ST SHARING,Agreement - Mahi - Room 1ST SHARING,tenant_mahi,property_b.d_flat_108_room_1ST SHARING,3250.0,500.0,active,2025-08-01,2026-07-31
+tenant_chandannayashree_property_b.d_flat_108_room_2ND SHARING,Agreement - Chandan/Nayashree - Room 2ND SHARING,tenant_chandannayashree,property_b.d_flat_108_room_2ND SHARING,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_kadir_property_b.d_flat_108_room_S. ATTACH,Agreement - Kadir - Room S. ATTACH,tenant_kadir,property_b.d_flat_108_room_S. ATTACH,3400.0,0.0,active,2025-08-01,2026-07-31
+tenant_samrth_property_b.d_flat_305_room_B. ATTACH,Agreement - Samrth - Room B. ATTACH,tenant_samrth,property_b.d_flat_305_room_B. ATTACH,4200.0,0.0,active,2025-08-01,2026-07-31
+tenant_atish_property_b.d_flat_305_room_S. ATTACH,Agreement - Atish - Room S. ATTACH,tenant_atish,property_b.d_flat_305_room_S. ATTACH,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_waqas_property_b.d_flat_305_room_2ND SHARING,Agreement - Waqas - Room 2ND SHARING,tenant_waqas,property_b.d_flat_305_room_2ND SHARING,3300.0,1000.0,active,2025-08-01,2026-07-31
+tenant_subarmaniyam_property_b.d_flat_305_room_1ST SHARING,Agreement - Subarmaniyam - Room 1ST SHARING,tenant_subarmaniyam,property_b.d_flat_305_room_1ST SHARING,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_samir_property_b.d_flat_305_room_HALLPART. WIND,Agreement - Samir - Room HALLPART. WIND,tenant_samir,property_b.d_flat_305_room_HALLPART. WIND,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_ujzla_property_b.d_flat_305_room_PART. NO. 1,Agreement - Ujzla - Room PART. NO. 1,tenant_ujzla,property_b.d_flat_305_room_PART. NO. 1,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_tasleemh_property_b.d_flat_305_room_KITCHEN HALL,Agreement - Tasleemh - Room KITCHEN HALL,tenant_tasleemh,property_b.d_flat_305_room_KITCHEN HALL,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_balaji_property_b.d_flat_305_room_MAID ROOM,Agreement - Balaji - Room MAID ROOM,tenant_balaji,property_b.d_flat_305_room_MAID ROOM,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_kartik_property_b.d_flat_401_room_ATTACH,Agreement - Kartik - Room ATTACH,tenant_kartik,property_b.d_flat_401_room_ATTACH,4200.0,1000.0,active,2025-08-01,2026-07-31
+tenant_saniki_property_b.d_flat_401_room_2ND SHARING,Agreement - Saniki - Room 2ND SHARING,tenant_saniki,property_b.d_flat_401_room_2ND SHARING,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_jai_property_b.d_flat_401_room_1ST SHARING,Agreement - Jai - Room 1ST SHARING,tenant_jai,property_b.d_flat_401_room_1ST SHARING,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_moulik_property_b.d_flat_401_room_1ST PART.,Agreement - Moulik - Room 1ST PART.,tenant_moulik,property_b.d_flat_401_room_1ST PART.,2600.0,0.0,active,2025-08-01,2026-07-31
+tenant_rohan_property_b.d_flat_401_room_PART. WIND.,Agreement - Rohan - Room PART. WIND.,tenant_rohan,property_b.d_flat_401_room_PART. WIND.,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_anup_property_b.d_flat_403_room_HALL PART. BAL.,Agreement - Anup - Room HALL PART. BAL.,tenant_anup,property_b.d_flat_403_room_HALL PART. BAL.,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_dimple_property_b.d_flat_403_room_RIGHT PART. BAL.,Agreement - Dimple - Room RIGHT PART. BAL.,tenant_dimple,property_b.d_flat_403_room_RIGHT PART. BAL.,2750.0,1000.0,active,2025-08-01,2026-07-31
+tenant_faisal_property_b.d_flat_403_room_K. HALL,Agreement - Faisal - Room K. HALL,tenant_faisal,property_b.d_flat_403_room_K. HALL,3400.0,1000.0,active,2025-08-01,2026-07-31
+tenant_ansuman_property_b.d_flat_403_room_K. MAID ROOM,Agreement - Ansuman - Room K. MAID ROOM,tenant_ansuman,property_b.d_flat_403_room_K. MAID ROOM,1900.0,0.0,active,2025-08-01,2026-07-31
+tenant_jyoti_property_b.d_flat_403_room_SHARING WIND.,Agreement - Jyoti - Room SHARING WIND.,tenant_jyoti,property_b.d_flat_403_room_SHARING WIND.,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_amit_property_b.d_flat_403_room_ATTACH BAL.,Agreement - Amit - Room ATTACH BAL.,tenant_amit,property_b.d_flat_403_room_ATTACH BAL.,4500.0,0.0,active,2025-08-01,2026-07-31
+tenant_savita_property_b.d_flat_408_room_K. HALL,Agreement - Savita - Room K. HALL,tenant_savita,property_b.d_flat_408_room_K. HALL,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_sheenusantosh_property_b.d_flat_408_room_BIG HALL,Agreement - Sheenu/Santosh - Room BIG HALL,tenant_sheenusantosh,property_b.d_flat_408_room_BIG HALL,5500.0,0.0,active,2025-08-01,2026-07-31
+tenant_karan_property_b.d_flat_408_room_SHARING,Agreement - Karan - Room SHARING,tenant_karan,property_b.d_flat_408_room_SHARING,2900.0,0.0,active,2025-08-01,2026-07-31
+tenant_ashok_property_b.d_flat_408_room_MAID ROOM,Agreement - Ashok - Room MAID ROOM,tenant_ashok,property_b.d_flat_408_room_MAID ROOM,2150.0,0.0,active,2025-08-01,2026-07-31
+tenant_royde_property_b.d_flat_408_room_B. ATTACH,Agreement - Royde - Room B. ATTACH,tenant_royde,property_b.d_flat_408_room_B. ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_safwan_property_b.d_flat_408_room_1ST SHARING,Agreement - Safwan - Room 1ST SHARING,tenant_safwan,property_b.d_flat_408_room_1ST SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_umesh_property_b.d_flat_408_room_S. ATTACH,Agreement - Umesh - Room S. ATTACH,tenant_umesh,property_b.d_flat_408_room_S. ATTACH,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_himanshu_property_b.d_flat_410_room_ATTACH,Agreement - Himanshu - Room ATTACH,tenant_himanshu,property_b.d_flat_410_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_megna_property_b.d_flat_410_room_SHARING,Agreement - Megna - Room SHARING,tenant_megna,property_b.d_flat_410_room_SHARING,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_megha_property_b.d_flat_410_room_LEFT PART. BAL.,Agreement - Megha - Room LEFT PART. BAL.,tenant_megha,property_b.d_flat_410_room_LEFT PART. BAL.,2700.0,0.0,active,2025-08-01,2026-07-31
+tenant_shruti_property_b.d_flat_410_room_PART. BAL.,Agreement - Shruti - Room PART. BAL.,tenant_shruti,property_b.d_flat_410_room_PART. BAL.,2700.0,0.0,active,2025-08-01,2026-07-31
+tenant_ramesh_property_b.d_flat_410_room_SHARING,Agreement - Ramesh - Room SHARING,tenant_ramesh,property_b.d_flat_410_room_SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_greeshma_property_b.d_flat_410_room_MAID ROOM,Agreement - Greeshma - Room MAID ROOM,tenant_greeshma,property_b.d_flat_410_room_MAID ROOM,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_adarsh_property_b.d_flat_410_room_K.HALL,Agreement - Adarsh - Room K.HALL,tenant_adarsh,property_b.d_flat_410_room_K.HALL,3400.0,0.0,active,2025-08-01,2026-07-31
+tenant_ranjit_property_b.d_flat_502_room_ATTACH,Agreement - Ranjit - Room ATTACH,tenant_ranjit,property_b.d_flat_502_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_ramesh_property_b.d_flat_502_room_ATTACH,Agreement - Ramesh - Room ATTACH,tenant_ramesh,property_b.d_flat_502_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_garima_kabir_property_b.d_flat_502_room_SHARING,Agreement - Garima Kabir - Room SHARING,tenant_garima_kabir,property_b.d_flat_502_room_SHARING,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_sadhu_saran_property_b.d_flat_502_room_SHARING,Agreement - Sadhu Saran - Room SHARING,tenant_sadhu_saran,property_b.d_flat_502_room_SHARING,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_nawroos_property_b.d_flat_502_room_MAID ROOM,Agreement - Nawroos - Room MAID ROOM,tenant_nawroos,property_b.d_flat_502_room_MAID ROOM,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_himanshi_property_b.d_flat_502_room_K. HALL,Agreement - Himanshi - Room K. HALL,tenant_himanshi,property_b.d_flat_502_room_K. HALL,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_afros_property_b.d_flat_502_room_HALL PART. WIND.,Agreement - Afros - Room HALL PART. WIND.,tenant_afros,property_b.d_flat_502_room_HALL PART. WIND.,2700.0,0.0,active,2025-08-01,2026-07-31
+tenant_sai_property_b.d_flat_502_room_HALL 1ST PART.,Agreement - Sai - Room HALL 1ST PART.,tenant_sai,property_b.d_flat_502_room_HALL 1ST PART.,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_azruddin_property_b.d_flat_504_room_LEFT HALL,Agreement - Azruddin - Room LEFT HALL,tenant_azruddin,property_b.d_flat_504_room_LEFT HALL,2700.0,0.0,active,2025-08-01,2026-07-31
+tenant_kushal_property_b.d_flat_504_room_RIGHT HALL,Agreement - Kushal - Room RIGHT HALL,tenant_kushal,property_b.d_flat_504_room_RIGHT HALL,2600.0,0.0,active,2025-08-01,2026-07-31
+tenant_rahul_property_b.d_flat_504_room_K. HALL,Agreement - Rahul - Room K. HALL,tenant_rahul,property_b.d_flat_504_room_K. HALL,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_sapna_property_b.d_flat_504_room_MAID ROOM,Agreement - Sapna - Room MAID ROOM,tenant_sapna,property_b.d_flat_504_room_MAID ROOM,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_ashish_property_b.d_flat_504_room_ATTACH,Agreement - Ashish - Room ATTACH,tenant_ashish,property_b.d_flat_504_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_srikant_property_b.d_flat_504_room_SHARING,Agreement - Srikant - Room SHARING,tenant_srikant,property_b.d_flat_504_room_SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_swroopa_property_b.d_flat_504_room_SHARING,Agreement - Swroopa - Room SHARING,tenant_swroopa,property_b.d_flat_504_room_SHARING,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_deshmukh_property_b.d_flat_605_room_HALL WIND. PART.,Agreement - Deshmukh - Room HALL WIND. PART.,tenant_deshmukh,property_b.d_flat_605_room_HALL WIND. PART.,2900.0,0.0,active,2025-08-01,2026-07-31
+tenant_rohan_property_b.d_flat_605_room_HALL PART. 1,Agreement - Rohan - Room HALL PART. 1,tenant_rohan,property_b.d_flat_605_room_HALL PART. 1,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_shalini_property_b.d_flat_605_room_K. HALL,Agreement - Shalini - Room K. HALL,tenant_shalini,property_b.d_flat_605_room_K. HALL,2700.0,0.0,active,2025-08-01,2026-07-31
+tenant_shabeer_property_b.d_flat_605_room_MAID ROOM,Agreement - Shabeer - Room MAID ROOM,tenant_shabeer,property_b.d_flat_605_room_MAID ROOM,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_anneka_iqra_property_b.d_flat_605_room_B. ATTACH,Agreement - Anneka Iqra - Room B. ATTACH,tenant_anneka_iqra,property_b.d_flat_605_room_B. ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_shruti_property_b.d_flat_605_room_SHARING,Agreement - Shruti - Room SHARING,tenant_shruti,property_b.d_flat_605_room_SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_jakin_property_b.d_flat_605_room_SHARING,Agreement - Jakin - Room SHARING,tenant_jakin,property_b.d_flat_605_room_SHARING,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_monish_property_b.d_flat_605_room_S. ATTACH,Agreement - Monish - Room S. ATTACH,tenant_monish,property_b.d_flat_605_room_S. ATTACH,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_iman_property_b.d_flat_608_room_S. ATTACH,Agreement - Iman - Room S. ATTACH,tenant_iman,property_b.d_flat_608_room_S. ATTACH,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_naffy_property_b.d_flat_608_room_B. ATTACH,Agreement - Naffy - Room B. ATTACH,tenant_naffy,property_b.d_flat_608_room_B. ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_sarfaraz_property_b.d_flat_608_room_MAID ROOM,Agreement - Sarfaraz - Room MAID ROOM,tenant_sarfaraz,property_b.d_flat_608_room_MAID ROOM,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_jagdish_property_b.d_flat_608_room_1ST SHARING,Agreement - Jagdish - Room 1ST SHARING,tenant_jagdish,property_b.d_flat_608_room_1ST SHARING,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_vinod_property_b.d_flat_608_room_2ND SHARING,Agreement - Vinod - Room 2ND SHARING,tenant_vinod,property_b.d_flat_608_room_2ND SHARING,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_shruti_property_b.d_flat_608_room_HALL PART. WIND.,Agreement - Shruti - Room HALL PART. WIND.,tenant_shruti,property_b.d_flat_608_room_HALL PART. WIND.,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_priya_property_b.d_flat_608_room_HALL PART. 1,Agreement - Priya - Room HALL PART. 1,tenant_priya,property_b.d_flat_608_room_HALL PART. 1,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_sneha_property_b.d_flat_608_room_KITCHEN HALL,Agreement - Sneha - Room KITCHEN HALL,tenant_sneha,property_b.d_flat_608_room_KITCHEN HALL,2700.0,0.0,active,2025-08-01,2026-07-31
+tenant_khushi_property_b.d_flat_609_room_ATTACH,Agreement - Khushi - Room ATTACH,tenant_khushi,property_b.d_flat_609_room_ATTACH,4400.0,0.0,active,2025-08-01,2026-07-31
+tenant_kartik_property_b.d_flat_609_room_SHARING,Agreement - Kartik - Room SHARING,tenant_kartik,property_b.d_flat_609_room_SHARING,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_ali_property_b.d_flat_609_room_SHARING,Agreement - Ali - Room SHARING,tenant_ali,property_b.d_flat_609_room_SHARING,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_memud_ali_property_b.d_flat_609_room_1ST PART. BAL.,Agreement - Memud Ali - Room 1ST PART. BAL.,tenant_memud_ali,property_b.d_flat_609_room_1ST PART. BAL.,2700.0,1000.0,active,2025-08-01,2026-07-31
+tenant_bhavna_property_b.d_flat_609_room_2ND HALL PART. BAL.,Agreement - Bhavna - Room 2ND HALL PART. BAL.,tenant_bhavna,property_b.d_flat_609_room_2ND HALL PART. BAL.,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_joel_property_b.d_flat_609_room_K. HALL,Agreement - Joel - Room K. HALL,tenant_joel,property_b.d_flat_609_room_K. HALL,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_shizir_property_b.d_flat_609_room_MAID ROOM,Agreement - Shizir - Room MAID ROOM,tenant_shizir,property_b.d_flat_609_room_MAID ROOM,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_jeet_property_s.p_flat_104_room_ATTACH,Agreement - Jeet - Room ATTACH,tenant_jeet,property_s.p_flat_104_room_ATTACH,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_darshan_property_s.p_flat_104_room_SEPRATE,Agreement - Darshan - Room SEPRATE,tenant_darshan,property_s.p_flat_104_room_SEPRATE,3550.0,0.0,active,2025-08-01,2026-07-31
+tenant_sarfaraz_property_s.p_flat_104_room_1ST SHARING,Agreement - Sarfaraz - Room 1ST SHARING,tenant_sarfaraz,property_s.p_flat_104_room_1ST SHARING,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_sarfaraz_property_s.p_flat_104_room_2ND SHARING,Agreement - Sarfaraz - Room 2ND SHARING,tenant_sarfaraz,property_s.p_flat_104_room_2ND SHARING,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_karuna_property_s.p_flat_104_room_MAID ROOM,Agreement - Karuna - Room MAID ROOM,tenant_karuna,property_s.p_flat_104_room_MAID ROOM,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_pooja_property_s.p_flat_104_room_KITCHEN HALL,Agreement - Pooja - Room KITCHEN HALL,tenant_pooja,property_s.p_flat_104_room_KITCHEN HALL,2700.0,0.0,active,2025-08-01,2026-07-31
+tenant_shruti_property_s.p_flat_104_room_1ST PART.,Agreement - Shruti - Room 1ST PART.,tenant_shruti,property_s.p_flat_104_room_1ST PART.,1900.0,0.0,active,2025-08-01,2026-07-31
+tenant_ekta_property_s.p_flat_104_room_MIDDLE PART.,Agreement - Ekta - Room MIDDLE PART.,tenant_ekta,property_s.p_flat_104_room_MIDDLE PART.,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_simran_property_s.p_flat_104_room_PART. WIND.,Agreement - Simran - Room PART. WIND.,tenant_simran,property_s.p_flat_104_room_PART. WIND.,2300.0,0.0,active,2025-08-01,2026-07-31
+tenant_hanna_property_s.p_flat_203_room_RIGHT ATTACH,Agreement - Hanna - Room RIGHT ATTACH,tenant_hanna,property_s.p_flat_203_room_RIGHT ATTACH,4200.0,0.0,active,2025-08-01,2026-07-31
+tenant_abhinandan_property_s.p_flat_203_room_LEFT ATTACH,Agreement - Abhinandan - Room LEFT ATTACH,tenant_abhinandan,property_s.p_flat_203_room_LEFT ATTACH,4200.0,0.0,active,2025-08-01,2026-07-31
+tenant_komal_property_s.p_flat_203_room_SHARING,Agreement - Komal - Room SHARING,tenant_komal,property_s.p_flat_203_room_SHARING,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_durga_property_s.p_flat_203_room_SEPRATE ROOM,Agreement - Durga - Room SEPRATE ROOM,tenant_durga,property_s.p_flat_203_room_SEPRATE ROOM,3500.0,1000.0,active,2025-08-01,2026-07-31
+tenant_sabiyo_property_s.p_flat_203_room_MAID ROOM,Agreement - Sabiyo - Room MAID ROOM,tenant_sabiyo,property_s.p_flat_203_room_MAID ROOM,1100.0,0.0,active,2025-08-01,2026-07-31
+tenant_waseem_property_s.p_flat_203_room_1ST PART.,Agreement - Waseem - Room 1ST PART.,tenant_waseem,property_s.p_flat_203_room_1ST PART.,1700.0,0.0,active,2025-08-01,2026-07-31
+tenant_arvind_property_s.p_flat_203_room_2ND PART.,Agreement - Arvind - Room 2ND PART.,tenant_arvind,property_s.p_flat_203_room_2ND PART.,2150.0,0.0,active,2025-08-01,2026-07-31
+tenant_3rd_part_room_property_s.p_flat_203_room_3RD PART.,Agreement - 3Rd Part. Room - Room 3RD PART.,tenant_3rd_part_room,property_s.p_flat_203_room_3RD PART.,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_kundan_property_s.p_flat_203_room_RIGHT PART.,Agreement - Kundan - Room RIGHT PART.,tenant_kundan,property_s.p_flat_203_room_RIGHT PART.,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_abnesh_property_s.p_flat_304_room_ATTACH,Agreement - Abnesh - Room ATTACH,tenant_abnesh,property_s.p_flat_304_room_ATTACH,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_chloe_property_s.p_flat_304_room_SEPRATE,Agreement - Chloe - Room SEPRATE,tenant_chloe,property_s.p_flat_304_room_SEPRATE,3350.0,0.0,active,2025-08-01,2026-07-31
+tenant_ashwati_property_s.p_flat_304_room_2ND SHARING,Agreement - Ashwati - Room 2ND SHARING,tenant_ashwati,property_s.p_flat_304_room_2ND SHARING,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_sachin_property_s.p_flat_304_room_1ST SHARING,Agreement - Sachin - Room 1ST SHARING,tenant_sachin,property_s.p_flat_304_room_1ST SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_mukesh_property_s.p_flat_304_room_HALL 1ST PART.,Agreement - Mukesh - Room HALL 1ST PART.,tenant_mukesh,property_s.p_flat_304_room_HALL 1ST PART.,1900.0,0.0,active,2025-08-01,2026-07-31
+tenant_meera_property_s.p_flat_304_room_MIDDLE PART.,Agreement - Meera - Room MIDDLE PART.,tenant_meera,property_s.p_flat_304_room_MIDDLE PART.,1900.0,0.0,active,2025-08-01,2026-07-31
+tenant_barkhakomal_property_s.p_flat_304_room_LAST PART. WIND.,Agreement - Barkha/Komal - Room LAST PART. WIND.,tenant_barkhakomal,property_s.p_flat_304_room_LAST PART. WIND.,2400.0,0.0,active,2025-08-01,2026-07-31
+tenant_ashish_property_s.p_flat_304_room_KITCHEN HALL,Agreement - Ashish - Room KITCHEN HALL,tenant_ashish,property_s.p_flat_304_room_KITCHEN HALL,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_andrea_property_s.p_flat_304_room_MAID ROOM,Agreement - Andrea - Room MAID ROOM,tenant_andrea,property_s.p_flat_304_room_MAID ROOM,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_gagandeep_rup_property_s.p_flat_401_room_ATTACH,Agreement - Gagandeep Rup - Room ATTACH,tenant_gagandeep_rup,property_s.p_flat_401_room_ATTACH,4200.0,0.0,active,2025-08-01,2026-07-31
+tenant_shazia_property_s.p_flat_401_room_SHARING,Agreement - Shazia - Room SHARING,tenant_shazia,property_s.p_flat_401_room_SHARING,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_thanika_property_s.p_flat_401_room_SHARING,Agreement - Thanika - Room SHARING,tenant_thanika,property_s.p_flat_401_room_SHARING,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_gourav_property_s.p_flat_401_room_MAID ROOM,Agreement - Gourav - Room MAID ROOM,tenant_gourav,property_s.p_flat_401_room_MAID ROOM,1750.0,0.0,active,2025-08-01,2026-07-31
+tenant_brunda_property_s.p_flat_401_room_PART. 3 WIND.,Agreement - Brunda - Room PART. 3 WIND.,tenant_brunda,property_s.p_flat_401_room_PART. 3 WIND.,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_om_property_s.p_flat_401_room_HALL PART. 2,Agreement - Om - Room HALL PART. 2,tenant_om,property_s.p_flat_401_room_HALL PART. 2,2250.0,0.0,active,2025-08-01,2026-07-31
+tenant_joeal_property_s.p_flat_404_room_ATTACH,Agreement - Joeal - Room ATTACH,tenant_joeal,property_s.p_flat_404_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_chachak_property_s.p_flat_404_room_SEPRATE,Agreement - Chachak - Room SEPRATE,tenant_chachak,property_s.p_flat_404_room_SEPRATE,3400.0,0.0,active,2025-08-01,2026-07-31
+tenant_vaibhav_property_s.p_flat_404_room_2ND SHARING,Agreement - Vaibhav - Room 2ND SHARING,tenant_vaibhav,property_s.p_flat_404_room_2ND SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_shusmita_property_s.p_flat_404_room_1ST SHARING,Agreement - Shusmita - Room 1ST SHARING,tenant_shusmita,property_s.p_flat_404_room_1ST SHARING,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_pooja_property_s.p_flat_404_room_KITCHEN HALL,Agreement - Pooja - Room KITCHEN HALL,tenant_pooja,property_s.p_flat_404_room_KITCHEN HALL,2800.0,0.0,active,2025-08-01,2026-07-31
+tenant_ahmed_property_s.p_flat_404_room_HALL 1ST PART.,Agreement - Ahmed - Room HALL 1ST PART.,tenant_ahmed,property_s.p_flat_404_room_HALL 1ST PART.,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_vishnu_property_s.p_flat_404_room_HALL PART. 2 ,Agreement - Vishnu - Room HALL PART. 2 ,tenant_vishnu,property_s.p_flat_404_room_HALL PART. 2 ,2250.0,0.0,active,2025-08-01,2026-07-31
+tenant_reena_property_s.p_flat_404_room_3RD PART.,Agreement - Reena - Room 3RD PART.,tenant_reena,property_s.p_flat_404_room_3RD PART.,2100.0,0.0,active,2025-08-01,2026-07-31
+tenant_nasreen_property_s.p_flat_506_room_ATTACH,Agreement - Nasreen - Room ATTACH,tenant_nasreen,property_s.p_flat_506_room_ATTACH,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_rahul_property_s.p_flat_506_room_SHARING,Agreement - Rahul - Room SHARING,tenant_rahul,property_s.p_flat_506_room_SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_bhshan_property_s.p_flat_506_room_SHARING,Agreement - Bhshan - Room SHARING,tenant_bhshan,property_s.p_flat_506_room_SHARING,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_sumit_property_s.p_flat_506_room_MAID ROOM,Agreement - Sumit - Room MAID ROOM,tenant_sumit,property_s.p_flat_506_room_MAID ROOM,1700.0,0.0,active,2025-08-01,2026-07-31
+tenant_billal_property_s.p_flat_506_room_2ND PART.,Agreement - Billal - Room 2ND PART.,tenant_billal,property_s.p_flat_506_room_2ND PART.,1900.0,0.0,active,2025-08-01,2026-07-31
+tenant_jeece_property_s.p_flat_506_room_3RD PART.,Agreement - Jeece - Room 3RD PART.,tenant_jeece,property_s.p_flat_506_room_3RD PART.,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_tariq_property_s.p_flat_704_room_ATTACH,Agreement - Tariq - Room ATTACH,tenant_tariq,property_s.p_flat_704_room_ATTACH,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_nikhil_property_s.p_flat_704_room_SEPRATE,Agreement - Nikhil - Room SEPRATE,tenant_nikhil,property_s.p_flat_704_room_SEPRATE,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_ayushi_property_s.p_flat_704_room_1ST SHARING,Agreement - Ayushi - Room 1ST SHARING,tenant_ayushi,property_s.p_flat_704_room_1ST SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_janvi_property_s.p_flat_704_room_2ND SHARING,Agreement - Janvi - Room 2ND SHARING,tenant_janvi,property_s.p_flat_704_room_2ND SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_phanisumit_property_s.p_flat_704_room_KITCHEN HALL,Agreement - Phani/Sumit - Room KITCHEN HALL,tenant_phanisumit,property_s.p_flat_704_room_KITCHEN HALL,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_shruti_property_s.p_flat_704_room_MAID ROOM,Agreement - Shruti - Room MAID ROOM,tenant_shruti,property_s.p_flat_704_room_MAID ROOM,1700.0,0.0,active,2025-08-01,2026-07-31
+tenant_sanket_property_s.p_flat_704_room_1ST PART.,Agreement - Sanket - Room 1ST PART.,tenant_sanket,property_s.p_flat_704_room_1ST PART.,1950.0,0.0,active,2025-08-01,2026-07-31
+tenant_kirti_property_s.p_flat_704_room_2ND PART.,Agreement - Kirti - Room 2ND PART.,tenant_kirti,property_s.p_flat_704_room_2ND PART.,2200.0,0.0,active,2025-08-01,2026-07-31
+tenant_dinesh_property_s.p_flat_704_room_3RD PART.,Agreement - Dinesh - Room 3RD PART.,tenant_dinesh,property_s.p_flat_704_room_3RD PART.,2400.0,0.0,active,2025-08-01,2026-07-31
+tenant_approva_property_s.p_flat_706_room_ATTACH,Agreement - Approva - Room ATTACH,tenant_approva,property_s.p_flat_706_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_jijo_property_s.p_flat_706_room_1ST SHARING,Agreement - Jijo - Room 1ST SHARING,tenant_jijo,property_s.p_flat_706_room_1ST SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_barsha_property_s.p_flat_706_room_2ND SHARING,Agreement - Barsha - Room 2ND SHARING,tenant_barsha,property_s.p_flat_706_room_2ND SHARING,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_pallavi_property_s.p_flat_706_room_MAID ROOM,Agreement - Pallavi - Room MAID ROOM,tenant_pallavi,property_s.p_flat_706_room_MAID ROOM,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_irfan_property_s.p_flat_706_room_1ST PART.,Agreement - Irfan - Room 1ST PART.,tenant_irfan,property_s.p_flat_706_room_1ST PART.,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_poonam_property_s.p_flat_706_room_2ND PART.,Agreement - Poonam - Room 2ND PART.,tenant_poonam,property_s.p_flat_706_room_2ND PART.,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_kalim_khan_property_s.p_flat_706_room_3RD PART.,Agreement - Kalim Khan - Room 3RD PART.,tenant_kalim_khan,property_s.p_flat_706_room_3RD PART.,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_sharad_property_al baker_flat_206_room_B. ATTACH,Agreement - Sharad - Room B. ATTACH,tenant_sharad,property_al baker_flat_206_room_B. ATTACH,4400.0,0.0,active,2025-08-01,2026-07-31
+tenant_parveen_property_al baker_flat_206_room_S. ATTACH,Agreement - Parveen - Room S. ATTACH,tenant_parveen,property_al baker_flat_206_room_S. ATTACH,4100.0,0.0,active,2025-08-01,2026-07-31
+tenant_nishad_property_al baker_flat_206_room_SHARING WIND.,Agreement - Nishad - Room SHARING WIND.,tenant_nishad,property_al baker_flat_206_room_SHARING WIND.,3400.0,1000.0,active,2025-08-01,2026-07-31
+tenant_pradeep_property_al baker_flat_206_room_SHARING BAL.,Agreement - Pradeep - Room SHARING BAL.,tenant_pradeep,property_al baker_flat_206_room_SHARING BAL.,3700.0,0.0,active,2025-08-01,2026-07-31
+tenant_sadia_property_al baker_flat_206_room_MAID ROOM,Agreement - Sadia - Room MAID ROOM,tenant_sadia,property_al baker_flat_206_room_MAID ROOM,1200.0,0.0,active,2025-08-01,2026-07-31
+tenant_kiran_property_al baker_flat_206_room_S. HALL,Agreement - Kiran - Room S. HALL,tenant_kiran,property_al baker_flat_206_room_S. HALL,2500.0,0.0,active,2025-08-01,2026-07-31
+tenant_mehtab_property_al baker_flat_206_room_HALL WIND.,Agreement - Mehtab - Room HALL WIND.,tenant_mehtab,property_al baker_flat_206_room_HALL WIND.,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_adhil_property_al baker_flat_207_room_B. ATTACH,Agreement - Adhil - Room B. ATTACH,tenant_adhil,property_al baker_flat_207_room_B. ATTACH,4300.0,1000.0,active,2025-08-01,2026-07-31
+tenant_shah_property_al baker_flat_207_room_S. ATTACH,Agreement - Shah - Room S. ATTACH,tenant_shah,property_al baker_flat_207_room_S. ATTACH,4100.0,0.0,active,2025-08-01,2026-07-31
+tenant_priyansh_property_al baker_flat_207_room_SHARING BAL.,Agreement - Priyansh - Room SHARING BAL.,tenant_priyansh,property_al baker_flat_207_room_SHARING BAL.,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_siddarth_property_al baker_flat_207_room_SHARING WIND.,Agreement - Siddarth - Room SHARING WIND.,tenant_siddarth,property_al baker_flat_207_room_SHARING WIND.,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_mohan_property_al baker_flat_207_room_MAID ROOM,Agreement - Mohan - Room MAID ROOM,tenant_mohan,property_al baker_flat_207_room_MAID ROOM,1100.0,0.0,active,2025-08-01,2026-07-31
+tenant_jaison_property_al baker_flat_207_room_HALL. PART. WIND.,Agreement - Jaison - Room HALL. PART. WIND.,tenant_jaison,property_al baker_flat_207_room_HALL. PART. WIND.,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_joseph_property_al baker_flat_207_room_HALL 1ST PART.,Agreement - Joseph - Room HALL 1ST PART.,tenant_joseph,property_al baker_flat_207_room_HALL 1ST PART.,2700.0,0.0,active,2025-08-01,2026-07-31
+tenant_ram_property_al dar_flat_101_room_ATTACH,Agreement - Ram - Room ATTACH,tenant_ram,property_al dar_flat_101_room_ATTACH,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_vishal_property_al dar_flat_101_room_2ND SHARING,Agreement - Vishal - Room 2ND SHARING,tenant_vishal,property_al dar_flat_101_room_2ND SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_macson_property_al dar_flat_101_room_1ST SHARING,Agreement - Macson - Room 1ST SHARING,tenant_macson,property_al dar_flat_101_room_1ST SHARING,3400.0,0.0,active,2025-08-01,2026-07-31
+tenant_parkash_property_al dar_flat_101_room_MAID ROOM,Agreement - Parkash - Room MAID ROOM,tenant_parkash,property_al dar_flat_101_room_MAID ROOM,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_muskan_property_al dar_flat_101_room_BIG HALL,Agreement - Muskan - Room BIG HALL,tenant_muskan,property_al dar_flat_101_room_BIG HALL,3700.0,1000.0,active,2025-08-01,2026-07-31
+tenant_taniya_property_al dar_flat_102_room_ATTACH,Agreement - Taniya - Room ATTACH,tenant_taniya,property_al dar_flat_102_room_ATTACH,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_tanvi_property_al dar_flat_102_room_1ST SHARING,Agreement - Tanvi - Room 1ST SHARING,tenant_tanvi,property_al dar_flat_102_room_1ST SHARING,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_pi_rabeem_property_al dar_flat_102_room_SHARING,Agreement - Pi Rabeem - Room SHARING,tenant_pi_rabeem,property_al dar_flat_102_room_SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_akash_property_al dar_flat_102_room_MAID ROOM,Agreement - Akash - Room MAID ROOM,tenant_akash,property_al dar_flat_102_room_MAID ROOM,1200.0,0.0,active,2025-08-01,2026-07-31
+tenant_jasir_property_al dar_flat_102_room_HALL,Agreement - Jasir - Room HALL,tenant_jasir,property_al dar_flat_102_room_HALL,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_bhairvi_property_al dar_flat_103_room_ATTACH,Agreement - Bhairvi - Room ATTACH,tenant_bhairvi,property_al dar_flat_103_room_ATTACH,4200.0,0.0,active,2025-08-01,2026-07-31
+tenant_raqeeb_property_al dar_flat_103_room_SHARING,Agreement - Raqeeb - Room SHARING,tenant_raqeeb,property_al dar_flat_103_room_SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_santoshi_property_al dar_flat_103_room_SHARING,Agreement - Santoshi - Room SHARING,tenant_santoshi,property_al dar_flat_103_room_SHARING,2900.0,0.0,active,2025-08-01,2026-07-31
+tenant_naresh_property_al dar_flat_103_room_MAID ROOM,Agreement - Naresh - Room MAID ROOM,tenant_naresh,property_al dar_flat_103_room_MAID ROOM,1200.0,0.0,active,2025-08-01,2026-07-31
+tenant_hari_property_al dar_flat_103_room_BIG HALL BAL.,Agreement - Hari - Room BIG HALL BAL.,tenant_hari,property_al dar_flat_103_room_BIG HALL BAL.,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_yusuf_property_al dar_flat_104_room_ATTACH,Agreement - Yusuf - Room ATTACH,tenant_yusuf,property_al dar_flat_104_room_ATTACH,4800.0,0.0,active,2025-08-01,2026-07-31
+tenant_priya_property_al dar_flat_104_room_2ND SHARING,Agreement - Priya - Room 2ND SHARING,tenant_priya,property_al dar_flat_104_room_2ND SHARING,3400.0,0.0,active,2025-08-01,2026-07-31
+tenant_illita_property_al dar_flat_104_room_1ST SHARING,Agreement - Illita - Room 1ST SHARING,tenant_illita,property_al dar_flat_104_room_1ST SHARING,3400.0,0.0,active,2025-08-01,2026-07-31
+tenant_ali_property_al dar_flat_104_room_HALL BAL.,Agreement - Ali - Room HALL BAL.,tenant_ali,property_al dar_flat_104_room_HALL BAL.,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_zuhiba_property_al dar_flat_104_room_MAID ROOM,Agreement - Zuhiba - Room MAID ROOM,tenant_zuhiba,property_al dar_flat_104_room_MAID ROOM,1700.0,0.0,active,2025-08-01,2026-07-31
+tenant_neha_property_al dar_flat_105_room_SHARING,Agreement - Neha - Room SHARING,tenant_neha,property_al dar_flat_105_room_SHARING,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_anjali_property_al dar_flat_105_room_SHARING,Agreement - Anjali - Room SHARING,tenant_anjali,property_al dar_flat_105_room_SHARING,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_hussain_property_al dar_flat_105_room_MAID ROOM,Agreement - Hussain - Room MAID ROOM,tenant_hussain,property_al dar_flat_105_room_MAID ROOM,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_agam_girls_property_al dar_flat_105_room_HALL,Agreement - Agam Girls - Room HALL,tenant_agam_girls,property_al dar_flat_105_room_HALL,4200.0,0.0,active,2025-08-01,2026-07-31
+tenant_ajay_property_al dar_flat_106_room_BIG HALL,Agreement - Ajay - Room BIG HALL,tenant_ajay,property_al dar_flat_106_room_BIG HALL,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_rani_property_al dar_flat_106_room_KITCHEN HALL,Agreement - Rani - Room KITCHEN HALL,tenant_rani,property_al dar_flat_106_room_KITCHEN HALL,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_ashar_property_al dar_flat_106_room_S. ATTACH,Agreement - Ashar - Room S. ATTACH,tenant_ashar,property_al dar_flat_106_room_S. ATTACH,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_lalit_property_al dar_flat_106_room_1ST SHARING,Agreement - Lalit - Room 1ST SHARING,tenant_lalit,property_al dar_flat_106_room_1ST SHARING,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_shashi_friend_property_al dar_flat_106_room_MAID ROOM,Agreement - Shashi Friend - Room MAID ROOM,tenant_shashi_friend,property_al dar_flat_106_room_MAID ROOM,1900.0,0.0,active,2025-08-01,2026-07-31
+tenant_gourav_property_al dar_flat_106_room_2ND SHARING,Agreement - Gourav - Room 2ND SHARING,tenant_gourav,property_al dar_flat_106_room_2ND SHARING,3400.0,1000.0,active,2025-08-01,2026-07-31
+tenant_ravi_property_al dar_flat_106_room_BIG ATTACH BAL.,Agreement - Ravi - Room BIG ATTACH BAL.,tenant_ravi,property_al dar_flat_106_room_BIG ATTACH BAL.,4500.0,0.0,active,2025-08-01,2026-07-31
+tenant_bavna_property_al dar_flat_201_room_ATTACH,Agreement - Bavna - Room ATTACH,tenant_bavna,property_al dar_flat_201_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_vishal_property_al dar_flat_201_room_1ST SHARING,Agreement - Vishal - Room 1ST SHARING,tenant_vishal,property_al dar_flat_201_room_1ST SHARING,3150.0,0.0,active,2025-08-01,2026-07-31
+tenant_sumod_property_al dar_flat_201_room_2ND SHARING,Agreement - Sumod - Room 2ND SHARING,tenant_sumod,property_al dar_flat_201_room_2ND SHARING,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_pankaj_property_al dar_flat_201_room_BIG HALL,Agreement - Pankaj - Room BIG HALL,tenant_pankaj,property_al dar_flat_201_room_BIG HALL,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_mohd_property_al dar_flat_201_room_MAID ROOM,Agreement - Mohd - Room MAID ROOM,tenant_mohd,property_al dar_flat_201_room_MAID ROOM,1300.0,0.0,active,2025-08-01,2026-07-31
+tenant_raj_property_al dar_flat_202_room_ATTACH,Agreement - Raj - Room ATTACH,tenant_raj,property_al dar_flat_202_room_ATTACH,40000.0,1000.0,active,2025-08-01,2026-07-31
+tenant_lalit_property_al dar_flat_202_room_1ST SHARING,Agreement - Lalit - Room 1ST SHARING,tenant_lalit,property_al dar_flat_202_room_1ST SHARING,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_viral_property_al dar_flat_202_room_2ND SHARING,Agreement - Viral - Room 2ND SHARING,tenant_viral,property_al dar_flat_202_room_2ND SHARING,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_renu_property_al dar_flat_202_room_HALL,Agreement - Renu - Room HALL,tenant_renu,property_al dar_flat_202_room_HALL,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_deepika_property_al dar_flat_202_room_MAID ROOM,Agreement - Deepika - Room MAID ROOM,tenant_deepika,property_al dar_flat_202_room_MAID ROOM,1150.0,0.0,active,2025-08-01,2026-07-31
+tenant_anju_property_al dar_flat_206_room_B. ATTACH,Agreement - Anju - Room B. ATTACH,tenant_anju,property_al dar_flat_206_room_B. ATTACH,4400.0,0.0,active,2025-08-01,2026-07-31
+tenant_adira_ramson_property_al dar_flat_206_room_SHARING,Agreement - Adira Ramson - Room SHARING,tenant_adira_ramson,property_al dar_flat_206_room_SHARING,3300.0,0.0,active,2025-08-01,2026-07-31
+tenant_kelvinlivia_property_al dar_flat_206_room_SHARING,Agreement - Kelvin/Livia - Room SHARING,tenant_kelvinlivia,property_al dar_flat_206_room_SHARING,3400.0,0.0,active,2025-08-01,2026-07-31
+tenant_kunal_property_al dar_flat_206_room_S. ATTACH,Agreement - Kunal - Room S. ATTACH,tenant_kunal,property_al dar_flat_206_room_S. ATTACH,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_khushbu_property_al dar_flat_206_room_HALL,Agreement - Khushbu - Room HALL,tenant_khushbu,property_al dar_flat_206_room_HALL,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_imran_property_al dar_flat_206_room_KITCHEN HALL,Agreement - Imran - Room KITCHEN HALL,tenant_imran,property_al dar_flat_206_room_KITCHEN HALL,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_aman_property_al dar_flat_206_room_MAID ROOM,Agreement - Aman - Room MAID ROOM,tenant_aman,property_al dar_flat_206_room_MAID ROOM,2000.0,0.0,active,2025-08-01,2026-07-31
+tenant_amit_property_al dar_flat_301_room_ATTACH,Agreement - Amit - Room ATTACH,tenant_amit,property_al dar_flat_301_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_prena_property_al dar_flat_301_room_2ND SHARING,Agreement - Prena - Room 2ND SHARING,tenant_prena,property_al dar_flat_301_room_2ND SHARING,2900.0,0.0,active,2025-08-01,2026-07-31
+tenant_dinuka_property_al dar_flat_301_room_1ST SHARING,Agreement - Dinuka - Room 1ST SHARING,tenant_dinuka,property_al dar_flat_301_room_1ST SHARING,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_shiwali_property_al dar_flat_301_room_HALL,Agreement - Shiwali - Room HALL,tenant_shiwali,property_al dar_flat_301_room_HALL,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_aunty_property_al dar_flat_301_room_MAID ROOM,Agreement - Aunty - Room MAID ROOM,tenant_aunty,property_al dar_flat_301_room_MAID ROOM,1500.0,0.0,active,2025-08-01,2026-07-31
+tenant_akash_property_al dar_flat_303_room_ATTACH,Agreement - Akash - Room ATTACH,tenant_akash,property_al dar_flat_303_room_ATTACH,4600.0,1000.0,active,2025-08-01,2026-07-31
+tenant_amit_property_al dar_flat_303_room_SHARING,Agreement - Amit - Room SHARING,tenant_amit,property_al dar_flat_303_room_SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_manisha_property_al dar_flat_303_room_SHARING,Agreement - Manisha - Room SHARING,tenant_manisha,property_al dar_flat_303_room_SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_shivraj_property_al dar_flat_303_room_HALL,Agreement - Shivraj - Room HALL,tenant_shivraj,property_al dar_flat_303_room_HALL,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_hifza_property_al dar_flat_303_room_MAID ROOM,Agreement - Hifza - Room MAID ROOM,tenant_hifza,property_al dar_flat_303_room_MAID ROOM,1200.0,0.0,active,2025-08-01,2026-07-31
+tenant_heena_property_al dar_flat_501_room_ATTACH,Agreement - Heena - Room ATTACH,tenant_heena,property_al dar_flat_501_room_ATTACH,4100.0,0.0,active,2025-08-01,2026-07-31
+tenant_yogesh_property_al dar_flat_501_room_2ND SHARING,Agreement - Yogesh - Room 2ND SHARING,tenant_yogesh,property_al dar_flat_501_room_2ND SHARING,3100.0,1000.0,active,2025-08-01,2026-07-31
+tenant_suhas_property_al dar_flat_501_room_1ST SHARING,Agreement - Suhas - Room 1ST SHARING,tenant_suhas,property_al dar_flat_501_room_1ST SHARING,3100.0,1000.0,active,2025-08-01,2026-07-31
+tenant_khawar_property_al dar_flat_501_room_MAID ROOM,Agreement - Khawar - Room MAID ROOM,tenant_khawar,property_al dar_flat_501_room_MAID ROOM,1350.0,0.0,active,2025-08-01,2026-07-31
+tenant_kartik_property_al dar_flat_501_room_HALL,Agreement - Kartik - Room HALL,tenant_kartik,property_al dar_flat_501_room_HALL,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_nidhi_property_al dar_flat_502_room_ATTACH,Agreement - Nidhi - Room ATTACH,tenant_nidhi,property_al dar_flat_502_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_sultan_property_al dar_flat_502_room_SHARING,Agreement - Sultan - Room SHARING,tenant_sultan,property_al dar_flat_502_room_SHARING,3200.0,0.0,active,2025-08-01,2026-07-31
+tenant_sankha_property_al dar_flat_502_room_SHARING,Agreement - Sankha - Room SHARING,tenant_sankha,property_al dar_flat_502_room_SHARING,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_sushmitha_property_al dar_flat_502_room_MAID ROOM,Agreement - Sushmitha - Room MAID ROOM,tenant_sushmitha,property_al dar_flat_502_room_MAID ROOM,1200.0,0.0,active,2025-08-01,2026-07-31
+tenant_divya_property_al dar_flat_502_room_HALL,Agreement - Divya - Room HALL,tenant_divya,property_al dar_flat_502_room_HALL,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_mastura_property_al dar_flat_503_room_ATTACH,Agreement - Mastura - Room ATTACH,tenant_mastura,property_al dar_flat_503_room_ATTACH,4200.0,0.0,active,2025-08-01,2026-07-31
+tenant_qadira_property_al dar_flat_503_room_SHARING,Agreement - Qadira - Room SHARING,tenant_qadira,property_al dar_flat_503_room_SHARING,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_frbin_property_al dar_flat_503_room_SHARING,Agreement - Frbin - Room SHARING,tenant_frbin,property_al dar_flat_503_room_SHARING,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_nisha_property_al dar_flat_503_room_MAID ROOM,Agreement - Nisha - Room MAID ROOM,tenant_nisha,property_al dar_flat_503_room_MAID ROOM,1150.0,500.0,active,2025-08-01,2026-07-31
+tenant_chanchal_property_al dar_flat_503_room_HALL,Agreement - Chanchal - Room HALL,tenant_chanchal,property_al dar_flat_503_room_HALL,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_jyoti_property_al dar_flat_504_room_ATTACH,Agreement - Jyoti - Room ATTACH,tenant_jyoti,property_al dar_flat_504_room_ATTACH,4300.0,0.0,active,2025-08-01,2026-07-31
+tenant_priyanka_property_al dar_flat_504_room_1ST SHARING,Agreement - Priyanka - Room 1ST SHARING,tenant_priyanka,property_al dar_flat_504_room_1ST SHARING,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_khushbu_property_al dar_flat_504_room_MAID ROOM,Agreement - Khushbu - Room MAID ROOM,tenant_khushbu,property_al dar_flat_504_room_MAID ROOM,1800.0,0.0,active,2025-08-01,2026-07-31
+tenant_anirudh_property_al dar_flat_504_room_HALL,Agreement - Anirudh - Room HALL,tenant_anirudh,property_al dar_flat_504_room_HALL,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_satywan_property_al dar_flat_602_room_ATTACH,Agreement - Satywan - Room ATTACH,tenant_satywan,property_al dar_flat_602_room_ATTACH,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_deepak_property_al dar_flat_602_room_1ST SHARING,Agreement - Deepak - Room 1ST SHARING,tenant_deepak,property_al dar_flat_602_room_1ST SHARING,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_sherin_property_al dar_flat_602_room_2ND SHARING,Agreement - Sherin - Room 2ND SHARING,tenant_sherin,property_al dar_flat_602_room_2ND SHARING,3100.0,0.0,active,2025-08-01,2026-07-31
+tenant_shobit_property_al dar_flat_602_room_HALL,Agreement - Shobit - Room HALL,tenant_shobit,property_al dar_flat_602_room_HALL,3700.0,0.0,active,2025-08-01,2026-07-31
+tenant_danu_property_al dar_flat_602_room_MAID ROOM,Agreement - Danu - Room MAID ROOM,tenant_danu,property_al dar_flat_602_room_MAID ROOM,1200.0,0.0,active,2025-08-01,2026-07-31
+tenant_aman_property_al dar_flat_702_room_ATTACH,Agreement - Aman - Room ATTACH,tenant_aman,property_al dar_flat_702_room_ATTACH,4100.0,0.0,active,2025-08-01,2026-07-31
+tenant_parth_property_al dar_flat_702_room_1ST SHARING,Agreement - Parth - Room 1ST SHARING,tenant_parth,property_al dar_flat_702_room_1ST SHARING,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_rameez_property_al dar_flat_702_room_2ND SHARING,Agreement - Rameez - Room 2ND SHARING,tenant_rameez,property_al dar_flat_702_room_2ND SHARING,3100.0,1000.0,active,2025-08-01,2026-07-31
+tenant_mahender_property_al dar_flat_702_room_HALL,Agreement - Mahender - Room HALL,tenant_mahender,property_al dar_flat_702_room_HALL,3600.0,1000.0,active,2025-08-01,2026-07-31
+tenant_manvat_property_al dar_flat_702_room_MAID ROOM,Agreement - Manvat - Room MAID ROOM,tenant_manvat,property_al dar_flat_702_room_MAID ROOM,1200.0,0.0,active,2025-08-01,2026-07-31
+tenant_manoj_property_js_flat_102_room_ATTACH,Agreement - Manoj - Room ATTACH,tenant_manoj,property_js_flat_102_room_ATTACH,3900.0,1000.0,active,2025-08-01,2026-07-31
+tenant_tanisha_property_js_flat_102_room_HALL,Agreement - Tanisha - Room HALL,tenant_tanisha,property_js_flat_102_room_HALL,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_agam_property_js_flat_104_room_1BHK,Agreement - Agam - Room 1BHK,tenant_agam,property_js_flat_104_room_1BHK,7300.0,0.0,active,2025-08-01,2026-07-31
+tenant_bijender_property_js_flat_105_room_ATTACH,Agreement - Bijender - Room ATTACH,tenant_bijender,property_js_flat_105_room_ATTACH,3800.0,1000.0,active,2025-08-01,2026-07-31
+tenant_shiv_property_js_flat_105_room_HALL,Agreement - Shiv - Room HALL,tenant_shiv,property_js_flat_105_room_HALL,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_shabiya_property_js_flat_106_room_1BHK,Agreement - Shabiya - Room 1BHK,tenant_shabiya,property_js_flat_106_room_1BHK,7500.0,2000.0,active,2025-08-01,2026-07-31
+tenant_rahul_property_js_flat_107_room_1BHK,Agreement - Rahul - Room 1BHK,tenant_rahul,property_js_flat_107_room_1BHK,7500.0,0.0,active,2025-08-01,2026-07-31
+tenant_rohit_property_js_flat_110_room_ATTACH,Agreement - Rohit - Room ATTACH,tenant_rohit,property_js_flat_110_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_danwar_property_js_flat_110_room_SEPRATE,Agreement - Danwar - Room SEPRATE,tenant_danwar,property_js_flat_110_room_SEPRATE,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_mithun_property_js_flat_110_room_HALL,Agreement - Mithun - Room HALL,tenant_mithun,property_js_flat_110_room_HALL,4500.0,0.0,active,2025-08-01,2026-07-31
+tenant_sidarth_property_js_flat_111_room_1BHK,Agreement - Sidarth - Room 1BHK,tenant_sidarth,property_js_flat_111_room_1BHK,7200.0,0.0,active,2025-08-01,2026-07-31
+tenant_herllin_property_js_flat_112_room_ATTACH,Agreement - Herllin - Room ATTACH,tenant_herllin,property_js_flat_112_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_rakesh_property_js_flat_112_room_HALL,Agreement - Rakesh - Room HALL,tenant_rakesh,property_js_flat_112_room_HALL,3000.0,0.0,active,2025-08-01,2026-07-31
+tenant_aditiya_property_js_flat_113_room_ATTACH,Agreement - Aditiya - Room ATTACH,tenant_aditiya,property_js_flat_113_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_gagandeep_dainel_property_js_flat_113_room_HALL,Agreement - Gagandeep/ Dainel - Room HALL,tenant_gagandeep_dainel,property_js_flat_113_room_HALL,4600.0,0.0,active,2025-08-01,2026-07-31
+tenant_akbar_ali_property_js_flat_114_room_1BHK,Agreement - Akbar Ali - Room 1BHK,tenant_akbar_ali,property_js_flat_114_room_1BHK,7500.0,0.0,active,2025-08-01,2026-07-31
+tenant_sukesh_property_js_flat_201_room_ATTACH,Agreement - Sukesh - Room ATTACH,tenant_sukesh,property_js_flat_201_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_avani_property_js_flat_201_room_SEPRATE,Agreement - Avani - Room SEPRATE,tenant_avani,property_js_flat_201_room_SEPRATE,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_rahul_property_js_flat_201_room_HALL,Agreement - Rahul - Room HALL,tenant_rahul,property_js_flat_201_room_HALL,4000.0,1000.0,active,2025-08-01,2026-07-31
+tenant_suraj_property_js_flat_202_room_ATTACH,Agreement - Suraj - Room ATTACH,tenant_suraj,property_js_flat_202_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_vaibhav_property_js_flat_202_room_SEPRATE,Agreement - Vaibhav - Room SEPRATE,tenant_vaibhav,property_js_flat_202_room_SEPRATE,3700.0,0.0,active,2025-08-01,2026-07-31
+tenant_manoj_property_js_flat_202_room_HALL,Agreement - Manoj - Room HALL,tenant_manoj,property_js_flat_202_room_HALL,4000.0,1000.0,active,2025-08-01,2026-07-31
+tenant_ajheet_property_js_flat_203_room_1BHK,Agreement - Ajheet - Room 1BHK,tenant_ajheet,property_js_flat_203_room_1BHK,7000.0,0.0,active,2025-08-01,2026-07-31
+tenant_aiyamn_property_js_flat_204_room_1BHK,Agreement - Aiyamn - Room 1BHK,tenant_aiyamn,property_js_flat_204_room_1BHK,7500.0,0.0,active,2025-08-01,2026-07-31
+tenant_budima_property_js_flat_208_room_1BHK,Agreement - Budima - Room 1BHK,tenant_budima,property_js_flat_208_room_1BHK,7500.0,0.0,active,2025-08-01,2026-07-31
+tenant_parnika_property_js_flat_209_room_ATTACH,Agreement - Parnika - Room ATTACH,tenant_parnika,property_js_flat_209_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_meeta_property_js_flat_209_room_SEPRATE,Agreement - Meeta - Room SEPRATE,tenant_meeta,property_js_flat_209_room_SEPRATE,3700.0,0.0,active,2025-08-01,2026-07-31
+tenant_amandeep_property_js_flat_209_room_HALL,Agreement - Amandeep - Room HALL,tenant_amandeep,property_js_flat_209_room_HALL,4500.0,0.0,active,2025-08-01,2026-07-31
+tenant_anuj_property_js_flat_212_room_1BHK,Agreement - Anuj - Room 1BHK,tenant_anuj,property_js_flat_212_room_1BHK,7500.0,0.0,active,2025-08-01,2026-07-31
+tenant_anshul_property_js_flat_213_room_ATTACH,Agreement - Anshul - Room ATTACH,tenant_anshul,property_js_flat_213_room_ATTACH,4500.0,0.0,active,2025-08-01,2026-07-31
+tenant_gourav_property_js_flat_213_room_HALL,Agreement - Gourav - Room HALL,tenant_gourav,property_js_flat_213_room_HALL,4300.0,0.0,active,2025-08-01,2026-07-31
+tenant_megha_property_js_flat_214_room_1BHK,Agreement - Megha - Room 1BHK,tenant_megha,property_js_flat_214_room_1BHK,7300.0,0.0,active,2025-08-01,2026-07-31
+tenant_era_pi_property_js_flat_301_room_ATTACH,Agreement - Era Pi - Room ATTACH,tenant_era_pi,property_js_flat_301_room_ATTACH,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_tanuja_property_js_flat_301_room_SEPRATE,Agreement - Tanuja - Room SEPRATE,tenant_tanuja,property_js_flat_301_room_SEPRATE,,1000.0,active,2025-08-01,2026-07-31
+tenant_aachala_property_js_flat_302_room_ATTACH,Agreement - Aachala - Room ATTACH,tenant_aachala,property_js_flat_302_room_ATTACH,,1000.0,active,2025-08-01,2026-07-31
+tenant_neel_property_js_flat_302_room_SEPRATE,Agreement - Neel - Room SEPRATE,tenant_neel,property_js_flat_302_room_SEPRATE,3800.0,1000.0,active,2025-08-01,2026-07-31
+tenant_tarun_property_js_flat_304_room_1BHK,Agreement - Tarun - Room 1BHK,tenant_tarun,property_js_flat_304_room_1BHK,7400.0,0.0,active,2025-08-01,2026-07-31
+tenant_ishka_property_js_flat_305_room_ATTACH,Agreement - Ishka - Room ATTACH,tenant_ishka,property_js_flat_305_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_john_property_js_flat_305_room_HALL,Agreement - John - Room HALL,tenant_john,property_js_flat_305_room_HALL,2645.0,1000.0,active,2025-08-01,2026-07-31
+tenant_sahil_property_js_flat_307_room_ATTACH,Agreement - Sahil - Room ATTACH,tenant_sahil,property_js_flat_307_room_ATTACH,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_pooja_property_js_flat_307_room_HALL,Agreement - Pooja - Room HALL,tenant_pooja,property_js_flat_307_room_HALL,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_laila___russian_property_js_flat_309_room_ATTACH,Agreement - Laila  ( Russian) - Room ATTACH,tenant_laila___russian,property_js_flat_309_room_ATTACH,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_merel_property_js_flat_309_room_SEPRATE,Agreement - Merel - Room SEPRATE,tenant_merel,property_js_flat_309_room_SEPRATE,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_shamil_property_js_flat_309_room_HALL,Agreement - Shamil - Room HALL,tenant_shamil,property_js_flat_309_room_HALL,4000.0,1000.0,active,2025-08-01,2026-07-31
+tenant_abhilasha_property_js_flat_310_room_ATTACH,Agreement - Abhilasha - Room ATTACH,tenant_abhilasha,property_js_flat_310_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_jyotika_property_js_flat_310_room_SEPRATE,Agreement - Jyotika - Room SEPRATE,tenant_jyotika,property_js_flat_310_room_SEPRATE,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_vasu_property_js_flat_310_room_HALL,Agreement - Vasu - Room HALL,tenant_vasu,property_js_flat_310_room_HALL,4300.0,0.0,active,2025-08-01,2026-07-31
+tenant_adhil_property_js_flat_312_room_ATTACH,Agreement - Adhil - Room ATTACH,tenant_adhil,property_js_flat_312_room_ATTACH,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_aditi_property_js_flat_312_room_HALL,Agreement - Aditi - Room HALL,tenant_aditi,property_js_flat_312_room_HALL,3900.0,0.0,active,2025-08-01,2026-07-31
+tenant_rehan_property_js_flat_313_room_1BHK,Agreement - Rehan - Room 1BHK,tenant_rehan,property_js_flat_313_room_1BHK,7400.0,0.0,active,2025-08-01,2026-07-31
+tenant_devender_property_js_flat_314_room_ATTACH,Agreement - Devender - Room ATTACH,tenant_devender,property_js_flat_314_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_abhijitpriyanka_property_js_flat_314_room_HALL,Agreement - Abhijit/Priyanka - Room HALL,tenant_abhijitpriyanka,property_js_flat_314_room_HALL,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_huda_property_js_flat_401_room_ATTACH,Agreement - Huda - Room ATTACH,tenant_huda,property_js_flat_401_room_ATTACH,4300.0,0.0,active,2025-08-01,2026-07-31
+tenant_riya_property_js_flat_401_room_SEPRATE,Agreement - Riya - Room SEPRATE,tenant_riya,property_js_flat_401_room_SEPRATE,3700.0,1000.0,active,2025-08-01,2026-07-31
+tenant_aneesh_property_js_flat_401_room_HALL,Agreement - Aneesh - Room HALL,tenant_aneesh,property_js_flat_401_room_HALL,4000.0,1000.0,active,2025-08-01,2026-07-31
+tenant_sourab_property_js_flat_402_room_BIG HALL,Agreement - Sourab - Room BIG HALL,tenant_sourab,property_js_flat_402_room_BIG HALL,3700.0,0.0,active,2025-08-01,2026-07-31
+tenant_partik_property_js_flat_402_room_SEPRATE,Agreement - Partik - Room SEPRATE,tenant_partik,property_js_flat_402_room_SEPRATE,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_pardeep_property_js_flat_402_room_ATTACH,Agreement - Pardeep - Room ATTACH,tenant_pardeep,property_js_flat_402_room_ATTACH,4200.0,0.0,active,2025-08-01,2026-07-31
+tenant_aman_property_js_flat_403_room_1BHK,Agreement - Aman - Room 1BHK,tenant_aman,property_js_flat_403_room_1BHK,7000.0,2000.0,active,2025-08-01,2026-07-31
+tenant_pawan_property_js_flat_404_room_1BHK,Agreement - Pawan - Room 1BHK,tenant_pawan,property_js_flat_404_room_1BHK,7250.0,3000.0,active,2025-08-01,2026-07-31
+tenant_sameer_property_js_flat_405_room_ATTACH,Agreement - Sameer - Room ATTACH,tenant_sameer,property_js_flat_405_room_ATTACH,3900.0,1000.0,active,2025-08-01,2026-07-31
+tenant_amrish_property_js_flat_405_room_HALL,Agreement - Amrish - Room HALL,tenant_amrish,property_js_flat_405_room_HALL,3900.0,1000.0,active,2025-08-01,2026-07-31
+tenant_chrimas_property_js_flat_406_room_1BHK,Agreement - Chrimas - Room 1BHK,tenant_chrimas,property_js_flat_406_room_1BHK,7300.0,3000.0,active,2025-08-01,2026-07-31
+tenant_arun_property_js_flat_407_room_ATTACH,Agreement - Arun - Room ATTACH,tenant_arun,property_js_flat_407_room_ATTACH,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_jobi_property_js_flat_409_room_ATTACH,Agreement - Jobi - Room ATTACH,tenant_jobi,property_js_flat_409_room_ATTACH,3800.0,1000.0,active,2025-08-01,2026-07-31
+tenant_netto_property_js_flat_409_room_SEPRATE,Agreement - Netto - Room SEPRATE,tenant_netto,property_js_flat_409_room_SEPRATE,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_vipul_property_js_flat_409_room_HALL,Agreement - Vipul - Room HALL,tenant_vipul,property_js_flat_409_room_HALL,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_revathi_property_js_flat_410_room_SEPRATE,Agreement - Revathi - Room SEPRATE,tenant_revathi,property_js_flat_410_room_SEPRATE,4000.0,1000.0,active,2025-08-01,2026-07-31
+tenant_jagroop_property_js_flat_410_room_HALL,Agreement - Jagroop - Room HALL,tenant_jagroop,property_js_flat_410_room_HALL,4200.0,1000.0,active,2025-08-01,2026-07-31
+tenant_binibiyat_property_js_flat_411_room_1BHK,Agreement - Binibiyat - Room 1BHK,tenant_binibiyat,property_js_flat_411_room_1BHK,7500.0,3000.0,active,2025-08-01,2026-07-31
+tenant_aiman_property_js_flat_412_room_1BHK,Agreement - Aiman - Room 1BHK,tenant_aiman,property_js_flat_412_room_1BHK,7250.0,3000.0,active,2025-08-01,2026-07-31
+tenant_morgan_property_js_flat_413_room_1BHK,Agreement - Morgan - Room 1BHK,tenant_morgan,property_js_flat_413_room_1BHK,7200.0,2500.0,active,2025-08-01,2026-07-31
+tenant_shushant_property_js_flat_414_room_ATTACH,Agreement - Shushant - Room ATTACH,tenant_shushant,property_js_flat_414_room_ATTACH,3900.0,1000.0,active,2025-08-01,2026-07-31
+tenant_tina_property_js_flat_414_room_HALL,Agreement - Tina - Room HALL,tenant_tina,property_js_flat_414_room_HALL,3500.0,1000.0,active,2025-08-01,2026-07-31
+tenant_shrinath_property_js_flat_502_room_ATTACH,Agreement - Shrinath - Room ATTACH,tenant_shrinath,property_js_flat_502_room_ATTACH,4000.0,1000.0,active,2025-08-01,2026-07-31
+tenant_naveen_property_js_flat_502_room_SEPRATE,Agreement - Naveen - Room SEPRATE,tenant_naveen,property_js_flat_502_room_SEPRATE,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_gourav_property_js_flat_504_room_1BHK,Agreement - Gourav - Room 1BHK,tenant_gourav,property_js_flat_504_room_1BHK,7500.0,3000.0,active,2025-08-01,2026-07-31
+tenant_chander_shakher_property_js_flat_506_room_1BHK,Agreement - Chander Shakher - Room 1BHK,tenant_chander_shakher,property_js_flat_506_room_1BHK,7000.0,0.0,active,2025-08-01,2026-07-31
+tenant_naveen_property_js_flat_509_room_2BHK,Agreement - Naveen - Room 2BHK,tenant_naveen,property_js_flat_509_room_2BHK,12000.0,0.0,active,2025-08-01,2026-07-31
+tenant_ankita_property_js_flat_510_room_ATTACH,Agreement - Ankita - Room ATTACH,tenant_ankita,property_js_flat_510_room_ATTACH,4000.0,1000.0,active,2025-08-01,2026-07-31
+tenant_naven_al_farhed_property_js_flat_510_room_SEPRATE,Agreement - Naven Al Farhed - Room SEPRATE,tenant_naven_al_farhed,property_js_flat_510_room_SEPRATE,3800.0,1000.0,active,2025-08-01,2026-07-31
+tenant_dimple_property_js_flat_511_room_ATTACH,Agreement - Dimple - Room ATTACH,tenant_dimple,property_js_flat_511_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_mina_property_js_flat_511_room_HALL,Agreement - Mina - Room HALL,tenant_mina,property_js_flat_511_room_HALL,3500.0,0.0,active,2025-08-01,2026-07-31
+tenant_divyani_property_js_flat_513_room_ATTACH,Agreement - Divyani - Room ATTACH,tenant_divyani,property_js_flat_513_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_faisal_property_js_flat_513_room_HALL,Agreement - Faisal - Room HALL,tenant_faisal,property_js_flat_513_room_HALL,4700.0,0.0,active,2025-08-01,2026-07-31
+tenant_dinesh_property_js_flat_601_room_ATTACH,Agreement - Dinesh - Room ATTACH,tenant_dinesh,property_js_flat_601_room_ATTACH,3850.0,1000.0,active,2025-08-01,2026-07-31
+tenant_partik_property_js_flat_601_room_SEPRATE,Agreement - Partik - Room SEPRATE,tenant_partik,property_js_flat_601_room_SEPRATE,3800.0,1000.0,active,2025-08-01,2026-07-31
+tenant_gytri_property_js_flat_601_room_HALL,Agreement - Gytri - Room HALL,tenant_gytri,property_js_flat_601_room_HALL,4400.0,0.0,active,2025-08-01,2026-07-31
+tenant_deepak_property_js_flat_603_room_1BHK,Agreement - Deepak - Room 1BHK,tenant_deepak,property_js_flat_603_room_1BHK,6900.0,0.0,active,2025-08-01,2026-07-31
+tenant_manivanan_property_js_flat_604_room_1BHK,Agreement - Manivanan - Room 1BHK,tenant_manivanan,property_js_flat_604_room_1BHK,7500.0,3000.0,active,2025-08-01,2026-07-31
+tenant_terry_property_js_flat_606_room_ATTACH,Agreement - Terry - Room ATTACH,tenant_terry,property_js_flat_606_room_ATTACH,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_himansu_property_js_flat_606_room_HALL,Agreement - Himansu - Room HALL,tenant_himansu,property_js_flat_606_room_HALL,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_rajender_property_js_flat_608_room_1BHK,Agreement - Rajender - Room 1BHK,tenant_rajender,property_js_flat_608_room_1BHK,6700.0,2000.0,active,2025-08-01,2026-07-31
+tenant_shahnawas_property_js_flat_610_room_ATTACH,Agreement - Shahnawas - Room ATTACH,tenant_shahnawas,property_js_flat_610_room_ATTACH,4000.0,0.0,active,2025-08-01,2026-07-31
+tenant_akhil_property_js_flat_610_room_SEPRATE,Agreement - Akhil - Room SEPRATE,tenant_akhil,property_js_flat_610_room_SEPRATE,4100.0,0.0,active,2025-08-01,2026-07-31
+tenant_anju_property_js_flat_610_room_HALL,Agreement - Anju - Room HALL,tenant_anju,property_js_flat_610_room_HALL,3600.0,0.0,active,2025-08-01,2026-07-31
+tenant_akashleenapooja_property_js_flat_611_room_1BHK,Agreement - Akash/Leena/Pooja - Room 1BHK,tenant_akashleenapooja,property_js_flat_611_room_1BHK,8000.0,0.0,active,2025-08-01,2026-07-31
+tenant_gagandeep_property_js_flat_613_room_1BHK,Agreement - Gagandeep - Room 1BHK,tenant_gagandeep,property_js_flat_613_room_1BHK,7800.0,0.0,active,2025-08-01,2026-07-31
+tenant_keshav_property_js_flat_614_room_1BHK,Agreement - Keshav - Room 1BHK,tenant_keshav,property_js_flat_614_room_1BHK,7400.0,3000.0,active,2025-08-01,2026-07-31
+tenant_mahantesh_property_js_flat_701_room_ATTACH,Agreement - Mahantesh - Room ATTACH,tenant_mahantesh,property_js_flat_701_room_ATTACH,3950.0,1000.0,active,2025-08-01,2026-07-31
+tenant_nepali_samit_property_js_flat_701_room_SEPRATE,Agreement - Nepali Samit - Room SEPRATE,tenant_nepali_samit,property_js_flat_701_room_SEPRATE,3700.0,1000.0,active,2025-08-01,2026-07-31
+tenant_sohan_property_js_flat_701_room_HALL,Agreement - Sohan - Room HALL,tenant_sohan,property_js_flat_701_room_HALL,4100.0,1000.0,active,2025-08-01,2026-07-31
+tenant_hameedantony_property_js_flat_704_room_ATTACH,Agreement - Hameed/Antony - Room ATTACH,tenant_hameedantony,property_js_flat_704_room_ATTACH,4200.0,0.0,active,2025-08-01,2026-07-31
+tenant_anchalkirti_property_js_flat_704_room_HALL,Agreement - Anchal/Kirti - Room HALL,tenant_anchalkirti,property_js_flat_704_room_HALL,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_sadia_property_js_flat_705_room_ATTACH,Agreement - Sadia - Room ATTACH,tenant_sadia,property_js_flat_705_room_ATTACH,4000.0,1000.0,active,2025-08-01,2026-07-31
+tenant_millind_property_js_flat_705_room_HALL,Agreement - Millind - Room HALL,tenant_millind,property_js_flat_705_room_HALL,3800.0,1000.0,active,2025-08-01,2026-07-31
+tenant_rohit_property_js_flat_706_room_1BHK,Agreement - Rohit - Room 1BHK,tenant_rohit,property_js_flat_706_room_1BHK,7500.0,0.0,active,2025-08-01,2026-07-31
+tenant_ashish_property_js_flat_707_room_ATTACH,Agreement - Ashish - Room ATTACH,tenant_ashish,property_js_flat_707_room_ATTACH,3800.0,0.0,active,2025-08-01,2026-07-31
+tenant_parsad_property_js_flat_707_room_HALL,Agreement - Parsad - Room HALL,tenant_parsad,property_js_flat_707_room_HALL,3600.0,1000.0,active,2025-08-01,2026-07-31
+tenant_shivanivinita_property_js_flat_708_room_1BHK,Agreement - Shivani/Vinita - Room 1BHK,tenant_shivanivinita,property_js_flat_708_room_1BHK,6500.0,0.0,active,2025-08-01,2026-07-31
+tenant_nisha_property_js_flat_710_room_ATTACH,Agreement - Nisha - Room ATTACH,tenant_nisha,property_js_flat_710_room_ATTACH,3800.0,1000.0,active,2025-08-01,2026-07-31
+tenant_vinay_property_js_flat_710_room_SEPRATE,Agreement - Vinay - Room SEPRATE,tenant_vinay,property_js_flat_710_room_SEPRATE,3500.0,1000.0,active,2025-08-01,2026-07-31
+tenant_deepan_property_js_flat_710_room_HALL,Agreement - Deepan - Room HALL,tenant_deepan,property_js_flat_710_room_HALL,4500.0,0.0,active,2025-08-01,2026-07-31
+tenant_santosh_property_js_flat_712_room_ATTACH,Agreement - Santosh - Room ATTACH,tenant_santosh,property_js_flat_712_room_ATTACH,3900.0,1000.0,active,2025-08-01,2026-07-31
+tenant_harish_property_js_flat_712_room_HALL,Agreement - Harish - Room HALL,tenant_harish,property_js_flat_712_room_HALL,4000.0,1000.0,active,2025-08-01,2026-07-31
+tenant_ibrahim_property_js_flat_713_room_ATTACH,Agreement - Ibrahim - Room ATTACH,tenant_ibrahim,property_js_flat_713_room_ATTACH,4100.0,0.0,active,2025-08-01,2026-07-31
+tenant_rijin_property_js_flat_713_room_HALL,Agreement - Rijin - Room HALL,tenant_rijin,property_js_flat_713_room_HALL,4100.0,0.0,active,2025-08-01,2026-07-31
