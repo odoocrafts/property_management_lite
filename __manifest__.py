@@ -45,9 +45,6 @@ with features for:
         'views/flat_views.xml',
         'views/room_views.xml',
         
-        # Menus (must come before views that reference them)
-        'views/menu_views.xml',
-        
         # Views - Tenant Management
         'views/tenant_views.xml',
         'views/agreement_views.xml',
@@ -63,7 +60,7 @@ with features for:
         # Email Templates (must come after reports)
         'data/email_templates.xml',
         
-        # Menus
+        # Menus (must come after all views that define actions)
         'views/menu_views.xml',
     ],
     'installable': True,
