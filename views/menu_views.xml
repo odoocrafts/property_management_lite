@@ -79,6 +79,24 @@
               action="action_property_collection" 
               sequence="10"/>
 
+    <!-- Invoicing Menu -->
+    <menuitem id="menu_property_invoicing" 
+              name="Invoicing" 
+              parent="menu_property_management_root" 
+              sequence="60"/>
+    
+    <menuitem id="menu_property_invoice" 
+              name="Invoices" 
+              parent="menu_property_invoicing" 
+              action="account.action_move_out_invoice" 
+              sequence="10"/>
+    
+    <menuitem id="menu_property_payment" 
+              name="Payments" 
+              parent="menu_property_invoicing" 
+              action="account.action_account_payments" 
+              sequence="20"/>
+
     <!-- Reports Menu -->
     <menuitem id="menu_property_reports" 
               name="Reports" 
