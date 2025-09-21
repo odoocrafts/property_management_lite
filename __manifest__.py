@@ -52,13 +52,15 @@ with features for:
         # Views - Daily Operations
         'views/collection_views.xml',
         # 'views/expense_views.xml',
-        'views/invoice_views.xml',
         
         # Reports (must come before email templates that reference them)
         'reports/invoice_reports.xml',
         
-        # Email Templates (must come after reports)
+        # Email Templates (must come before views that reference them)
         'data/email_templates.xml',
+        
+        # Invoice views (references email templates)
+        'views/invoice_views.xml',
         
         # Menus (must come after all views that define actions)
         'views/menu_views.xml',
