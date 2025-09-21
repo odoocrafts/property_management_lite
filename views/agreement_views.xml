@@ -140,11 +140,4 @@
         </field>
     </record>
 
-    <!-- Menu Item -->
-    <menuitem id="menu_property_agreement" 
-              name="Agreements" 
-              parent="menu_tenant_management" 
-              action="action_property_agreement" 
-              sequence="20"/>
-
 </odoo>
