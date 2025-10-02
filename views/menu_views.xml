@@ -114,6 +114,13 @@
               parent="menu_property_configuration" 
               action="action_property_data_import_wizard" 
               sequence="10"/>
+              
+    <!-- Test menu item -->
+    <menuitem id="menu_property_test" 
+              name="Test Properties" 
+              parent="menu_property_configuration" 
+              action="action_property_property" 
+              sequence="20"/>
 
     <menuitem id="menu_property_collection_reports" 
               name="Collection Reports" 

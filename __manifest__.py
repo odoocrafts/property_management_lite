@@ -37,6 +37,7 @@ with features for:
         'data/property_data.xml',
         'data/sequences.xml',
         'data/product.xml',
+        'data/agent_data.xml',
         # Views - Dashboard
         'views/dashboard_views.xml',
         
@@ -48,6 +49,7 @@ with features for:
         # Views - Tenant Management
         'views/tenant_views.xml',
         'views/agreement_views.xml',
+        'views/agent_views.xml',
         
         # Views - Daily Operations
         'views/collection_views.xml',

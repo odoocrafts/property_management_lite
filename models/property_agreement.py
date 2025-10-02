@@ -15,6 +15,11 @@ class PropertyAgreement(models.Model):
     tenant_id = fields.Many2one('property.tenant', 'Tenant', required=True, tracking=True)
     room_id = fields.Many2one('property.room', 'Room', required=True, tracking=True)
     property_id = fields.Many2one(related='room_id.property_id', string='Property', store=True)
+    agent_id = fields.Many2one('res.partner', 'Agent', 
+                              domain=[('is_company', '=', False), 
+                                      '|', ('category_id.name', 'in', ['Property Agent', 'Rental Agent', 'Sales Agent']), 
+                                      ('function', 'ilike', 'agent')],
+                              help="Agent responsible for this agreement", tracking=True)
     
     # Dates
     start_date = fields.Date('Start Date', required=True, tracking=True)
@@ -195,6 +200,14 @@ class PropertyAgreement(models.Model):
         if self.tenant_id:
             self.payment_method = self.tenant_id.payment_method
     
+    @api.onchange('agent_id')
+    def _onchange_agent_id(self):
+        """Update any agent-specific defaults when agent is selected"""
+        if self.agent_id:
+            # You can add agent-specific logic here
+            # For example, set default payment terms based on agent preferences
+            pass
+    
     def action_activate(self):
         for record in self:
             # Update room status
@@ -277,3 +290,17 @@ class PropertyAgreement(models.Model):
                 note=f'Agreement for room {agreement.room_id.name} expires on {agreement.end_date}',
                 user_id=agreement.room_id.property_id.manager_id.id,
             )
+    
+    def action_view_agent_agreements(self):
+        """View all agreements for the selected agent"""
+        if not self.agent_id:
+            return
+        
+        return {
+            'name': f'Agreements - {self.agent_id.name}',
+            'view_mode': 'list,form',
+            'res_model': 'property.agreement',
+            'type': 'ir.actions.act_window',
+            'domain': [('agent_id', '=', self.agent_id.id)],
+            'context': {'default_agent_id': self.agent_id.id},
+        }

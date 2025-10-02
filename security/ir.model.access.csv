@@ -28,3 +28,6 @@ access_property_invoice_manager,property.invoice.manager,model_account_move,grou
 access_property_payment_user,property.payment.user,model_account_payment,group_property_user,1,1,1,0
 access_property_payment_officer,property.payment.officer,model_account_payment,group_property_officer,1,1,1,1
 access_property_payment_manager,property.payment.manager,model_account_payment,group_property_manager,1,1,1,1
+access_property_data_import_wizard_user,property.data.import.wizard.user,model_property_data_import_wizard,group_property_user,1,1,1,1
+access_property_data_import_wizard_officer,property.data.import.wizard.officer,model_property_data_import_wizard,group_property_officer,1,1,1,1
+access_property_data_import_wizard_manager,property.data.import.wizard.manager,model_property_data_import_wizard,group_property_manager,1,1,1,1
