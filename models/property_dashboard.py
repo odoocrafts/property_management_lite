@@ -133,6 +133,62 @@ class PropertyDashboard(models.TransientModel):
         
         res['total_tenants'] = self.env['property.tenant'].search_count([('status', '=', 'active')])
         
+        # Agent Statistics
+        all_agents = self.env['res.partner'].search([
+            ('is_company', '=', False),
+            '|', ('category_id.name', 'in', ['Property Agent', 'Rental Agent', 'Sales Agent']),
+            ('function', 'ilike', 'agent')
+        ])
+        res['total_agents'] = len(all_agents)
+        
+        # Count agents with active agreements
+        active_agreements = self.env['property.agreement'].search([('state', '=', 'active')])
+        agents_with_agreements = active_agreements.mapped('agent_id').filtered(lambda a: a)
+        res['active_agents'] = len(set(agents_with_agreements.ids))
+        res['agents_with_tenants'] = len(set(agents_with_agreements.ids))
+        
+        # Top performing agents by tenant count
+        agent_performance = {}
+        for agreement in active_agreements:
+            if agreement.agent_id:
+                agent_name = agreement.agent_id.name
+                if agent_name not in agent_performance:
+                    agent_performance[agent_name] = {
+                        'tenant_count': 0,
+                        'total_rent': 0,
+                        'agent_id': agreement.agent_id.id
+                    }
+                agent_performance[agent_name]['tenant_count'] += 1
+                agent_performance[agent_name]['total_rent'] += agreement.rent_amount
+        
+        # Sort agents by tenant count (descending)
+        sorted_agents = sorted(agent_performance.items(), 
+                             key=lambda x: x[1]['tenant_count'], 
+                             reverse=True)
+        
+        # Format top agents list
+        top_agents_text = ""
+        for i, (agent_name, stats) in enumerate(sorted_agents[:10], 1):
+            top_agents_text += f"{i}. {agent_name} - {stats['tenant_count']} tenants (AED {stats['total_rent']:,.0f}/month)\n"
+        res['top_agents_list'] = top_agents_text or "No agents assigned to agreements"
+        
+        # Agent performance summary
+        if agent_performance:
+            avg_tenants = sum(stats['tenant_count'] for stats in agent_performance.values()) / len(agent_performance)
+            avg_rent = sum(stats['total_rent'] for stats in agent_performance.values()) / len(agent_performance)
+            max_tenants = max(stats['tenant_count'] for stats in agent_performance.values())
+            min_tenants = min(stats['tenant_count'] for stats in agent_performance.values())
+            
+            performance_summary = f"Average tenants per agent: {avg_tenants:.1f}\n"
+            performance_summary += f"Average monthly rent per agent: AED {avg_rent:,.0f}\n"
+            performance_summary += f"Highest tenant count: {max_tenants}\n"
+            performance_summary += f"Lowest tenant count: {min_tenants}\n"
+            performance_summary += f"Agents without assignments: {res['total_agents'] - res['agents_with_tenants']}"
+        else:
+            performance_summary = "No agent performance data available"
+        
+        res['agent_performance_summary'] = performance_summary
+        
         # Recent activities
         recent_collections = self.env['property.collection'].search([
             ('status', '!=', 'cancelled')
@@ -183,6 +239,13 @@ class PropertyDashboard(models.TransientModel):
     vacant_rooms = fields.Integer('Vacant Rooms')
     occupancy_rate = fields.Float('Occupancy Rate (%)')
     total_tenants = fields.Integer('Total Active Tenants')
+    
+    # Agent Stats
+    total_agents = fields.Integer('Total Agents')
+    active_agents = fields.Integer('Active Agents')
+    agents_with_tenants = fields.Integer('Agents with Tenants')
+    top_agents_list = fields.Text('Top Performing Agents')
+    agent_performance_summary = fields.Text('Agent Performance Summary')
 
     # Recent Activities
     recent_collections = fields.Text('Recent Collections')
@@ -231,5 +294,28 @@ class PropertyDashboard(models.TransientModel):
             'res_model': 'property.room',
             'view_mode': 'list,form',
             'domain': [('status', '=', 'vacant')],
+            'target': 'current',
+        }
+    
+    def action_open_agents(self):
+        return {
+            'name': 'Property Agents',
+            'type': 'ir.actions.act_window',
+            'res_model': 'res.partner',
+            'view_mode': 'list,form',
+            'domain': [('is_company', '=', False), 
+                      '|', ('category_id.name', 'in', ['Property Agent', 'Rental Agent', 'Sales Agent']),
+                      ('function', 'ilike', 'agent')],
+            'target': 'current',
+        }
+    
+    def action_open_agent_agreements(self):
+        return {
+            'name': 'Agreements by Agent',
+            'type': 'ir.actions.act_window',
+            'res_model': 'property.agreement',
+            'view_mode': 'list,form',
+            'domain': [('state', '=', 'active'), ('agent_id', '!=', False)],
+            'context': {'group_by': 'agent_id'},
             'target': 'current',
         }

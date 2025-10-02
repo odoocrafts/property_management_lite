@@ -76,7 +76,7 @@
 
                         <!-- Occupancy and Tenants -->
                         <div class="row mb-4">
-                            <div class="col-6">
+                            <div class="col-4">
                                 <div class="card">
                                     <div class="card-body text-center">
                                         <h3>Occupancy Rate</h3>
@@ -84,12 +84,55 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-4">
                                 <div class="card">
                                     <div class="card-body text-center">
                                         <h3>Active Tenants</h3>
                                         <h2 class="text-success"><field name="total_tenants" readonly="1"/></h2>
                                         <button name="action_open_tenants" type="object" class="btn btn-sm btn-outline-primary">View All</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h3>Total Agents</h3>
+                                        <h2 class="text-info"><field name="total_agents" readonly="1"/></h2>
+                                        <button name="action_open_agents" type="object" class="btn btn-sm btn-outline-primary">View All</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Agent Statistics -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h3 class="text-primary">Agent Performance</h3>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h4 class="text-success"><field name="active_agents" readonly="1"/></h4>
+                                        <p>Active Agents</p>
+                                        <small class="text-muted">Agents with assigned tenants</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h4 class="text-info"><field name="agents_with_tenants" readonly="1"/></h4>
+                                        <p>Agents with Tenants</p>
+                                        <button name="action_open_agent_agreements" type="object" class="btn btn-sm btn-outline-primary">View Assignments</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h4 class="text-warning"><field name="total_agents" readonly="1"/></h4>
+                                        <p>Total Registered</p>
+                                        <small class="text-muted">All agent contacts</small>
                                     </div>
                                 </div>
                             </div>
@@ -225,8 +268,40 @@
                             </div>
                         </div>
 
+                        <!-- Agent Performance Details -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h3 class="text-primary">Agent Performance Details</h3>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Top Performing Agents</h5>
+                                        <small class="text-muted">Ranked by number of tenants managed</small>
+                                    </div>
+                                    <div class="card-body">
+                                        <pre style="white-space: pre-wrap; font-family: inherit;"><field name="top_agents_list" readonly="1"/></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Agent Performance Summary</h5>
+                                        <small class="text-muted">Key performance indicators</small>
+                                    </div>
+                                    <div class="card-body">
+                                        <pre style="white-space: pre-wrap; font-family: inherit;"><field name="agent_performance_summary" readonly="1"/></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Recent Activities -->
                         <div class="row">
+                            <div class="col-12">
+                                <h3 class="text-primary">Recent Activities</h3>
+                            </div>
                             <div class="col-6">
                                 <div class="card">
                                     <div class="card-header">
