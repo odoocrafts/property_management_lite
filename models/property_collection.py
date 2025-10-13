@@ -70,6 +70,9 @@ class PropertyCollection(models.Model):
     currency_id = fields.Many2one('res.currency', 'Currency', 
                                   default=lambda self: self.env.company.currency_id)
     
+    # Archive
+    active = fields.Boolean('Active', default=True)
+    
     # Bank Information (for transfers)
     bank_id = fields.Many2one('res.bank', 'Bank')
     bank_account = fields.Char('Bank Account')

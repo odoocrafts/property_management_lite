@@ -88,6 +88,9 @@ class PropertyExpense(models.Model):
     currency_id = fields.Many2one('res.currency', 'Currency', 
                                   default=lambda self: self.env.company.currency_id)
     
+    # Archive
+    active = fields.Boolean('Active', default=True)
+    
     # Bill Reference (Community Edition)
     bill_reference = fields.Char('Related Bill Reference')
     

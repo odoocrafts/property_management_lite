@@ -56,6 +56,9 @@ class PropertyDueTracker(models.Model):
     currency_id = fields.Many2one('res.currency', 'Currency', 
                                   default=lambda self: self.env.company.currency_id)
     
+    # Archive
+    active = fields.Boolean('Active', default=True)
+    
     @api.depends('tenant_id', 'due_type', 'due_date')
     def _compute_name(self):
         for record in self:

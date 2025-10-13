@@ -50,6 +50,9 @@ class PropertyTenantExit(models.Model):
     currency_id = fields.Many2one('res.currency', 'Currency', 
                                   default=lambda self: self.env.company.currency_id)
     
+    # Archive
+    active = fields.Boolean('Active', default=True)
+    
     @api.depends('tenant_id', 'exit_date')
     def _compute_name(self):
         for record in self:

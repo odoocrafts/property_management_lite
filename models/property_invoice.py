@@ -71,6 +71,9 @@ class PropertyInvoice(models.Model):
     # Company Info
     company_id = fields.Many2one('res.company', 'Company', default=lambda self: self.env.company)
     
+    # Archive
+    active = fields.Boolean('Active', default=True)
+    
     @api.model
     def create(self, vals):
         if vals.get('name', _('New')) == _('New'):

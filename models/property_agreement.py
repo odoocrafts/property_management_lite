@@ -97,6 +97,9 @@ class PropertyAgreement(models.Model):
     currency_id = fields.Many2one('res.currency', 'Currency', 
                                   default=lambda self: self.env.company.currency_id)
     
+    # Archive
+    active = fields.Boolean('Active', default=True)
+    
     # Documents
     agreement_document = fields.Binary('Agreement Document')
     agreement_filename = fields.Char('Agreement Filename')

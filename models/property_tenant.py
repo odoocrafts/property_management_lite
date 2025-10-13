@@ -81,6 +81,9 @@ class PropertyTenant(models.Model):
     currency_id = fields.Many2one('res.currency', 'Currency', 
                                   default=lambda self: self.env.company.currency_id)
     
+    # Archive
+    active = fields.Boolean('Active', default=True)
+    
     # Additional Fields
     notes = fields.Text('Notes')
     date_joined = fields.Date('Date Joined', default=fields.Date.today)
