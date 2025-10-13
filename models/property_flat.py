@@ -53,6 +53,9 @@ class PropertyFlat(models.Model):
     # Financial
     currency_id = fields.Many2one(related='property_id.currency_id')
     
+    # Archive
+    active = fields.Boolean('Active', default=True)
+    
     # Images
     image = fields.Image('Flat Image', max_width=1920, max_height=1920)
     

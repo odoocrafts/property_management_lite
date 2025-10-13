@@ -57,6 +57,9 @@ class AccountInvoice(models.Model):
     period_from = fields.Date('Period From', default=_default_period_from)
     period_to = fields.Date('Period To', default=_default_period_to)
     notes = fields.Text('Terms and Conditions')
+    
+    # Archive
+    active = fields.Boolean('Active', default=True)
 
     @api.onchange('room_id')
     def _onchange_room_id(self):

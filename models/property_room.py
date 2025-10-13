@@ -62,6 +62,13 @@ class PropertyRoom(models.Model):
     is_available = fields.Boolean('Available for Rent', compute='_compute_availability')
     days_vacant = fields.Integer('Days Vacant', compute='_compute_days_vacant')
     
+        # Financial
+    currency_id = fields.Many2one('res.currency', 'Currency', 
+                                  default=lambda self: self.env.company.currency_id)
+    
+    # Archive
+    active = fields.Boolean('Active', default=True)
+    
     # Financial Tracking
     total_collected = fields.Monetary('Total Collected', compute='_compute_financial_stats', currency_field='currency_id')
     last_collection_date = fields.Date('Last Collection', compute='_compute_financial_stats')
