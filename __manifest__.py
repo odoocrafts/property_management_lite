@@ -16,16 +16,6 @@ with features for:
 * Expense management and profit analysis
 * Real-time dashboard and analytics
 
-Community Edition Features:
-- Utilizes Odoo Community's built-in contact management
-- Standalone financial tracking without accounting integration
-- Self-contained invoicing and payment tracking
-- Document management using standard attachments
-- Role-based access control
-- Mobile-friendly daily operations interface
-
-Note: This module is designed for Odoo Community Edition and does not require
-Enterprise modules like Sales, Accounting, or Website.
     """,
     'author': 'Your Company',
     'website': 'https://www.yourcompany.com',
@@ -35,6 +25,8 @@ Enterprise modules like Sales, Accounting, or Website.
         'contacts',
         'mail',
         'web',
+        'sale',
+        'account',
     ],
     'data': [
         # Security
@@ -44,7 +36,8 @@ Enterprise modules like Sales, Accounting, or Website.
         # Data
         'data/property_data.xml',
         'data/sequences.xml',
-        
+        'data/product.xml',
+        'data/agent_data.xml',
         # Views - Dashboard
         'views/dashboard_views.xml',
         
@@ -56,19 +49,25 @@ Enterprise modules like Sales, Accounting, or Website.
         # Views - Tenant Management
         'views/tenant_views.xml',
         'views/agreement_views.xml',
+        'views/agent_views.xml',
         
         # Views - Daily Operations
         'views/collection_views.xml',
-        'views/expense_views.xml',
-        'views/invoice_views.xml',
+        # 'views/expense_views.xml',
         
         # Reports (must come before email templates that reference them)
         'reports/invoice_reports.xml',
         
-        # Email Templates (must come after reports)
+        # Email Templates (must come before views that reference them)
         'data/email_templates.xml',
         
-        # Menus
+        # Invoice views (references email templates)
+        'views/invoice_views.xml',
+        
+        # Wizards
+        'wizards/property_data_import_wizard_views.xml',
+        
+        # Menus (must come after all views that define actions)
         'views/menu_views.xml',
     ],
     'installable': True,

@@ -15,6 +15,11 @@ class PropertyAgreement(models.Model):
     tenant_id = fields.Many2one('property.tenant', 'Tenant', required=True, tracking=True)
     room_id = fields.Many2one('property.room', 'Room', required=True, tracking=True)
     property_id = fields.Many2one(related='room_id.property_id', string='Property', store=True)
+    agent_id = fields.Many2one('res.partner', 'Agent', 
+                              domain=[('is_company', '=', False), 
+                                      '|', ('category_id.name', 'in', ['Property Agent', 'Rental Agent', 'Sales Agent']), 
+                                      ('function', 'ilike', 'agent')],
+                              help="Agent responsible for this agreement", tracking=True)
     
     # Dates
     start_date = fields.Date('Start Date', required=True, tracking=True)
@@ -26,7 +31,24 @@ class PropertyAgreement(models.Model):
     deposit_amount = fields.Monetary('Security Deposit', currency_field='currency_id', tracking=True)
     token_money = fields.Monetary('Token Money', currency_field='currency_id')
     extra_charges = fields.Monetary('Extra Charges', currency_field='currency_id')
-    
+
+    invoice_ids = fields.One2many('account.move', 'agreement_id', 'Invoices')
+    invoices_count = fields.Integer('Invoices Count', compute='_compute_invoices_count',)
+
+    def _compute_invoices_count(self):
+        for agreement in self:
+            agreement.invoices_count = len(agreement.invoice_ids.filtered(lambda inv: inv.move_type in ('out_invoice', 'out_refund')))
+
+    def action_view_invoices(self):
+        return {
+            'view_mode': 'form',
+            'type': 'ir.actions.act_window',
+            'name': 'Invoices',
+            'view_mode': 'list,form',
+            'res_model': 'account.move',
+            'domain': [('id', 'in', self.invoice_ids.ids), ('move_type', 'in', ('out_invoice', 'out_refund'))],
+        }
+
     # Payment Terms
     payment_method = fields.Selection([
         ('cash', 'Cash'),
@@ -178,6 +200,14 @@ class PropertyAgreement(models.Model):
         if self.tenant_id:
             self.payment_method = self.tenant_id.payment_method
     
+    @api.onchange('agent_id')
+    def _onchange_agent_id(self):
+        """Update any agent-specific defaults when agent is selected"""
+        if self.agent_id:
+            # You can add agent-specific logic here
+            # For example, set default payment terms based on agent preferences
+            pass
+    
     def action_activate(self):
         for record in self:
             # Update room status
@@ -260,3 +290,17 @@ class PropertyAgreement(models.Model):
                 note=f'Agreement for room {agreement.room_id.name} expires on {agreement.end_date}',
                 user_id=agreement.room_id.property_id.manager_id.id,
             )
+    
+    def action_view_agent_agreements(self):
+        """View all agreements for the selected agent"""
+        if not self.agent_id:
+            return
+        
+        return {
+            'name': f'Agreements - {self.agent_id.name}',
+            'view_mode': 'list,form',
+            'res_model': 'property.agreement',
+            'type': 'ir.actions.act_window',
+            'domain': [('agent_id', '=', self.agent_id.id)],
+            'context': {'default_agent_id': self.agent_id.id},
+        }

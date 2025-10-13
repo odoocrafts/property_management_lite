@@ -2,7 +2,20 @@
 
 A comprehensive property and room rental management system designed specifically for Dubai properties, featuring daily rent collection, tenant management, and real-time financial analytics.
 
-## 🏢 Overview
+## � **Production Status: OPERATIONAL**
+
+**Current Deployment**: https://erp.shobharealestate.com  
+**Last Updated**: October 2, 2025  
+**Status**: ✅ Production Ready - All data imported successfully  
+
+### **Live System Statistics**
+- **8 Properties**: ADCB, AL BAKER, AL DAR, B.D, DEEMA, JS, S.P, YAHYA
+- **151 Flats**: Across all properties with complete specifications  
+- **627 Rooms**: Available for rental with proper categorization
+- **614 Tenants**: Active tenants with complete profiles and documentation
+- **614 Agreements**: Rental agreements with agent tracking capability
+
+## �🏢 Overview
 
 Property Management Lite is a full-featured Odoo 18 module that streamlines property rental operations with a focus on:
 

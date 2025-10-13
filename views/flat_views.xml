@@ -77,8 +77,9 @@
                     
                     <notebook>
                         <page string="Rooms" name="rooms">
-                            <field name="room_ids">
+                            <field name="room_ids" context="{'default_property_id': property_id}">
                                 <list editable="bottom">
+                                    <field name="property_id" column_invisible="1"/>
                                     <field name="room_number"/>
                                     <field name="room_type_id"/>
                                     <field name="rent_amount" widget="monetary"/>
