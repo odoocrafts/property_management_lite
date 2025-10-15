@@ -164,7 +164,7 @@ class PropertyTenant(models.Model):
             'view_mode': 'list,form',
             'res_model': 'property.agreement',
             'type': 'ir.actions.act_window',
-            'domain': [('tenant_id', '=', self.id)],
+            'domain': [('tenant_id', '=', self.id), ('active', '=', True)],
             'context': {'default_tenant_id': self.id}
         }
     
@@ -230,7 +230,7 @@ class PropertyTenant(models.Model):
             'view_mode': 'list,form',
             'res_model': 'property.collection',
             'type': 'ir.actions.act_window',
-            'domain': [('tenant_id', '=', self.id)],
+            'domain': [('tenant_id', '=', self.id), ('active', '=', True)],
             'context': {'default_tenant_id': self.id}
         }
     

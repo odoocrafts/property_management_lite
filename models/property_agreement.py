@@ -41,13 +41,14 @@ class PropertyAgreement(models.Model):
             agreement.invoices_count = len(active_invoices.filtered(lambda inv: inv.move_type in ('out_invoice', 'out_refund')))
 
     def action_view_invoices(self):
+        active_invoices = self.invoice_ids.filtered('active')
         return {
             'view_mode': 'form',
             'type': 'ir.actions.act_window',
             'name': 'Invoices',
             'view_mode': 'list,form',
             'res_model': 'account.move',
-            'domain': [('id', 'in', self.invoice_ids.ids), ('move_type', 'in', ('out_invoice', 'out_refund'))],
+            'domain': [('id', 'in', active_invoices.ids), ('move_type', 'in', ('out_invoice', 'out_refund'))],
         }
 
     # Payment Terms

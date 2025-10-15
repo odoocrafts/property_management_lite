@@ -163,7 +163,7 @@ class PropertyRoom(models.Model):
             'view_mode': 'list,form',
             'res_model': 'property.collection',
             'type': 'ir.actions.act_window',
-            'domain': [('room_id', '=', self.id)],
+            'domain': [('room_id', '=', self.id), ('active', '=', True)],
             'context': {'default_room_id': self.id, 'default_property_id': self.property_id.id}
         }
     

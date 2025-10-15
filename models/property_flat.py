@@ -117,7 +117,7 @@ class PropertyFlat(models.Model):
             'view_mode': 'list,form',
             'res_model': 'property.room',
             'type': 'ir.actions.act_window',
-            'domain': [('flat_id', '=', self.id)],
+            'domain': [('flat_id', '=', self.id), ('active', '=', True)],
             'context': {'default_flat_id': self.id, 'default_property_id': self.property_id.id}
         }
     

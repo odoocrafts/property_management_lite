@@ -45,7 +45,7 @@ class ResPartner(models.Model):
             'view_mode': 'list,form',
             'res_model': 'property.property',
             'type': 'ir.actions.act_window',
-            'domain': [('landlord_id', '=', self.id)],
+            'domain': [('landlord_id', '=', self.id), ('active', '=', True)],
             'context': {'default_landlord_id': self.id}
         }
     
@@ -55,7 +55,7 @@ class ResPartner(models.Model):
             'view_mode': 'list,form',
             'res_model': 'property.collection',
             'type': 'ir.actions.act_window',
-            'domain': [('tenant_id', '=', self.tenant_id.id)],
+            'domain': [('tenant_id', '=', self.tenant_id.id), ('active', '=', True)],
         }
     
     def action_create_tenant_profile(self):
