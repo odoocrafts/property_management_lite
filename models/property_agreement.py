@@ -155,7 +155,7 @@ class PropertyAgreement(models.Model):
             else:
                 record.days_remaining = 0
     
-    @api.depends('collection_ids.amount_collected')
+    @api.depends('collection_ids.amount_collected', 'collection_ids.active')
     def _compute_payment_stats(self):
         for record in self:
             active_collections = record.collection_ids.filtered('active')

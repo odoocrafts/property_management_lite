@@ -67,26 +67,26 @@ class PropertyFlat(models.Model):
             else:
                 record.name = record.flat_number or 'New Flat'
     
-    @api.depends('room_ids')
+    @api.depends('room_ids', 'room_ids.active')
     def _compute_rooms_count(self):
         for record in self:
             record.rooms_count = len(record.room_ids.filtered('active'))
     
-    @api.depends('room_ids.status')
+    @api.depends('room_ids.status', 'room_ids.active')
     def _compute_room_stats(self):
         for record in self:
             active_rooms = record.room_ids.filtered('active')
             record.occupied_rooms = len(active_rooms.filtered(lambda r: r.status == 'occupied'))
             record.vacant_rooms = len(active_rooms.filtered(lambda r: r.status == 'vacant'))
     
-    @api.depends('room_ids.rent_amount', 'room_ids.status')
+    @api.depends('room_ids.rent_amount', 'room_ids.status', 'room_ids.active')
     def _compute_financial(self):
         for record in self:
             active_rooms = record.room_ids.filtered('active')
             occupied_rooms = active_rooms.filtered(lambda r: r.status == 'occupied')
             record.total_rent = sum(occupied_rooms.mapped('rent_amount'))
     
-    @api.depends('room_ids.status')
+    @api.depends('room_ids.status', 'room_ids.active')
     def _compute_state(self):
         for record in self:
             active_rooms = record.room_ids.filtered('active')

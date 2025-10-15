@@ -64,18 +64,18 @@ class PropertyProperty(models.Model):
     image_medium = fields.Image('Medium-sized Image', related='image', max_width=128, max_height=128, store=True)
     image_small = fields.Image('Small-sized Image', related='image', max_width=64, max_height=64, store=True)
     
-    @api.depends('flat_ids')
+    @api.depends('flat_ids', 'flat_ids.active')
     def _compute_total_flats(self):
         for record in self:
             record.total_flats = len(record.flat_ids.filtered('active'))
     
-    @api.depends('flat_ids.room_ids')
+    @api.depends('flat_ids.room_ids', 'flat_ids.active', 'flat_ids.room_ids.active')
     def _compute_total_rooms(self):
         for record in self:
             active_flats = record.flat_ids.filtered('active')
             record.total_rooms = sum(len(flat.room_ids.filtered('active')) for flat in active_flats)
     
-    @api.depends('flat_ids.room_ids.status')
+    @api.depends('flat_ids.room_ids.status', 'flat_ids.active', 'flat_ids.room_ids.active')
     def _compute_room_stats(self):
         for record in self:
             active_flats = record.flat_ids.filtered('active')

@@ -94,14 +94,14 @@ class PropertyTenant(models.Model):
     # Image
     image = fields.Image('Photo', max_width=1920, max_height=1920)
     
-    @api.depends('agreement_ids.state')
+    @api.depends('agreement_ids.state', 'agreement_ids.active')
     def _compute_agreement_stats(self):
         for record in self:
             active_agreements = record.agreement_ids.filtered('active')
             record.total_agreements_count = len(active_agreements)
             record.active_agreements_count = len(active_agreements.filtered(lambda a: a.state == 'active'))
     
-    @api.depends('collection_ids.amount_collected')
+    @api.depends('collection_ids.amount_collected', 'collection_ids.active')
     def _compute_payment_stats(self):
         for record in self:
             active_collections = record.collection_ids.filtered('active')
