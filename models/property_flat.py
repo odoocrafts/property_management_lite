@@ -70,28 +70,31 @@ class PropertyFlat(models.Model):
     @api.depends('room_ids')
     def _compute_rooms_count(self):
         for record in self:
-            record.rooms_count = len(record.room_ids)
+            record.rooms_count = len(record.room_ids.filtered('active'))
     
     @api.depends('room_ids.status')
     def _compute_room_stats(self):
         for record in self:
-            record.occupied_rooms = len(record.room_ids.filtered(lambda r: r.status == 'occupied'))
-            record.vacant_rooms = len(record.room_ids.filtered(lambda r: r.status == 'vacant'))
+            active_rooms = record.room_ids.filtered('active')
+            record.occupied_rooms = len(active_rooms.filtered(lambda r: r.status == 'occupied'))
+            record.vacant_rooms = len(active_rooms.filtered(lambda r: r.status == 'vacant'))
     
     @api.depends('room_ids.rent_amount', 'room_ids.status')
     def _compute_financial(self):
         for record in self:
-            occupied_rooms = record.room_ids.filtered(lambda r: r.status == 'occupied')
+            active_rooms = record.room_ids.filtered('active')
+            occupied_rooms = active_rooms.filtered(lambda r: r.status == 'occupied')
             record.total_rent = sum(occupied_rooms.mapped('rent_amount'))
     
     @api.depends('room_ids.status')
     def _compute_state(self):
         for record in self:
-            if not record.room_ids:
+            active_rooms = record.room_ids.filtered('active')
+            if not active_rooms:
                 record.state = 'available'
-            elif all(room.status == 'vacant' for room in record.room_ids):
+            elif all(room.status == 'vacant' for room in active_rooms):
                 record.state = 'available'
-            elif all(room.status == 'occupied' for room in record.room_ids):
+            elif all(room.status == 'occupied' for room in active_rooms):
                 record.state = 'fully_occupied'
             else:
                 record.state = 'partially_occupied'

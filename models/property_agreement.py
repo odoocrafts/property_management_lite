@@ -37,7 +37,8 @@ class PropertyAgreement(models.Model):
 
     def _compute_invoices_count(self):
         for agreement in self:
-            agreement.invoices_count = len(agreement.invoice_ids.filtered(lambda inv: inv.move_type in ('out_invoice', 'out_refund')))
+            active_invoices = agreement.invoice_ids.filtered('active')
+            agreement.invoices_count = len(active_invoices.filtered(lambda inv: inv.move_type in ('out_invoice', 'out_refund')))
 
     def action_view_invoices(self):
         return {
@@ -156,8 +157,9 @@ class PropertyAgreement(models.Model):
     @api.depends('collection_ids.amount_collected')
     def _compute_payment_stats(self):
         for record in self:
-            record.total_collected = sum(record.collection_ids.mapped('amount_collected'))
-            record.last_payment_date = max(record.collection_ids.mapped('date')) if record.collection_ids else False
+            active_collections = record.collection_ids.filtered('active')
+            record.total_collected = sum(active_collections.mapped('amount_collected'))
+            record.last_payment_date = max(active_collections.mapped('date')) if active_collections else False
             
             # Calculate pending amount (simplified logic)
             if record.state == 'active':

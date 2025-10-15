@@ -106,7 +106,7 @@ class PropertyRoom(models.Model):
     
     def _compute_financial_stats(self):
         for record in self:
-            collections = self.env['property.collection'].search([('room_id', '=', record.id)])
+            collections = self.env['property.collection'].search([('room_id', '=', record.id), ('active', '=', True)])
             record.total_collected = sum(collections.mapped('amount_collected'))
             record.last_collection_date = max(collections.mapped('date')) if collections else False
             

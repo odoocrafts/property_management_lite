@@ -67,17 +67,19 @@ class PropertyProperty(models.Model):
     @api.depends('flat_ids')
     def _compute_total_flats(self):
         for record in self:
-            record.total_flats = len(record.flat_ids)
+            record.total_flats = len(record.flat_ids.filtered('active'))
     
     @api.depends('flat_ids.room_ids')
     def _compute_total_rooms(self):
         for record in self:
-            record.total_rooms = sum(len(flat.room_ids) for flat in record.flat_ids)
+            active_flats = record.flat_ids.filtered('active')
+            record.total_rooms = sum(len(flat.room_ids.filtered('active')) for flat in active_flats)
     
     @api.depends('flat_ids.room_ids.status')
     def _compute_room_stats(self):
         for record in self:
-            rooms = record.flat_ids.mapped('room_ids')
+            active_flats = record.flat_ids.filtered('active')
+            rooms = active_flats.mapped('room_ids').filtered('active')
             record.occupied_rooms = len(rooms.filtered(lambda r: r.status == 'occupied'))
             record.vacant_rooms = len(rooms.filtered(lambda r: r.status == 'vacant'))
             # Calculate as decimal (0.0 to 1.0) since view uses percentage widget
@@ -86,8 +88,9 @@ class PropertyProperty(models.Model):
     # @api.depends('flat_ids.room_ids.rent_amount', 'expense_ids.amount_total')
     def _compute_financial_summary(self):
         for record in self:
-            # Monthly rent income from occupied rooms
-            occupied_rooms = record.flat_ids.mapped('room_ids').filtered(lambda r: r.status == 'occupied')
+            # Monthly rent income from occupied rooms (only active)
+            active_flats = record.flat_ids.filtered('active')
+            occupied_rooms = active_flats.mapped('room_ids').filtered(lambda r: r.active and r.status == 'occupied')
             record.monthly_rent_income = sum(occupied_rooms.mapped('rent_amount'))
             
             # Monthly expenses (average from last 12 months)

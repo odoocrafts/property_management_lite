@@ -97,15 +97,20 @@ class PropertyTenant(models.Model):
     @api.depends('agreement_ids.state')
     def _compute_agreement_stats(self):
         for record in self:
-            record.total_agreements_count = len(record.agreement_ids)
-            record.active_agreements_count = len(record.agreement_ids.filtered(lambda a: a.state == 'active'))
+            active_agreements = record.agreement_ids.filtered('active')
+            record.total_agreements_count = len(active_agreements)
+            record.active_agreements_count = len(active_agreements.filtered(lambda a: a.state == 'active'))
     
     @api.depends('collection_ids.amount_collected')
     def _compute_payment_stats(self):
         for record in self:
-            record.total_paid = sum(record.collection_ids.mapped('amount_collected'))
-            record.last_payment_date = max(record.collection_ids.mapped('date')) if record.collection_ids else False
-
+            active_collections = record.collection_ids.filtered('active')
+            record.total_paid = sum(active_collections.mapped('amount_collected'))
+            if active_collections:
+                record.last_payment_date = max(active_collections.mapped('date'))
+            else:
+                record.last_payment_date = False
+    
     def write(self, vals):
         # Update corresponding res.partner
         if self.partner_id:
