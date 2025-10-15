@@ -32,6 +32,8 @@
                     <button name="action_activate" string="Activate" type="object" class="btn-primary" invisible="state == 'active'"/>
                     <button name="action_maintenance" string="Maintenance" type="object" invisible="state == 'maintenance'"/>
                     <button name="action_deactivate" string="Deactivate" type="object" invisible="state == 'inactive'"/>
+                    <button name="action_recalculate_computed_fields" string="Recalculate Statistics" type="object" class="btn-secondary" 
+                            help="Manually recalculate all computed fields to ensure accurate counts"/>
                     <field name="state" widget="statusbar" statusbar_visible="draft,active,maintenance,inactive"/>
                 </header>
                 

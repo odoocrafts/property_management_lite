@@ -38,6 +38,7 @@ with features for:
         'data/sequences.xml',
         'data/product.xml',
         'data/agent_data.xml',
+        'data/scheduled_actions.xml',
         # Views - Dashboard
         'views/dashboard_views.xml',
         

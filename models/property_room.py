@@ -181,3 +181,29 @@ class PropertyRoom(models.Model):
                 'default_deposit_amount': self.deposit_amount,
             }
         }
+    
+    def write(self, vals):
+        """Override write to invalidate parent computed fields when active status changes"""
+        result = super().write(vals)
+        
+        # If active field is being changed, invalidate parent flat and property computed fields
+        if 'active' in vals:
+            # Invalidate flat computed fields
+            flats_to_recompute = self.mapped('flat_id')
+            if flats_to_recompute:
+                # Force recomputation of flat stats
+                flats_to_recompute._compute_rooms_count()
+                flats_to_recompute._compute_room_stats()
+                flats_to_recompute._compute_financial()
+                flats_to_recompute._compute_state()
+            
+            # Invalidate property computed fields
+            properties_to_recompute = self.mapped('property_id')
+            if properties_to_recompute:
+                # Force recomputation of property stats
+                properties_to_recompute._compute_total_flats()
+                properties_to_recompute._compute_total_rooms()
+                properties_to_recompute._compute_room_stats()
+                properties_to_recompute._compute_financial_summary()
+        
+        return result

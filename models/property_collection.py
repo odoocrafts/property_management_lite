@@ -199,3 +199,26 @@ class PropertyCollection(models.Model):
             date_deadline=due_date,
             user_id=agreement.room_id.property_id.manager_id.id,
         )
+    
+    def write(self, vals):
+        """Override write to invalidate related computed fields when active status changes"""
+        result = super().write(vals)
+        
+        # If active field is being changed, invalidate tenant and agreement computed fields
+        if 'active' in vals:
+            # Invalidate tenant computed fields
+            tenants_to_recompute = self.mapped('tenant_id')
+            if tenants_to_recompute:
+                tenants_to_recompute._compute_payment_stats()
+            
+            # Invalidate agreement computed fields
+            agreements_to_recompute = self.mapped('agreement_id')
+            if agreements_to_recompute:
+                agreements_to_recompute._compute_payment_stats()
+            
+            # Invalidate room computed fields
+            rooms_to_recompute = self.mapped('room_id')
+            if rooms_to_recompute:
+                rooms_to_recompute._compute_financial_stats()
+        
+        return result

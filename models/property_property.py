@@ -1,6 +1,7 @@
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
-from  datetime import timedelta
+from datetime import timedelta
+import logging
 
 
 class PropertyProperty(models.Model):
@@ -153,3 +154,88 @@ class PropertyProperty(models.Model):
             name = f"[{record.code}] {record.name}"
             result.append((record.id, name))
         return result
+    
+    @api.model
+    def _cron_recalculate_all_computed_fields(self):
+        """
+        Scheduled action to recalculate all stored computed fields across the property management system.
+        This helps fix any cached values that might not reflect archived records correctly.
+        """
+        _logger = logging.getLogger(__name__)
+        _logger.info("Starting recalculation of all property management computed fields...")
+        
+        try:
+            # Recalculate Property computed fields
+            properties = self.search([])
+            _logger.info(f"Recalculating computed fields for {len(properties)} properties...")
+            for prop in properties:
+                prop._compute_total_flats()
+                prop._compute_total_rooms()
+                prop._compute_room_stats()
+                prop._compute_financial_summary()
+            
+            # Recalculate Flat computed fields
+            flats = self.env['property.flat'].search([])
+            _logger.info(f"Recalculating computed fields for {len(flats)} flats...")
+            for flat in flats:
+                flat._compute_rooms_count()
+                flat._compute_room_stats()
+                flat._compute_financial()
+                flat._compute_state()
+            
+            # Recalculate Room computed fields
+            rooms = self.env['property.room'].search([])
+            _logger.info(f"Recalculating computed fields for {len(rooms)} rooms...")
+            for room in rooms:
+                room._compute_financial_stats()
+            
+            # Recalculate Tenant computed fields
+            tenants = self.env['property.tenant'].search([])
+            _logger.info(f"Recalculating computed fields for {len(tenants)} tenants...")
+            for tenant in tenants:
+                tenant._compute_agreement_stats()
+                tenant._compute_payment_stats()
+            
+            # Recalculate Agreement computed fields
+            agreements = self.env['property.agreement'].search([])
+            _logger.info(f"Recalculating computed fields for {len(agreements)} agreements...")
+            for agreement in agreements:
+                agreement._compute_payment_stats()
+            
+            _logger.info("Successfully completed recalculation of all computed fields!")
+            
+        except Exception as e:
+            _logger.error(f"Error during computed fields recalculation: {str(e)}")
+            raise
+    
+    def action_recalculate_computed_fields(self):
+        """Manual action to recalculate computed fields for the current property and its related records"""
+        self.ensure_one()
+        
+        # Recalculate this property's computed fields
+        self._compute_total_flats()
+        self._compute_total_rooms()
+        self._compute_room_stats()
+        self._compute_financial_summary()
+        
+        # Recalculate all related flats
+        for flat in self.flat_ids:
+            flat._compute_rooms_count()
+            flat._compute_room_stats()
+            flat._compute_financial()
+            flat._compute_state()
+            
+            # Recalculate all rooms in each flat
+            for room in flat.room_ids:
+                room._compute_financial_stats()
+        
+        # Show success message
+        return {
+            'type': 'ir.actions.client',
+            'tag': 'display_notification',
+            'params': {
+                'title': _('Statistics Recalculated'),
+                'message': _('All computed fields have been recalculated for this property and its related records.'),
+                'type': 'success',
+            }
+        }

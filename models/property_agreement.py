@@ -310,3 +310,16 @@ class PropertyAgreement(models.Model):
             'domain': [('agent_id', '=', self.agent_id.id)],
             'context': {'default_agent_id': self.agent_id.id},
         }
+    
+    def write(self, vals):
+        """Override write to invalidate tenant computed fields when active status changes"""
+        result = super().write(vals)
+        
+        # If active field is being changed, invalidate tenant computed fields
+        if 'active' in vals:
+            tenants_to_recompute = self.mapped('tenant_id')
+            if tenants_to_recompute:
+                # Force recomputation of tenant stats
+                tenants_to_recompute._compute_agreement_stats()
+        
+        return result
