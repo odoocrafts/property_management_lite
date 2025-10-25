@@ -13,6 +13,8 @@
                 <field name="rooms_count"/>
                 <field name="total_area"/>
                 <field name="total_rent" widget="monetary"/>
+                <field name="total_security_deposit" widget="monetary"/>
+                <field name="total_outstanding_dues" widget="monetary"/>
                 <field name="occupied_rooms"/>
                 <field name="vacant_rooms"/>
                 <field name="state"/>
@@ -63,6 +65,8 @@
                         </group>
                         <group name="financial">
                             <field name="total_rent" readonly="1"/>
+                            <field name="total_security_deposit" readonly="1"/>
+                            <field name="total_outstanding_dues" readonly="1"/>
                             <field name="currency_id" invisible="1"/>
                         </group>
                     </group>
@@ -126,6 +130,8 @@
                 <field name="occupied_rooms"/>
                 <field name="vacant_rooms"/>
                 <field name="total_rent"/>
+                <field name="total_security_deposit"/>
+                <field name="total_outstanding_dues"/>
                 <field name="state"/>
                 <templates>
                     <t t-name="kanban-box">
@@ -146,7 +152,11 @@
                                     </div>
                                 </div>
                                 <div class="oe_kanban_bottom_right">
-                                    <field name="total_rent" widget="monetary"/>
+                                    <div><field name="total_rent" widget="monetary"/></div>
+                                    <div class="text-muted">Deposit: <field name="total_security_deposit" widget="monetary"/></div>
+                                    <div class="text-warning" t-if="total_outstanding_dues > 0">
+                                        Dues: <field name="total_outstanding_dues" widget="monetary"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -156,11 +166,40 @@
         </field>
     </record>
 
+    <!-- Flat Search View -->
+    <record id="view_property_flat_search" model="ir.ui.view">
+        <field name="name">property.flat.search</field>
+        <field name="model">property.flat</field>
+        <field name="arch" type="xml">
+            <search string="Search Flats">
+                <field name="flat_number"/>
+                <field name="property_id"/>
+                <field name="flat_type"/>
+                <field name="floor"/>
+                <filter name="available" string="Available" domain="[('state', '=', 'available')]"/>
+                <filter name="partially_occupied" string="Partially Occupied" domain="[('state', '=', 'partially_occupied')]"/>
+                <filter name="fully_occupied" string="Fully Occupied" domain="[('state', '=', 'fully_occupied')]"/>
+                <filter name="maintenance" string="Maintenance" domain="[('state', '=', 'maintenance')]"/>
+                <separator/>
+                <filter name="has_dues" string="Has Outstanding Dues" domain="[('total_outstanding_dues', '>', 0)]"/>
+                <filter name="high_rent" string="High Rent (>5000)" domain="[('total_rent', '>', 5000)]"/>
+                <separator/>
+                <group expand="0" string="Group By">
+                    <filter name="group_property" string="Property" context="{'group_by': 'property_id'}"/>
+                    <filter name="group_floor" string="Floor" context="{'group_by': 'floor'}"/>
+                    <filter name="group_type" string="Flat Type" context="{'group_by': 'flat_type'}"/>
+                    <filter name="group_state" string="State" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
     <!-- Flat Action -->
     <record id="action_property_flat" model="ir.actions.act_window">
         <field name="name">Flats</field>
         <field name="res_model">property.flat</field>
         <field name="view_mode">kanban,list,form</field>
+        <field name="search_view_id" ref="view_property_flat_search"/>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Create your first flat!

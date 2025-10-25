@@ -1,5 +1,6 @@
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
+from datetime import timedelta
 
 
 class PropertyCollection(models.Model):
@@ -17,7 +18,7 @@ class PropertyCollection(models.Model):
     # Relations
     tenant_id = fields.Many2one('property.tenant', 'Tenant', required=True, tracking=True)
     room_id = fields.Many2one('property.room', 'Room', required=True, tracking=True)
-    property_id = fields.Many2one(related='room_id.property_id', string='Property', store=True)
+    property_id = fields.Many2one(related='room_id.property_id', string='Property', store=True, readonly=True)
     agreement_id = fields.Many2one('property.agreement', 'Agreement')
     
     # Payment Details
@@ -36,6 +37,9 @@ class PropertyCollection(models.Model):
         ('rent', 'Monthly Rent'),
         ('deposit', 'Security Deposit'),
         ('token', 'Token Money'),
+        ('parking_charges', 'Parking Charges'),
+        ('parking_deposit', 'Parking Remote Deposit'),
+        ('other_charges', 'Other Charges'),
         ('extra', 'Extra Charges'),
         ('penalty', 'Late Payment Penalty'),
         ('maintenance', 'Maintenance Charges'),
@@ -53,7 +57,7 @@ class PropertyCollection(models.Model):
         ('verified', 'Verified'),
         ('deposited', 'Deposited'),
         ('cancelled', 'Cancelled'),
-    ], string='Status', default='draft', tracking=True)
+    ], string='Status', default='collected', tracking=True)
     
     # Additional Information
     notes = fields.Text('Notes')
@@ -86,11 +90,126 @@ class PropertyCollection(models.Model):
     invoice_reference = fields.Char('Invoice Reference')
     payment_reference = fields.Char('Payment Reference')
     
-    @api.depends('tenant_id', 'room_id', 'date', 'collection_type')
+    @api.model
+    def create(self, vals):
+        # Generate receipt number for new collections
+        if not vals.get('receipt_number'):
+            sequence = self.env['ir.sequence'].next_by_code('property.collection') or '/'
+            vals['receipt_number'] = sequence
+        
+        # Set collected_by to current user if not set
+        if not vals.get('collected_by'):
+            vals['collected_by'] = self.env.user.id
+        
+        # Auto-populate room and agreement from tenant if not provided
+        if vals.get('tenant_id') and not vals.get('room_id'):
+            tenant = self.env['property.tenant'].browse(vals['tenant_id'])
+            if tenant.current_room_id:
+                vals['room_id'] = tenant.current_room_id.id
+            if tenant.current_agreement_id and not vals.get('agreement_id'):
+                vals['agreement_id'] = tenant.current_agreement_id.id
+                # Auto-set amount if not provided
+                if not vals.get('amount_collected') and vals.get('collection_type'):
+                    if vals['collection_type'] == 'rent':
+                        vals['amount_collected'] = tenant.current_agreement_id.rent_amount
+                    elif vals['collection_type'] == 'deposit':
+                        vals['amount_collected'] = tenant.current_agreement_id.deposit_amount
+                    elif vals['collection_type'] == 'parking_charges':
+                        vals['amount_collected'] = tenant.current_agreement_id.parking_charges
+                    elif vals['collection_type'] == 'parking_deposit':
+                        vals['amount_collected'] = tenant.current_agreement_id.parking_deposit
+        
+        # Auto-calculate rent period if not provided
+        if (vals.get('collection_type') in ['rent', 'parking_charges'] and vals.get('date') and 
+            not vals.get('period_from') and not vals.get('period_to')):
+            
+            from datetime import datetime
+            if isinstance(vals['date'], str):
+                collection_date = datetime.strptime(vals['date'], '%Y-%m-%d').date()
+            else:
+                collection_date = vals['date']
+            
+            year = collection_date.year
+            month = collection_date.month
+            
+            # First day of the month
+            period_from = collection_date.replace(day=1)
+            
+            # Last day of the month
+            if month == 12:
+                next_month = collection_date.replace(year=year + 1, month=1, day=1)
+            else:
+                next_month = collection_date.replace(month=month + 1, day=1)
+            period_to = next_month - timedelta(days=1)
+            
+            vals['period_from'] = period_from
+            vals['period_to'] = period_to
+            
+            # Set due date to last day of previous month
+            if month == 1:
+                due_date = collection_date.replace(year=year - 1, month=12, day=31)
+            else:
+                next_month_first = collection_date.replace(day=1)
+                due_date = next_month_first - timedelta(days=1)
+            vals['due_date'] = due_date
+        
+        return super().create(vals)
+    
+    @api.onchange('date', 'collection_type')
+    def _onchange_date_collection_type(self):
+        """Auto-calculate rent period based on collection date and type"""
+        if self.date and self.collection_type in ['rent', 'parking_charges']:
+            # Calculate period from 1st to last day of the collection month
+            year = self.date.year
+            month = self.date.month
+            
+            # First day of the month
+            period_from = self.date.replace(day=1)
+            
+            # Last day of the month
+            if month == 12:
+                next_month = self.date.replace(year=year + 1, month=1, day=1)
+            else:
+                next_month = self.date.replace(month=month + 1, day=1)
+            period_to = next_month - timedelta(days=1)
+            
+            self.period_from = period_from
+            self.period_to = period_to
+            
+            # Set due date to last day of previous month for rent
+            if month == 1:
+                due_date = self.date.replace(year=year - 1, month=12, day=31)
+            else:
+                prev_month_last_day = self.date.replace(month=month - 1, day=1)
+                if month - 1 == 12:
+                    prev_month_last_day = prev_month_last_day.replace(year=year - 1, month=12)
+                else:
+                    prev_month_last_day = prev_month_last_day.replace(month=month - 1)
+                # Get last day of previous month
+                next_month_first = self.date.replace(day=1)
+                due_date = next_month_first - timedelta(days=1)
+            
+            self.due_date = due_date
+        elif self.collection_type not in ['rent', 'parking_charges']:
+            # Clear period fields for non-rent/parking collections
+            self.period_from = False
+            self.period_to = False
+            self.due_date = False
+    
+    @api.depends('tenant_id', 'room_id', 'date', 'collection_type', 'period_from', 'period_to')
     def _compute_name(self):
         for record in self:
             if record.tenant_id and record.room_id and record.date:
-                record.name = f"COL/{record.date.strftime('%Y%m%d')}/{record.tenant_id.name[:10]}/{record.room_id.room_number}"
+                date_str = record.date.strftime('%Y%m%d')
+                tenant_name = record.tenant_id.name[:10]
+                room_number = record.room_id.room_number
+                
+                # Include period information for rent collections
+                if record.collection_type == 'rent' and record.period_from and record.period_to:
+                    period_str = f"/{record.period_from.strftime('%m%Y')}"
+                    record.name = f"COL/{date_str}/{tenant_name}/{room_number}{period_str}"
+                else:
+                    record.name = f"COL/{date_str}/{tenant_name}/{room_number}"
             else:
                 record.name = 'New Collection'
     
@@ -115,9 +234,50 @@ class PropertyCollection(models.Model):
     @api.onchange('tenant_id')
     def _onchange_tenant_id(self):
         if self.tenant_id:
+            # Set room and related fields
             self.room_id = self.tenant_id.current_room_id
+            
+            # Set agreement if available
+            if self.tenant_id.current_agreement_id:
+                self.agreement_id = self.tenant_id.current_agreement_id
+                # Auto-populate amount based on agreement
+                if self.collection_type == 'rent':
+                    self.amount_collected = self.agreement_id.rent_amount
+                elif self.collection_type == 'deposit':
+                    self.amount_collected = self.agreement_id.deposit_amount
+                elif self.collection_type == 'parking_charges':
+                    self.amount_collected = self.agreement_id.parking_charges
+                elif self.collection_type == 'parking_deposit':
+                    self.amount_collected = self.agreement_id.parking_deposit
+            
+            # Set payment method from tenant preference
             if self.tenant_id.payment_method:
                 self.payment_method = self.tenant_id.payment_method
+            
+            # Trigger period calculation if collection type is rent or parking
+            if self.collection_type in ['rent', 'parking_charges'] and self.date:
+                self._onchange_date_collection_type()
+            
+            # Return domain for room field to show only tenant's current room
+            return {
+                'domain': {
+                    'room_id': [('current_tenant_id', '=', self.tenant_id.id)],
+                    'agreement_id': [('tenant_id', '=', self.tenant_id.id), ('state', '=', 'active')]
+                }
+            }
+        else:
+            # Clear related fields when tenant is cleared
+            self.room_id = False
+            self.agreement_id = False
+            self.period_from = False
+            self.period_to = False
+            self.due_date = False
+            return {
+                'domain': {
+                    'room_id': [],
+                    'agreement_id': []
+                }
+            }
     
     @api.onchange('collection_type', 'agreement_id')
     def _onchange_collection_type(self):
@@ -126,8 +286,45 @@ class PropertyCollection(models.Model):
                 self.amount_collected = self.agreement_id.rent_amount
             elif self.collection_type == 'deposit':
                 self.amount_collected = self.agreement_id.deposit_amount
+            elif self.collection_type == 'parking_charges':
+                self.amount_collected = self.agreement_id.parking_charges
+            elif self.collection_type == 'parking_deposit':
+                self.amount_collected = self.agreement_id.parking_deposit
             elif self.collection_type == 'extra':
                 self.amount_collected = self.agreement_id.extra_charges
+        
+        # TODO: Handle other charges once models are stable
+        # if self.collection_type == 'other_charges' and self.other_charge_id:
+        #     # Look for agreement-specific charge amount or use default
+        #     agreement_charge = self.env['property.agreement.charges'].search([
+        #         ('agreement_id', '=', self.agreement_id.id),
+        #         ('charge_id', '=', self.other_charge_id.id),
+        #         ('active', '=', True)
+        #     ], limit=1)
+        #     
+        #     if agreement_charge:
+        #         self.amount_collected = agreement_charge.amount
+        #     else:
+        #         self.amount_collected = self.other_charge_id.amount
+    
+    # TODO: Re-enable when other charges models are stable
+    # @api.onchange('other_charge_id')
+    # def _onchange_other_charge_id(self):
+    #     if self.other_charge_id and self.collection_type == 'other_charges':
+    #         # Look for agreement-specific charge amount or use default
+    #         if self.agreement_id:
+    #             agreement_charge = self.env['property.agreement.charges'].search([
+    #                 ('agreement_id', '=', self.agreement_id.id),
+    #                 ('charge_id', '=', self.other_charge_id.id),
+    #                 ('active', '=', True)
+    #             ], limit=1)
+    #             
+    #             if agreement_charge:
+    #                 self.amount_collected = agreement_charge.amount
+    #             else:
+    #                 self.amount_collected = self.other_charge_id.amount
+    #         else:
+    #             self.amount_collected = self.other_charge_id.amount
     
     @api.constrains('amount_collected')
     def _check_amount_positive(self):

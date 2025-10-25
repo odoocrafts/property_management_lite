@@ -7,4 +7,5 @@ from . import property_agreement
 from . import property_collection
 from . import property_invoice
 from . import property_dashboard
+from . import property_other_charges
 # from . import res_partner

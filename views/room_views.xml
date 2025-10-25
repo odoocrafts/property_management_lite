@@ -11,6 +11,7 @@
                 <field name="flat_id"/>
                 <field name="room_type_id"/>
                 <field name="rent_amount" widget="monetary"/>
+                <field name="parking_charges" widget="monetary" optional="hide"/>
                 <field name="current_tenant_id"/>
                 <field name="status"/>
                 <field name="has_parking"/>
@@ -68,6 +69,8 @@
                         <group name="financial">
                             <field name="rent_amount"/>
                             <field name="deposit_amount"/>
+                            <field name="parking_charges" invisible="not has_parking"/>
+                            <field name="parking_deposit" invisible="not has_parking"/>
                             <field name="currency_id" invisible="1"/>
                         </group>
                     </group>

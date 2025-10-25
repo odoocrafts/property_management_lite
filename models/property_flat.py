@@ -33,7 +33,11 @@ class PropertyFlat(models.Model):
     rooms_count = fields.Integer('Number of Rooms', compute='_compute_rooms_count', store=True)
     occupied_rooms = fields.Integer('Occupied Rooms', compute='_compute_room_stats', store=True)
     vacant_rooms = fields.Integer('Vacant Rooms', compute='_compute_room_stats', store=True)
-    total_rent = fields.Monetary('Total Rent', compute='_compute_financial', currency_field='currency_id')
+    total_rent = fields.Monetary('Total Rent', compute='_compute_financial', currency_field='currency_id', store=True)
+    
+    # Financial Summary
+    total_security_deposit = fields.Monetary('Total Security Deposit', compute='_compute_financial_summary', currency_field='currency_id', store=True)
+    total_outstanding_dues = fields.Monetary('Total Outstanding Dues', compute='_compute_financial_summary', currency_field='currency_id', store=True)
     
     # Facilities
     has_parking = fields.Boolean('Has Parking')
@@ -98,6 +102,25 @@ class PropertyFlat(models.Model):
                 record.state = 'fully_occupied'
             else:
                 record.state = 'partially_occupied'
+    
+    @api.depends('room_ids.current_agreement_id.deposit_amount', 'room_ids.current_agreement_id.pending_amount', 'room_ids.active')
+    def _compute_financial_summary(self):
+        for record in self:
+            active_rooms = record.room_ids.filtered('active')
+            
+            # Calculate total security deposit from active agreements
+            total_deposit = 0.0
+            for room in active_rooms:
+                if room.current_agreement_id and room.current_agreement_id.active:
+                    total_deposit += room.current_agreement_id.deposit_amount or 0.0
+            record.total_security_deposit = total_deposit
+            
+            # Calculate total outstanding dues from active agreements
+            total_dues = 0.0
+            for room in active_rooms:
+                if room.current_agreement_id and room.current_agreement_id.active:
+                    total_dues += room.current_agreement_id.pending_amount or 0.0
+            record.total_outstanding_dues = total_dues
     
     @api.constrains('property_id', 'flat_number')
     def _check_flat_number_unique(self):

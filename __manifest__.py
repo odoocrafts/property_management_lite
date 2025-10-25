@@ -50,6 +50,7 @@ with features for:
         # Views - Tenant Management
         'views/tenant_views.xml',
         'views/agreement_views.xml',
+        'views/other_charges_views.xml',
         'views/agent_views.xml',
         
         # Views - Daily Operations

@@ -49,11 +49,17 @@
               action="action_property_tenant" 
               sequence="10"/>
 
-    <menuitem id="menu_property_agreement" 
+    <menuitem id="menu_property_agreements" 
               name="Agreements" 
               parent="menu_tenant_management" 
               action="action_property_agreement" 
               sequence="20"/>
+              
+    <menuitem id="menu_property_other_charges" 
+              name="Other Charges" 
+              parent="menu_tenant_management" 
+              action="action_property_other_charges" 
+              sequence="30"/>
 
     <!-- Bills Menu -->
     <menuitem id="menu_expenses_bills" 

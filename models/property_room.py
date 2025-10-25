@@ -25,6 +25,14 @@ class PropertyRoom(models.Model):
     rent_amount = fields.Monetary('Monthly Rent', required=True, currency_field='currency_id', tracking=True)
     deposit_amount = fields.Monetary('Security Deposit', currency_field='currency_id')
     
+    # Parking Details
+    parking_number = fields.Char('Parking Number')
+    has_parking = fields.Boolean('Has Parking')
+    parking_charges = fields.Monetary('Parking Charges', currency_field='currency_id',
+                                     help="Monthly parking charges for this room")
+    parking_deposit = fields.Monetary('Parking Remote Deposit', currency_field='currency_id',
+                                     help="One-time parking remote deposit")
+    
     # Status
     status = fields.Selection([
         ('vacant', 'Vacant'),
@@ -42,10 +50,6 @@ class PropertyRoom(models.Model):
     has_wifi = fields.Boolean('WiFi', default=True)
     has_private_bathroom = fields.Boolean('Private Bathroom')
     has_balcony_access = fields.Boolean('Balcony Access')
-    
-    # Parking
-    parking_number = fields.Char('Parking Number')
-    has_parking = fields.Boolean('Has Parking')
     
     # Utilities
     has_gas = fields.Boolean('Gas Included')

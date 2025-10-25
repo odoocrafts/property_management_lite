@@ -67,6 +67,9 @@ class PropertyTenant(models.Model):
     # Relations
     partner_id = fields.Many2one('res.partner', 'Contact', ondelete='cascade')
     current_room_id = fields.Many2one('property.room', 'Current Room')
+    current_flat_id = fields.Many2one('property.flat', 'Current Flat', compute='_compute_current_location', store=True)
+    current_property_id = fields.Many2one('property.property', 'Current Property', compute='_compute_current_location', store=True)
+    current_agreement_id = fields.Many2one('property.agreement', 'Current Agreement', compute='_compute_current_agreement', store=True)
     agreement_ids = fields.One2many('property.agreement', 'tenant_id', 'Agreements')
     collection_ids = fields.One2many('property.collection', 'tenant_id', 'Collections')
     
@@ -93,6 +96,25 @@ class PropertyTenant(models.Model):
     
     # Image
     image = fields.Image('Photo', max_width=1920, max_height=1920)
+    
+    @api.depends('current_room_id', 'current_room_id.flat_id', 'current_room_id.property_id')
+    def _compute_current_location(self):
+        for record in self:
+            if record.current_room_id:
+                record.current_flat_id = record.current_room_id.flat_id
+                record.current_property_id = record.current_room_id.property_id
+            else:
+                record.current_flat_id = False
+                record.current_property_id = False
+    
+    @api.depends('agreement_ids', 'agreement_ids.state', 'current_room_id')
+    def _compute_current_agreement(self):
+        for record in self:
+            # Find active agreement for current room
+            current_agreement = record.agreement_ids.filtered(
+                lambda a: a.state == 'active' and a.room_id == record.current_room_id
+            )
+            record.current_agreement_id = current_agreement[0] if current_agreement else False
     
     @api.depends('agreement_ids.state', 'agreement_ids.active')
     def _compute_agreement_stats(self):

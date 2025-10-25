@@ -11,7 +11,7 @@ class PropertyAgreement(models.Model):
 
     name = fields.Char('Agreement Reference', compute='_compute_name', store=True)
     
-    # Parties
+    # Relations
     tenant_id = fields.Many2one('property.tenant', 'Tenant', required=True, tracking=True)
     room_id = fields.Many2one('property.room', 'Room', required=True, tracking=True)
     property_id = fields.Many2one(related='room_id.property_id', string='Property', store=True)
@@ -20,6 +20,9 @@ class PropertyAgreement(models.Model):
                                       '|', ('category_id.name', 'in', ['Property Agent', 'Rental Agent', 'Sales Agent']), 
                                       ('function', 'ilike', 'agent')],
                               help="Agent responsible for this agreement", tracking=True)
+    
+    # Other Charges
+    other_charges_ids = fields.One2many('property.agreement.charges', 'agreement_id', 'Other Charges')
     
     # Dates
     start_date = fields.Date('Start Date', required=True, tracking=True)
@@ -31,6 +34,12 @@ class PropertyAgreement(models.Model):
     deposit_amount = fields.Monetary('Security Deposit', currency_field='currency_id', tracking=True)
     token_money = fields.Monetary('Token Money', currency_field='currency_id')
     extra_charges = fields.Monetary('Extra Charges', currency_field='currency_id')
+    
+    # Parking Terms
+    parking_charges = fields.Monetary('Parking Charges', currency_field='currency_id', 
+                                     help="Monthly parking charges if applicable")
+    parking_deposit = fields.Monetary('Parking Remote Deposit', currency_field='currency_id',
+                                     help="One-time parking remote deposit")
 
     invoice_ids = fields.One2many('account.move', 'agreement_id', 'Invoices')
     invoices_count = fields.Integer('Invoices Count', compute='_compute_invoices_count',)
@@ -199,6 +208,8 @@ class PropertyAgreement(models.Model):
         if self.room_id:
             self.rent_amount = self.room_id.rent_amount
             self.deposit_amount = self.room_id.deposit_amount
+            self.parking_charges = self.room_id.parking_charges
+            self.parking_deposit = self.room_id.parking_deposit
             self.property_id = self.room_id.property_id
     
     @api.onchange('tenant_id')
