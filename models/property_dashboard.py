@@ -189,6 +189,52 @@ class PropertyDashboard(models.TransientModel):
         
         res['agent_performance_summary'] = performance_summary
         
+        # Statement and Outstanding Dues Statistics
+        # Total outstanding dues across all tenants
+        outstanding_dues = self.env['property.outstanding.dues'].search([])
+        res['total_outstanding_amount'] = sum(outstanding_dues.mapped('total_outstanding'))
+        res['total_outstanding_count'] = len(outstanding_dues.filtered(lambda d: d.total_outstanding > 0))
+        
+        # Outstanding dues by status
+        overdue_dues = outstanding_dues.filtered(lambda d: d.status in ['overdue_30', 'overdue_60', 'overdue_90', 'overdue_90plus', 'critical'])
+        res['overdue_tenants_count'] = len(overdue_dues)
+        res['overdue_amount'] = sum(overdue_dues.mapped('total_outstanding'))
+        
+        # Critical overdue (90+ days)
+        critical_dues = outstanding_dues.filtered(lambda d: d.status in ['overdue_90', 'overdue_90plus', 'critical'])
+        res['critical_overdue_count'] = len(critical_dues)
+        res['critical_overdue_amount'] = sum(critical_dues.mapped('total_outstanding'))
+        
+        # Statement entries this month
+        month_statements = self.env['property.statement'].search([
+            ('transaction_date', '>=', month_start),
+            ('transaction_date', '<=', today)
+        ])
+        res['month_statement_entries'] = len(month_statements)
+        res['month_total_debits'] = sum(month_statements.mapped('debit_amount'))
+        res['month_total_credits'] = sum(month_statements.mapped('credit_amount'))
+        res['month_net_balance'] = res['month_total_debits'] - res['month_total_credits']
+        
+        # Tenant payment behavior analysis
+        active_tenants = self.env['property.tenant'].search([('status', '=', 'active')])
+        res['tenants_with_negative_balance'] = len(active_tenants.filtered(lambda t: t.current_balance < 0))
+        res['tenants_with_positive_balance'] = len(active_tenants.filtered(lambda t: t.current_balance > 0))
+        
+        # Top debtors list
+        top_debtors = outstanding_dues.filtered(lambda d: d.total_outstanding > 0).sorted('total_outstanding', reverse=True)[:10]
+        debtors_text = ""
+        for i, debtor in enumerate(top_debtors, 1):
+            debtors_text += f"{i}. {debtor.tenant_id.name} - AED {debtor.total_outstanding:,.0f} ({debtor.status.replace('_', ' ').title()})\n"
+        res['top_debtors_list'] = debtors_text or "No outstanding dues found"
+        
+        # Collection efficiency (payments vs expected)
+        total_expected = res['month_total_debits']
+        total_collected = res['month_total_credits']
+        if total_expected > 0:
+            res['collection_efficiency'] = (total_collected / total_expected)
+        else:
+            res['collection_efficiency'] = 0.0
+        
         # Recent activities
         recent_collections = self.env['property.collection'].search([
             ('status', '!=', 'cancelled')
@@ -250,6 +296,26 @@ class PropertyDashboard(models.TransientModel):
     # Recent Activities
     recent_collections = fields.Text('Recent Collections')
     recent_tenants = fields.Text('Recent Tenants')
+    
+    # Statement and Outstanding Dues Stats
+    total_outstanding_amount = fields.Float('Total Outstanding Amount')
+    total_outstanding_count = fields.Integer('Tenants with Outstanding Dues')
+    overdue_tenants_count = fields.Integer('Overdue Tenants')
+    overdue_amount = fields.Float('Overdue Amount')
+    critical_overdue_count = fields.Integer('Critical Overdue Count')
+    critical_overdue_amount = fields.Float('Critical Overdue Amount')
+    
+    # Monthly Statement Analysis
+    month_statement_entries = fields.Integer('Monthly Statement Entries')
+    month_total_debits = fields.Float('Monthly Total Charges')
+    month_total_credits = fields.Float('Monthly Total Payments')
+    month_net_balance = fields.Float('Monthly Net Balance')
+    collection_efficiency = fields.Float('Collection Efficiency %')
+    
+    # Tenant Balance Analysis
+    tenants_with_negative_balance = fields.Integer('Tenants with Credit Balance')
+    tenants_with_positive_balance = fields.Integer('Tenants with Debit Balance')
+    top_debtors_list = fields.Text('Top Debtors List')
 
     def action_open_collections(self):
         return {
@@ -317,5 +383,53 @@ class PropertyDashboard(models.TransientModel):
             'view_mode': 'list,form',
             'domain': [('state', '=', 'active'), ('agent_id', '!=', False)],
             'context': {'group_by': 'agent_id'},
+            'target': 'current',
+        }
+    
+    def action_open_outstanding_dues(self):
+        return {
+            'name': 'Outstanding Dues',
+            'type': 'ir.actions.act_window',
+            'res_model': 'property.outstanding.dues',
+            'view_mode': 'list,form',
+            'target': 'current',
+        }
+    
+    def action_open_overdue_tenants(self):
+        return {
+            'name': 'Overdue Tenants',
+            'type': 'ir.actions.act_window',
+            'res_model': 'property.outstanding.dues',
+            'view_mode': 'list,form',
+            'domain': [('status', 'in', ['overdue_30', 'overdue_60', 'overdue_90', 'overdue_90plus', 'critical'])],
+            'target': 'current',
+        }
+    
+    def action_open_critical_overdue(self):
+        return {
+            'name': 'Critical Overdue',
+            'type': 'ir.actions.act_window',
+            'res_model': 'property.outstanding.dues',
+            'view_mode': 'list,form',
+            'domain': [('status', 'in', ['overdue_90', 'overdue_90plus', 'critical'])],
+            'target': 'current',
+        }
+    
+    def action_open_statement_analysis(self):
+        return {
+            'name': 'Statement Analysis',
+            'type': 'ir.actions.act_window',
+            'res_model': 'property.statement',
+            'view_mode': 'pivot,graph,list,form',
+            'target': 'current',
+        }
+    
+    def action_open_tenant_balances(self):
+        return {
+            'name': 'Tenant Balances',
+            'type': 'ir.actions.act_window',
+            'res_model': 'property.tenant',
+            'view_mode': 'list,form',
+            'context': {'search_default_active': 1},
             'target': 'current',
         }

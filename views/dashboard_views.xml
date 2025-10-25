@@ -300,6 +300,136 @@
                         <!-- Recent Activities -->
                         <div class="row">
                             <div class="col-12">
+                                <h3 class="text-primary">Outstanding Dues &amp; Collections</h3>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h2 class="text-warning"><field name="total_outstanding_amount" widget="monetary" readonly="1"/></h2>
+                                        <p>Total Outstanding</p>
+                                        <small><field name="total_outstanding_count" readonly="1"/> Tenants</small>
+                                        <br/>
+                                        <button name="action_open_outstanding_dues" type="object" class="btn btn-sm btn-outline-warning">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h2 class="text-danger"><field name="overdue_amount" widget="monetary" readonly="1"/></h2>
+                                        <p>Overdue Amount</p>
+                                        <small><field name="overdue_tenants_count" readonly="1"/> Tenants</small>
+                                        <br/>
+                                        <button name="action_open_overdue_tenants" type="object" class="btn btn-sm btn-outline-danger">View Overdue</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h2 class="text-dark"><field name="critical_overdue_amount" widget="monetary" readonly="1"/></h2>
+                                        <p>Critical Overdue (90+ Days)</p>
+                                        <small><field name="critical_overdue_count" readonly="1"/> Tenants</small>
+                                        <br/>
+                                        <button name="action_open_critical_overdue" type="object" class="btn btn-sm btn-outline-dark">View Critical</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h2 class="text-success"><field name="collection_efficiency" widget="percentage" readonly="1"/></h2>
+                                        <p>Collection Efficiency</p>
+                                        <small>This Month</small>
+                                        <br/>
+                                        <button name="action_open_statement_analysis" type="object" class="btn btn-sm btn-outline-success">View Analysis</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Monthly Statement Analysis -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h3 class="text-primary">Monthly Statement Analysis</h3>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h2 class="text-info"><field name="month_statement_entries" readonly="1"/></h2>
+                                        <p>Statement Entries</p>
+                                        <small>This Month</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h2 class="text-warning"><field name="month_total_debits" widget="monetary" readonly="1"/></h2>
+                                        <p>Total Charges</p>
+                                        <small>This Month</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h2 class="text-success"><field name="month_total_credits" widget="monetary" readonly="1"/></h2>
+                                        <p>Total Payments</p>
+                                        <small>This Month</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h2 class="text-dark"><field name="month_net_balance" widget="monetary" readonly="1"/></h2>
+                                        <p>Net Balance</p>
+                                        <small>This Month</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tenant Balance Summary -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h3 class="text-primary">Tenant Balance Summary</h3>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h2 class="text-success"><field name="tenants_with_negative_balance" readonly="1"/></h2>
+                                        <p>Tenants with Credit Balance</p>
+                                        <small>Advance Payments</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h2 class="text-warning"><field name="tenants_with_positive_balance" readonly="1"/></h2>
+                                        <p>Tenants with Debit Balance</p>
+                                        <small>Pending Payments</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Top Debtors</h5>
+                                        <button name="action_open_tenant_balances" type="object" class="btn btn-sm btn-outline-primary">View All Balances</button>
+                                    </div>
+                                    <div class="card-body">
+                                        <pre style="white-space: pre-wrap; font-size: 12px;"><field name="top_debtors_list" readonly="1"/></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recent Activities -->
+                        <div class="row">
+                            <div class="col-12">
                                 <h3 class="text-primary">Recent Activities</h3>
                             </div>
                             <div class="col-6">
