@@ -20,6 +20,8 @@ class PropertyCollection(models.Model):
     room_id = fields.Many2one('property.room', 'Room', required=True, tracking=True)
     property_id = fields.Many2one(related='room_id.property_id', string='Property', store=True, readonly=True)
     agreement_id = fields.Many2one('property.agreement', 'Agreement')
+    other_charge_id = fields.Many2one('property.other.charges', 'Other Charge', 
+                                     help="Select specific other charge when collection type is 'Other Charges'")
     
     # Payment Details
     payment_method = fields.Selection([
@@ -195,6 +197,10 @@ class PropertyCollection(models.Model):
             self.period_from = False
             self.period_to = False
             self.due_date = False
+        
+        # Clear other charge if collection type is not other_charges
+        if self.collection_type != 'other_charges':
+            self.other_charge_id = False
     
     @api.depends('tenant_id', 'room_id', 'date', 'collection_type', 'period_from', 'period_to')
     def _compute_name(self):
@@ -279,7 +285,7 @@ class PropertyCollection(models.Model):
                 }
             }
     
-    @api.onchange('collection_type', 'agreement_id')
+    @api.onchange('collection_type', 'agreement_id', 'other_charge_id')
     def _onchange_collection_type(self):
         if self.collection_type and self.agreement_id:
             if self.collection_type == 'rent':
@@ -293,38 +299,37 @@ class PropertyCollection(models.Model):
             elif self.collection_type == 'extra':
                 self.amount_collected = self.agreement_id.extra_charges
         
-        # TODO: Handle other charges once models are stable
-        # if self.collection_type == 'other_charges' and self.other_charge_id:
-        #     # Look for agreement-specific charge amount or use default
-        #     agreement_charge = self.env['property.agreement.charges'].search([
-        #         ('agreement_id', '=', self.agreement_id.id),
-        #         ('charge_id', '=', self.other_charge_id.id),
-        #         ('active', '=', True)
-        #     ], limit=1)
-        #     
-        #     if agreement_charge:
-        #         self.amount_collected = agreement_charge.amount
-        #     else:
-        #         self.amount_collected = self.other_charge_id.amount
+        # Handle other charges
+        if self.collection_type == 'other_charges' and self.other_charge_id:
+            # Look for agreement-specific charge amount or use default
+            agreement_charge = self.env['property.agreement.charges'].search([
+                ('agreement_id', '=', self.agreement_id.id),
+                ('charge_id', '=', self.other_charge_id.id),
+                ('active', '=', True)
+            ], limit=1)
+            
+            if agreement_charge:
+                self.amount_collected = agreement_charge.amount
+            else:
+                self.amount_collected = self.other_charge_id.amount
     
-    # TODO: Re-enable when other charges models are stable
-    # @api.onchange('other_charge_id')
-    # def _onchange_other_charge_id(self):
-    #     if self.other_charge_id and self.collection_type == 'other_charges':
-    #         # Look for agreement-specific charge amount or use default
-    #         if self.agreement_id:
-    #             agreement_charge = self.env['property.agreement.charges'].search([
-    #                 ('agreement_id', '=', self.agreement_id.id),
-    #                 ('charge_id', '=', self.other_charge_id.id),
-    #                 ('active', '=', True)
-    #             ], limit=1)
-    #             
-    #             if agreement_charge:
-    #                 self.amount_collected = agreement_charge.amount
-    #             else:
-    #                 self.amount_collected = self.other_charge_id.amount
-    #         else:
-    #             self.amount_collected = self.other_charge_id.amount
+    @api.onchange('other_charge_id')
+    def _onchange_other_charge_id(self):
+        if self.other_charge_id and self.collection_type == 'other_charges':
+            # Look for agreement-specific charge amount or use default
+            if self.agreement_id:
+                agreement_charge = self.env['property.agreement.charges'].search([
+                    ('agreement_id', '=', self.agreement_id.id),
+                    ('charge_id', '=', self.other_charge_id.id),
+                    ('active', '=', True)
+                ], limit=1)
+                
+                if agreement_charge:
+                    self.amount_collected = agreement_charge.amount
+                else:
+                    self.amount_collected = self.other_charge_id.amount
+            else:
+                self.amount_collected = self.other_charge_id.amount
     
     @api.constrains('amount_collected')
     def _check_amount_positive(self):

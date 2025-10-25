@@ -18,6 +18,9 @@
                 <field name="period_to" optional="show" readonly="0" 
                        invisible="collection_type not in ['rent', 'parking_charges']"/>
                 <field name="amount_collected" widget="monetary" required="1"/>
+                <field name="other_charge_id" optional="hide" 
+                       invisible="collection_type != 'other_charges'" 
+                       domain="[('active', '=', True)]" options="{'no_create': True}"/>
                 <field name="payment_method" required="1"/>
                 <field name="reference_number" optional="hide"/>
                 <field name="status" readonly="1"/>
@@ -145,6 +148,8 @@
                             <field name="property_id" readonly="1"/>
                             <field name="agreement_id" domain="[('tenant_id', '=', tenant_id), ('room_id', '=', room_id), ('state', '=', 'active')]" 
                                    options="{'no_create': True}"/>
+                            <field name="other_charge_id" invisible="collection_type != 'other_charges'" 
+                                   domain="[('active', '=', True)]" options="{'no_create': True}"/>
                         </group>
                     </group>
                     

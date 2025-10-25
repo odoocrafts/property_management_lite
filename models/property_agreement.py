@@ -24,6 +24,15 @@ class PropertyAgreement(models.Model):
     # Other Charges
     other_charges_ids = fields.One2many('property.agreement.charges', 'agreement_id', 'Other Charges')
     
+    # Dummy fields to avoid view validation error during upgrade
+    charge_id = fields.Many2one('property.other.charges', 'Dummy Charge', help="Temporary field for view validation")
+    charge_name = fields.Char('Dummy Charge Name', help="Temporary field for view validation")
+    charge_type = fields.Char('Dummy Charge Type', help="Temporary field for view validation")
+    default_amount = fields.Monetary('Dummy Default Amount', currency_field='currency_id', help="Temporary field for view validation")
+    custom_amount = fields.Boolean('Dummy Custom Amount', help="Temporary field for view validation")
+    amount = fields.Monetary('Dummy Amount', currency_field='currency_id', help="Temporary field for view validation")
+    # Note: start_date, end_date, and active already exist in the model, so no need to add them as dummies
+    
     # Dates
     start_date = fields.Date('Start Date', required=True, tracking=True)
     end_date = fields.Date('End Date', required=True, tracking=True)

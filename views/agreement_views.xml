@@ -100,6 +100,24 @@
                                 </group>
                             </group>
                         </page>
+                        <!-- Temporary comment out other charges during upgrade
+                        <page string="Other Charges" name="other_charges">
+                            <field name="other_charges_ids">
+                                <tree editable="bottom">
+                                    <field name="charge_id" domain="[('active', '=', True)]" options="{'no_create': True}"/>
+                                    <field name="charge_name" readonly="1"/>
+                                    <field name="charge_type" readonly="1"/>
+                                    <field name="default_amount" widget="monetary" readonly="1"/>
+                                    <field name="custom_amount"/>
+                                    <field name="amount" widget="monetary"/>
+                                    <field name="start_date"/>
+                                    <field name="end_date"/>
+                                    <field name="active"/>
+                                    <field name="currency_id" invisible="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                        -->
                     </notebook>
                 </sheet>
                 <chatter/>

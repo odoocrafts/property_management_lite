@@ -48,6 +48,8 @@ with features for:
         'views/room_views.xml',
         
         # Views - Tenant Management
+        'views/outstanding_dues_views.xml',  # Load this first so action is available
+        'views/statement_views.xml',
         'views/tenant_views.xml',
         'views/agreement_views.xml',
         'views/other_charges_views.xml',
@@ -68,6 +70,7 @@ with features for:
         
         # Wizards
         'wizards/property_data_import_wizard_views.xml',
+        'views/statement_wizard_views.xml',
         
         # Menus (must come after all views that define actions)
         'views/menu_views.xml',

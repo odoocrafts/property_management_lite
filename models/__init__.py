@@ -8,4 +8,6 @@ from . import property_collection
 from . import property_invoice
 from . import property_dashboard
 from . import property_other_charges
+from . import property_outstanding_dues
+from . import property_statement
 # from . import res_partner

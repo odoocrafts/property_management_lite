@@ -5,16 +5,22 @@
         <field name="name">property.tenant.tree</field>
         <field name="model">property.tenant</field>
         <field name="arch" type="xml">
-            <list string="Tenants" decoration-success="status=='active'" decoration-info="status=='prospect'" decoration-muted="status=='inactive'">
+            <list string="Tenants" decoration-success="status=='active'" decoration-info="status=='prospect'" decoration-muted="status=='inactive'"
+                  decoration-warning="outstanding_status in ['overdue_30', 'overdue_60']" 
+                  decoration-danger="outstanding_status in ['overdue_90', 'overdue_90plus', 'critical']">
                 <field name="name"/>
                 <field name="mobile"/>
                 <field name="email"/>
                 <field name="nationality"/>
-                <field name="current_room_id"/>
+                <field name="current_room_number" string="Current Room"/>
                 <field name="status"/>
+                <field name="total_outstanding_dues" widget="monetary" string="Outstanding"/>
+                <field name="outstanding_status" string="Dues Status"/>
+                <field name="current_balance" widget="monetary" string="Statement Balance" optional="show"/>
                 <field name="total_paid" widget="monetary"/>
                 <field name="last_payment_date"/>
                 <field name="currency_id" invisible="1"/>
+                <field name="current_room_id" invisible="1"/>
             </list>
         </field>
     </record>
@@ -44,6 +50,13 @@
                         </button>
                         <button name="action_view_collections" type="object" class="oe_stat_button" icon="fa-money">
                             <field name="total_paid" widget="statinfo" string="Total Paid"/>
+                        </button>
+                        <button name="%(action_property_outstanding_dues)d" type="action" class="oe_stat_button" icon="fa-exclamation-triangle"
+                                context="{'search_default_tenant_id': id}">
+                            <field name="total_outstanding_dues" widget="statinfo" string="Outstanding"/>
+                        </button>
+                        <button name="action_view_statement" type="object" class="oe_stat_button" icon="fa-list-alt">
+                            <field name="statement_count" widget="statinfo" string="Statement Entries"/>
                         </button>
                     </div>
                     
@@ -95,6 +108,28 @@
                         </group>
                     </group>
                     
+                    <group name="outstanding_info" string="Outstanding Dues" invisible="status != 'active'">
+                        <group>
+                            <field name="total_outstanding_dues" widget="monetary"/>
+                            <field name="rent_outstanding" widget="monetary"/>
+                            <field name="deposit_outstanding" widget="monetary"/>
+                        </group>
+                        <group>
+                            <field name="outstanding_status"/>
+                        </group>
+                    </group>
+                    
+                    <group name="statement_info" string="Statement Summary" invisible="status != 'active'">
+                        <group>
+                            <field name="total_debits" widget="monetary" string="Total Charges"/>
+                            <field name="total_credits" widget="monetary" string="Total Payments"/>
+                        </group>
+                        <group>
+                            <field name="current_balance" widget="monetary" string="Current Balance"/>
+                            <button name="action_generate_statement_report" string="Generate Statement" type="object" class="btn-secondary"/>
+                        </group>
+                    </group>
+                    
                     <notebook>
                         <page string="Agreements" name="agreements">
                             <field name="agreement_ids" readonly="1">
@@ -130,6 +165,19 @@
                         </page>
                         <page string="Notes" name="notes">
                             <field name="notes" placeholder="Additional notes about the tenant..."/>
+                        </page>
+                        <page string="Statement of Account" name="statement">
+                            <field name="statement_ids" readonly="1">
+                                <list>
+                                    <field name="transaction_date"/>
+                                    <field name="reference"/>
+                                    <field name="description"/>
+                                    <field name="transaction_type"/>
+                                    <field name="debit_amount" sum="Total Debits"/>
+                                    <field name="credit_amount" sum="Total Credits"/>
+                                    <field name="running_balance"/>
+                                </list>
+                            </field>
                         </page>
                     </notebook>
                 </sheet>

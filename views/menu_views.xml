@@ -134,6 +134,24 @@
               action="action_property_collection" 
               sequence="10"/>
 
+    <menuitem id="menu_property_outstanding_dues" 
+              name="Outstanding Dues Summary" 
+              parent="menu_property_reports" 
+              action="action_property_outstanding_dues" 
+              sequence="15"/>
+
+    <menuitem id="menu_property_statement" 
+              name="Statement of Account" 
+              parent="menu_property_reports" 
+              action="action_property_statement" 
+              sequence="18"/>
+
+    <menuitem id="menu_property_statement_analysis" 
+              name="Statement Analysis" 
+              parent="menu_property_reports" 
+              action="action_property_statement_analysis" 
+              sequence="19"/>
+
     <menuitem id="menu_property_rooms_available" 
               name="Available Rooms" 
               parent="menu_property_reports" 

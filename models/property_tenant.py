@@ -67,6 +67,7 @@ class PropertyTenant(models.Model):
     # Relations
     partner_id = fields.Many2one('res.partner', 'Contact', ondelete='cascade')
     current_room_id = fields.Many2one('property.room', 'Current Room')
+    current_room_number = fields.Char('Current Room Number', compute='_compute_current_room_info', store=True)
     current_flat_id = fields.Many2one('property.flat', 'Current Flat', compute='_compute_current_location', store=True)
     current_property_id = fields.Many2one('property.property', 'Current Property', compute='_compute_current_location', store=True)
     current_agreement_id = fields.Many2one('property.agreement', 'Current Agreement', compute='_compute_current_agreement', store=True)
@@ -82,6 +83,19 @@ class PropertyTenant(models.Model):
     total_agreements_count = fields.Integer('Total Agreements', compute='_compute_agreement_stats')
     total_paid = fields.Monetary('Total Paid', compute='_compute_payment_stats', currency_field='currency_id')
     last_payment_date = fields.Date('Last Payment', compute='_compute_payment_stats')
+    
+    # Outstanding Dues
+    total_outstanding_dues = fields.Monetary('Total Outstanding', compute='_compute_outstanding_dues', currency_field='currency_id')
+    rent_outstanding = fields.Monetary('Rent Outstanding', compute='_compute_outstanding_dues', currency_field='currency_id')
+    deposit_outstanding = fields.Monetary('Deposit Outstanding', compute='_compute_outstanding_dues', currency_field='currency_id')
+    outstanding_status = fields.Selection([
+        ('current', 'Current'),
+        ('overdue_30', 'Overdue (1-30 days)'),
+        ('overdue_60', 'Overdue (31-60 days)'),
+        ('overdue_90', 'Overdue (61-90 days)'),
+        ('overdue_90plus', 'Overdue (90+ days)'),
+        ('critical', 'Critical (180+ days)'),
+    ], string='Outstanding Status', compute='_compute_outstanding_dues')
     
     # Financial
     currency_id = fields.Many2one('res.currency', 'Currency', 
@@ -106,6 +120,14 @@ class PropertyTenant(models.Model):
             else:
                 record.current_flat_id = False
                 record.current_property_id = False
+    
+    @api.depends('current_room_id', 'current_room_id.room_number', 'current_room_id.name')
+    def _compute_current_room_info(self):
+        for record in self:
+            if record.current_room_id:
+                record.current_room_number = f"{record.current_room_id.room_number}"
+            else:
+                record.current_room_number = ""
     
     @api.depends('agreement_ids', 'agreement_ids.state', 'current_room_id')
     def _compute_current_agreement(self):
@@ -132,6 +154,135 @@ class PropertyTenant(models.Model):
                 record.last_payment_date = max(active_collections.mapped('date'))
             else:
                 record.last_payment_date = False
+    
+    @api.depends('current_agreement_id', 'collection_ids.amount_collected', 'collection_ids.date', 'collection_ids.active')
+    def _compute_outstanding_dues(self):
+        from datetime import datetime
+        from dateutil.relativedelta import relativedelta
+        
+        for record in self:
+            if not record.current_agreement_id or record.current_agreement_id.state != 'active':
+                record.total_outstanding_dues = 0
+                record.rent_outstanding = 0
+                record.deposit_outstanding = 0
+                record.outstanding_status = 'current'
+                continue
+            
+            agreement = record.current_agreement_id
+            today = fields.Date.today()
+            
+            # Calculate rent outstanding
+            start_date = agreement.start_date
+            monthly_rent = agreement.rent_amount
+            
+            # Calculate expected rent based on months passed
+            months_passed = relativedelta(today, start_date).months + (relativedelta(today, start_date).years * 12)
+            if today.day >= agreement.payment_day:
+                months_passed += 1  # Include current month if past due date
+            
+            expected_rent = monthly_rent * months_passed if months_passed > 0 else 0
+            
+            # Calculate total rent collected
+            active_collections = record.collection_ids.filtered('active')
+            rent_collections = active_collections.filtered(lambda c: c.collection_type == 'rent')
+            total_rent_collected = sum(rent_collections.mapped('amount_collected'))
+            
+            rent_outstanding = max(0, expected_rent - total_rent_collected)
+            
+            # Calculate deposit outstanding
+            expected_deposit = agreement.deposit_amount
+            deposit_collections = active_collections.filtered(lambda c: c.collection_type == 'deposit')
+            total_deposit_collected = sum(deposit_collections.mapped('amount_collected'))
+            deposit_outstanding = max(0, expected_deposit - total_deposit_collected)
+            
+            # Total outstanding
+            total_outstanding = rent_outstanding + deposit_outstanding
+            
+            # Calculate status based on last payment
+            last_payment_date = max(active_collections.mapped('date')) if active_collections else agreement.start_date
+            days_overdue = (today - last_payment_date).days if last_payment_date else 0
+            
+            if total_outstanding <= 0:
+                outstanding_status = 'current'
+            elif days_overdue <= 30:
+                outstanding_status = 'overdue_30'
+            elif days_overdue <= 60:
+                outstanding_status = 'overdue_60'
+            elif days_overdue <= 90:
+                outstanding_status = 'overdue_90'
+            elif days_overdue <= 180:
+                outstanding_status = 'overdue_90plus'
+            else:
+                outstanding_status = 'critical'
+            
+            record.total_outstanding_dues = total_outstanding
+            record.rent_outstanding = rent_outstanding
+            record.deposit_outstanding = deposit_outstanding
+            record.outstanding_status = outstanding_status
+    # @api.depends('current_agreement_id', 'collection_ids.amount_collected', 'collection_ids.date', 'collection_ids.active')
+    # def _compute_outstanding_dues(self):
+    #     from datetime import datetime
+    #     from dateutil.relativedelta import relativedelta
+    #     
+    #     for record in self:
+    #         if not record.current_agreement_id or record.current_agreement_id.state != 'active':
+    #             record.total_outstanding_dues = 0
+    #             record.rent_outstanding = 0
+    #             record.deposit_outstanding = 0
+    #             record.outstanding_status = 'current'
+    #             continue
+    #         
+    #         agreement = record.current_agreement_id
+    #         today = fields.Date.today()
+    #         
+    #         # Calculate rent outstanding
+    #         start_date = agreement.start_date
+    #         monthly_rent = agreement.rent_amount
+    #         
+    #         # Calculate expected rent based on months passed
+    #         months_passed = relativedelta(today, start_date).months + (relativedelta(today, start_date).years * 12)
+    #         if today.day >= agreement.payment_day:
+    #             months_passed += 1  # Include current month if past due date
+    #         
+    #         expected_rent = monthly_rent * months_passed if months_passed > 0 else 0
+    #         
+    #         # Calculate total rent collected
+    #         active_collections = record.collection_ids.filtered('active')
+    #         rent_collections = active_collections.filtered(lambda c: c.collection_type == 'rent')
+    #         total_rent_collected = sum(rent_collections.mapped('amount_collected'))
+    #         
+    #         rent_outstanding = max(0, expected_rent - total_rent_collected)
+    #         
+    #         # Calculate deposit outstanding
+    #         expected_deposit = agreement.deposit_amount
+    #         deposit_collections = active_collections.filtered(lambda c: c.collection_type == 'deposit')
+    #         total_deposit_collected = sum(deposit_collections.mapped('amount_collected'))
+    #         deposit_outstanding = max(0, expected_deposit - total_deposit_collected)
+    #         
+    #         # Total outstanding
+    #         total_outstanding = rent_outstanding + deposit_outstanding
+    #         
+    #         # Calculate status based on last payment
+    #         last_payment_date = max(active_collections.mapped('date')) if active_collections else agreement.start_date
+    #         days_overdue = (today - last_payment_date).days if last_payment_date else 0
+    #         
+    #         if total_outstanding <= 0:
+    #             outstanding_status = 'current'
+    #         elif days_overdue <= 30:
+    #             outstanding_status = 'overdue_30'
+    #         elif days_overdue <= 60:
+    #             outstanding_status = 'overdue_60'
+    #         elif days_overdue <= 90:
+    #             outstanding_status = 'overdue_90'
+    #         elif days_overdue <= 180:
+    #             outstanding_status = 'overdue_90plus'
+    #         else:
+    #             outstanding_status = 'critical'
+    #         
+    #         record.total_outstanding_dues = total_outstanding
+    #         record.rent_outstanding = rent_outstanding
+    #         record.deposit_outstanding = deposit_outstanding
+    #         record.outstanding_status = outstanding_status
     
     def write(self, vals):
         # Update corresponding res.partner
