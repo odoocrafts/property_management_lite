@@ -1,244 +1,261 @@
-# Property Management Lite - Odoo 18 Module
+# Property Management Lite - Odoo 18
 
-A comprehensive property and room rental management system designed specifically for Dubai properties, featuring daily rent collection, tenant management, and real-time financial analytics.
+## 🏢 Complete Property & Room Rental Management System
 
-## � **Production Status: OPERATIONAL**
-
-**Current Deployment**: https://erp.shobharealestate.com  
-**Last Updated**: October 2, 2025  
-**Status**: ✅ Production Ready - All data imported successfully  
-
-### **Live System Statistics**
-- **8 Properties**: ADCB, AL BAKER, AL DAR, B.D, DEEMA, JS, S.P, YAHYA
-- **151 Flats**: Across all properties with complete specifications  
-- **627 Rooms**: Available for rental with proper categorization
-- **614 Tenants**: Active tenants with complete profiles and documentation
-- **614 Agreements**: Rental agreements with agent tracking capability
-
-## �🏢 Overview
-
-Property Management Lite is a full-featured Odoo 18 module that streamlines property rental operations with a focus on:
-
-- **Property Hierarchy**: Properties → Flats → Rooms (3-level structure)
-- **Tenant Management**: Complete tenant profiles with document management
-- **Daily Operations**: Rent collection tracking and expense management
-- **Financial Analytics**: Real-time profit analysis and reporting
-- **Integration**: Leverages Odoo's built-in CRM, Accounting, and HR modules
-
-## 🚀 Key Features
-
-### Property Structure Management
-- **Properties**: Multi-property portfolio management
-- **Flats**: Floor-wise flat organization with detailed specifications
-- **Rooms**: Individual room management with facilities tracking
-- **Room Types**: Predefined room categories (Master, Partition, Sharing, Maid, Separate)
-
-### Tenant Management
-- **Complete Profiles**: Personal, professional, and emergency contact information
-- **Document Storage**: ID/Passport, visa, and other document management
-- **Agreement Tracking**: Rental agreements with terms and conditions
-- **Exit Process**: Structured tenant exit with deposit settlement
-
-### Daily Operations
-- **Collection Tracking**: Daily rent collection with multiple payment methods
-- **Due Management**: Automated due tracking with reminder system
-- **Expense Management**: Property-wise expense tracking and approval workflow
-- **Bank Reconciliation**: Bank transfer tracking and reconciliation
-
-### Financial Management
-- **Automated Invoicing**: Integration with Odoo's accounting module
-- **Deposit Management**: Security deposit tracking and refund processing
-- **Landlord Payments**: Automated landlord payment scheduling
-- **Profit Analytics**: Real-time profit/loss calculation per property
-
-### Dashboard & Analytics
-- **Real-time Dashboard**: Live occupancy rates and collection status
-- **Financial Reports**: Comprehensive financial analytics
-- **Occupancy Reports**: Room utilization and vacancy analysis
-- **Due Tracking**: Pending payments and follow-up management
-
-## 📋 Installation
-
-1. **Copy the module** to your Odoo addons directory:
-   ```bash
-   cp -r property_management_lite /path/to/odoo/addons/
-   ```
-
-2. **Update the module list** in Odoo:
-   - Go to Apps → Update Apps List
-
-3. **Install the module**:
-   - Search for "Property Management Lite"
-   - Click Install
-
-4. **Configure permissions**:
-   - Assign users to appropriate groups (User, Officer, Manager, Admin)
-
-## 🏗️ Module Structure
-
-```
-property_management_lite/
-├── __manifest__.py           # Module configuration
-├── __init__.py              # Main module initialization
-├── models/                  # Data models
-│   ├── __init__.py
-│   ├── property_property.py     # Properties
-│   ├── property_flat.py         # Flats
-│   ├── property_room.py         # Rooms
-│   ├── property_tenant.py       # Tenants
-│   ├── property_agreement.py    # Rental agreements
-│   ├── property_collection.py   # Rent collections
-│   ├── property_expense.py      # Expenses
-│   ├── property_due_tracker.py  # Due tracking
-│   └── res_partner.py           # Partner extensions
-├── views/                   # User interface
-│   ├── property_views.xml       # Property views
-│   ├── tenant_views.xml         # Tenant management
-│   ├── collection_views.xml     # Collections
-│   ├── room_views.xml           # Room management
-│   └── menu_views.xml           # Navigation menus
-├── security/                # Access control
-│   ├── property_security.xml    # Security groups
-│   └── ir.model.access.csv      # Access permissions
-├── data/                   # Default data
-│   └── property_data.xml        # Room types, sequences
-├── controllers/            # Web controllers
-│   ├── main.py                  # Main controllers
-│   └── portal.py                # Portal integration
-├── static/                 # Assets
-└── reports/               # Report templates
-```
-
-## 🔧 Configuration
-
-### Initial Setup
-
-1. **Create Room Types**:
-   - Master Room (AED 2,500/month)
-   - Partition Room (AED 1,800/month)
-   - Sharing Room (AED 1,200/month)
-   - Maid Room (AED 800/month)
-   - Separate Room (AED 2,000/month)
-
-2. **Set up Properties**:
-   - Add your properties with complete address information
-   - Configure flats within each property
-   - Set up rooms with facilities and rent amounts
-
-3. **Configure Users**:
-   - **Property User**: Basic access for data entry
-   - **Property Officer**: Collections and expense management
-   - **Property Manager**: Full operational access
-   - **Property Admin**: System configuration access
-
-### Integration with Odoo Modules
-
-- **Contacts**: Automatic customer/supplier creation for tenants/landlords
-- **Accounting**: Automated invoice generation and payment tracking
-- **Sales**: Integration with quotation system for new tenants
-- **HR**: Staff management and commission tracking
-- **Website/Portal**: Tenant self-service portal
-
-## 💼 Business Workflow
-
-### Tenant Onboarding
-1. Create tenant profile with documents
-2. Select available room
-3. Create rental agreement
-4. Activate agreement (room becomes occupied)
-5. Generate first invoice
-
-### Daily Operations
-1. **Morning**: Check due payments for the day
-2. **Collections**: Record payments received
-3. **Expenses**: Log property expenses
-4. **Evening**: Verify collections and update status
-
-### Monthly Process
-1. Generate monthly invoices
-2. Process landlord payments
-3. Calculate staff commissions
-4. Generate financial reports
-
-## 📊 Reporting Features
-
-### Financial Reports
-- Monthly profit/loss by property
-- Collection efficiency reports
-- Expense analysis by category
-- Landlord payment tracking
-
-### Operational Reports
-- Room occupancy statistics
-- Tenant turnover analysis
-- Due payment tracking
-- Maintenance request tracking
-
-## 🔐 Security Features
-
-- **Role-based Access**: Four-tier permission system
-- **Data Protection**: Tenant document encryption
-- **Audit Trail**: Complete activity logging
-- **Record Rules**: Data isolation by user role
-
-## 🌐 Website/Portal Integration
-
-### Tenant Portal Features
-- View current agreement details
-- Payment history and receipts
-- Document upload facility
-- Maintenance request submission
-
-### Public Website Features
-- Available room listings
-- Online inquiry forms
-- Property showcase
-- Contact information
-
-## 📱 Mobile Optimization
-
-- Responsive design for mobile collection teams
-- Quick collection entry forms
-- Offline-capable expense recording
-- Real-time synchronization
-
-## 🔮 Future Enhancements
-
-### Phase 2 Features
-- **SMS Integration**: Automated payment reminders
-- **WhatsApp Business API**: Communication automation
-- **Mobile App**: Dedicated mobile application
-- **IoT Integration**: Smart meter readings
-
-### Advanced Features
-- **AI Analytics**: Predictive occupancy analysis
-- **Automated Pricing**: Dynamic rent optimization
-- **Multi-currency**: Support for multiple currencies
-- **Multi-company**: Group-level property management
-
-## 🆘 Support & Documentation
-
-### User Guide
-- Complete user manual available in the module
-- Video tutorials for common operations
-- Best practices guide
-
-### Technical Support
-- Module customization services
-- Integration with external systems
-- Performance optimization
-- Custom report development
-
-## 📄 License
-
-This module is licensed under LGPL-3. See the LICENSE file for details.
-
-## 🤝 Contributing
-
-We welcome contributions! Please read our contributing guidelines and submit pull requests for any improvements.
+A comprehensive property management solution designed for real estate professionals, property managers, and building owners. Built specifically for Odoo 18 with advanced financial tracking and automated workflows.
 
 ---
 
-**Developed with ❤️ for the Dubai property rental market**
+## ✨ **Key Features**
 
-For support, customization, or training, please contact your implementation partner.
+### 🏗️ **Property Structure Management**
+- **Multi-level Hierarchy**: Property → Flat → Room organization
+- **Room Type Classification**: Standard, Premium, Deluxe categorization
+- **Real-time Availability**: Vacant/Occupied status tracking
+- **Comprehensive Details**: Property documentation and specifications
+
+### 👥 **Tenant & Agreement Management**
+- **Complete Tenant Profiles**: Contact info, documents, emergency contacts
+- **Flexible Rental Agreements**: Customizable terms and conditions
+- **Multi-tenant Support**: Multiple tenants per room capability
+- **Tenant History Tracking**: Complete rental history and status changes
+
+### 💰 **Advanced Financial Management**
+- **Daily Collections**: Multi-payment method support (Cash, Bank Transfer, Card)
+- **Other Charges System**: Parking, utilities, maintenance, and custom charges
+- **Outstanding Dues Tracking**: Automated calculations with aging analysis
+- **Statement of Account**: Complete transaction history for each tenant
+- **Collection Efficiency**: Performance metrics and overdue management
+
+### 📊 **Dashboard & Analytics**
+- **Real-time KPIs**: Occupancy rates, collection efficiency, outstanding dues
+- **Financial Overview**: Today/Week/Month performance metrics
+- **Tenant Analytics**: Payment behavior and balance analysis
+- **Agent Performance**: Comprehensive agent management and tracking
+
+### 🔄 **Automated Workflows**
+- **Rent Period Calculation**: Automatic monthly cycle management
+- **Outstanding Dues Updates**: Real-time balance calculations
+- **Status Tracking**: Color-coded tenant and payment status
+- **Statement Generation**: Automatic transaction recording
+
+---
+
+## 🚀 **Installation**
+
+### Prerequisites
+- Odoo 18.0 or higher
+- Python 3.8+
+- PostgreSQL database
+
+### Install Steps
+
+1. **Clone or Download** the module to your Odoo addons directory:
+   ```bash
+   cd /path/to/odoo/addons
+   git clone <repository-url> property_management_lite
+   ```
+
+2. **Update Apps List** in Odoo:
+   - Go to Apps menu
+   - Click "Update Apps List"
+
+3. **Install Module**:
+   - Search for "Property Management Lite"
+   - Click Install
+
+4. **Configure Currency** (if needed):
+   - Enable multi-currency if required
+   - Set AED as default for Dubai properties
+
+---
+
+## 🎯 **Quick Start Guide**
+
+### 1. **Setup Property Structure**
+```
+Property Management → Property Structure → Properties
+```
+- Create your properties
+- Add flats within properties
+- Define rooms within flats
+
+### 2. **Configure Room Types**
+```
+Property Management → Configuration → Room Types
+```
+- Set up Standard, Premium, Deluxe categories
+- Define pricing and features
+
+### 3. **Register Tenants**
+```
+Property Management → Tenant Management → Tenants
+```
+- Add tenant profiles with complete information
+- Upload necessary documents
+
+### 4. **Create Agreements**
+```
+Property Management → Tenant Management → Agreements
+```
+- Set rental terms and conditions
+- Define rent amounts and deposit
+- Add other charges (parking, utilities)
+
+### 5. **Daily Operations**
+```
+Property Management → Daily Collections
+```
+- Record daily rent collections
+- Track payment methods
+- Monitor outstanding dues
+
+---
+
+## 📈 **Core Modules**
+
+### **Property Structure**
+- **Properties**: Main building/property management
+- **Flats**: Individual flat units within properties  
+- **Rooms**: Room-level management with occupancy tracking
+
+### **Tenant Management**
+- **Tenants**: Complete tenant profiles and documentation
+- **Agreements**: Rental agreements with flexible terms
+- **Other Charges**: Additional billing for parking, utilities, etc.
+
+### **Financial Tracking**
+- **Collections**: Daily rent collection management
+- **Outstanding Dues**: Automated due tracking with aging
+- **Statement of Account**: Complete transaction history
+- **Dashboard**: Real-time financial KPIs and analytics
+
+### **Reporting & Analysis**
+- **Outstanding Dues Summary**: Aging analysis and collection priorities
+- **Statement Analysis**: Pivot tables and graphs for trends
+- **Collection Reports**: Performance metrics and efficiency tracking
+- **Available Rooms**: Vacancy management and optimization
+
+---
+
+## 🎨 **User Interface**
+
+### **Dashboard Highlights**
+- **Today's Metrics**: Collections, expenses, profit
+- **Outstanding Dues**: Total amounts with urgency indicators
+- **Collection Efficiency**: Monthly performance tracking
+- **Tenant Balances**: Credit/debit analysis
+- **Top Debtors**: Priority collection list
+
+### **Color-Coded Status**
+- **Green**: Active tenants, on-time payments
+- **Yellow**: Overdue 30-60 days
+- **Orange**: Overdue 60-90 days  
+- **Red**: Critical overdue 90+ days
+
+### **Quick Actions**
+- One-click navigation to detailed views
+- Direct collection creation from outstanding dues
+- Statement report generation
+- Tenant balance management
+
+---
+
+## 🔧 **Configuration Options**
+
+### **System Settings**
+- Default currency (AED recommended for Dubai)
+- Rent calculation methods
+- Payment terms and grace periods
+- Outstanding dues aging rules
+
+### **User Permissions**
+- **Property User**: View-only access
+- **Property Officer**: Daily operations and tenant management
+- **Property Manager**: Full administrative access
+
+### **Email Templates**
+- Rent reminder notifications
+- Outstanding dues alerts
+- Agreement confirmation emails
+
+---
+
+## 📱 **Mobile Friendly**
+- Responsive design for tablet and mobile use
+- Quick collection entry on mobile devices
+- Dashboard accessible from any device
+- Touch-friendly interfaces
+
+---
+
+## 🔒 **Security & Permissions**
+
+### **Role-Based Access**
+- Multi-level user permissions
+- Data security and privacy protection
+- Audit trails for all financial transactions
+
+### **Data Protection**
+- Tenant document security
+- Financial data encryption
+- Backup and recovery support
+
+---
+
+## 🛠️ **Technical Specifications**
+
+### **Dependencies**
+- `base`: Core Odoo functionality
+- `contacts`: Partner/contact management
+- `mail`: Communication and chatter
+- `account`: Financial integration
+- `web`: User interface components
+
+### **Database Models**
+- 12+ interconnected models
+- Optimized queries and indexing
+- Automated data validation
+- Real-time calculation engines
+
+---
+
+## 📞 **Support & Documentation**
+
+### **Built-in Help**
+- Contextual help text in all views
+- Field descriptions and tooltips
+- User-friendly error messages
+
+### **Best Practices**
+- Regular outstanding dues updates
+- Daily collection entry
+- Monthly reconciliation
+- Periodic tenant status review
+
+---
+
+## 🌟 **Why Choose Property Management Lite?**
+
+✅ **Complete Solution**: End-to-end property management  
+✅ **User-Friendly**: Intuitive interface for all user levels  
+✅ **Scalable**: Handles single properties to large portfolios  
+✅ **Dubai-Optimized**: Built for Middle East real estate market  
+✅ **Real-time Analytics**: Instant insights and reporting  
+✅ **Mobile Ready**: Accessible from anywhere, any device  
+✅ **Open Source**: Full customization capability  
+✅ **Community Support**: Active development and updates  
+
+---
+
+## 📄 **License**
+Licensed under LGPL-3. See LICENSE file for details.
+
+---
+
+## 🤝 **Contributing**
+We welcome contributions! Please see our contributing guidelines for details on how to submit improvements and bug fixes.
+
+---
+
+*Built with ❤️ for the real estate community*

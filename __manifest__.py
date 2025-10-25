@@ -2,22 +2,46 @@
     'name': 'Property Management Lite',
     'version': '18.0.1.0.0',
     'category': 'Real Estate',
-    'summary': 'Complete Room Rental Management System with daily rent collection and tenant management',
+    'summary': 'Complete Property & Room Rental Management System with Advanced Financial Tracking',
     'description': """
-Property Management Lite - Community Edition
+Property Management Lite - Complete Solution
 ============================================
 
-A comprehensive property and room rental management system designed for Dubai properties 
-with features for:
+A comprehensive property and room rental management system featuring:
 
-* Property → Flat → Room hierarchy management
-* Tenant management with document storage
-* Daily rent collection tracking
-* Expense management and profit analysis
-* Real-time dashboard and analytics
+**Property Structure Management:**
+* Multi-level Property → Flat → Room hierarchy
+* Room type classification and availability tracking
+* Comprehensive property details and documentation
 
+**Tenant & Agreement Management:**
+* Complete tenant profiles with documents and emergency contacts
+* Flexible rental agreements with automatic calculations
+* Multi-tenant room support and tenant history tracking
+
+**Financial Management:**
+* Daily rent collection with multiple payment methods
+* Other charges system (parking, utilities, maintenance)
+* Outstanding dues tracking with automated calculations
+* Statement of account with complete transaction history
+* Collection efficiency analysis and overdue management
+
+**Advanced Features:**
+* Real-time dashboard with financial KPIs
+* Automated rent period calculations (monthly cycles)
+* Color-coded tenant status and payment tracking
+* Comprehensive reporting and analytics
+* Agent management and performance tracking
+
+**Designed for:**
+* Property management companies
+* Real estate agents
+* Building owners and landlords
+* Multi-property portfolios
+
+Optimized for Dubai real estate market with AED currency support.
     """,
-    'author': 'Your Company',
+    'author': 'Property Management Solutions',
     'website': 'https://www.yourcompany.com',
     'license': 'LGPL-3',
     'depends': [
@@ -57,7 +81,6 @@ with features for:
         
         # Views - Daily Operations
         'views/collection_views.xml',
-        # 'views/expense_views.xml',
         
         # Reports (must come before email templates that reference them)
         'reports/invoice_reports.xml',
