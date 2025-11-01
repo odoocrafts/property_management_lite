@@ -11,13 +11,15 @@
               name="Dashboard" 
               parent="menu_property_management_root" 
               action="action_property_dashboard" 
-              sequence="5"/>
+              sequence="5"
+              groups="group_property_user,group_property_officer,group_property_manager,group_property_admin"/>
 
     <!-- Property Structure Menu -->
     <menuitem id="menu_property_structure" 
               name="Property Structure" 
               parent="menu_property_management_root" 
-              sequence="10"/>
+              sequence="10"
+              groups="group_property_user,group_property_officer,group_property_manager,group_property_admin"/>
 
     <menuitem id="menu_property_properties" 
               name="Properties" 
@@ -41,31 +43,36 @@
     <menuitem id="menu_tenant_management" 
               name="Tenant Management" 
               parent="menu_property_management_root" 
-              sequence="20"/>
+              sequence="20"
+              groups="group_property_user,group_property_officer,group_property_manager,group_property_admin,group_property_tenant_manager"/>
 
     <menuitem id="menu_property_tenants" 
               name="Tenants" 
               parent="menu_tenant_management" 
               action="action_property_tenant" 
-              sequence="10"/>
+              sequence="10"
+              groups="group_property_user,group_property_officer,group_property_manager,group_property_admin,group_property_tenant_manager"/>
 
     <menuitem id="menu_property_agreements" 
               name="Agreements" 
               parent="menu_tenant_management" 
               action="action_property_agreement" 
-              sequence="20"/>
+              sequence="20"
+              groups="group_property_user,group_property_officer,group_property_manager,group_property_admin,group_property_tenant_manager"/>
               
     <menuitem id="menu_property_other_charges" 
               name="Other Charges" 
               parent="menu_tenant_management" 
               action="action_property_other_charges" 
-              sequence="30"/>
+              sequence="30"
+              groups="group_property_user,group_property_officer,group_property_manager,group_property_admin"/>
 
     <!-- Bills Menu -->
     <menuitem id="menu_expenses_bills" 
               name="Expenses/Bills" 
               parent="menu_property_management_root" 
-              sequence="30"/>
+              sequence="30"
+              groups="group_property_user,group_property_officer,group_property_manager,group_property_admin"/>
     <menuitem id="menu_property_expenses" 
               name="Bills" 
               parent="menu_expenses_bills" 
@@ -83,13 +90,15 @@
               name="Daily Collections" 
               parent="menu_property_management_root" 
               action="action_property_collection" 
-              sequence="10"/>
+              sequence="10"
+              groups="group_property_user,group_property_officer,group_property_manager,group_property_admin"/>
 
     <!-- Invoicing Menu -->
     <menuitem id="menu_property_invoicing" 
               name="Invoicing" 
               parent="menu_property_management_root" 
-              sequence="60"/>
+              sequence="60"
+              groups="group_property_user,group_property_officer,group_property_manager,group_property_admin"/>
     
     <menuitem id="menu_property_invoice" 
               name="Invoices" 
@@ -107,13 +116,15 @@
     <menuitem id="menu_property_reports" 
               name="Reports" 
               parent="menu_property_management_root" 
-              sequence="90"/>
+              sequence="90"
+              groups="group_property_user,group_property_officer,group_property_manager,group_property_admin"/>
 
     <!-- Configuration Menu -->
     <menuitem id="menu_property_configuration" 
               name="Configuration" 
               parent="menu_property_management_root" 
-              sequence="95"/>
+              sequence="95"
+              groups="group_property_user,group_property_officer,group_property_manager,group_property_admin"/>
               
     <menuitem id="menu_property_import_data" 
               name="Import Data" 
