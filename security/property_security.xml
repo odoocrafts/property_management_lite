@@ -85,6 +85,14 @@
         <field name="groups" eval="[(4, ref('group_property_user'))]"/>
     </record>
 
+    <!-- Occupants: All property users can access -->
+    <record id="property_occupant_rule_all" model="ir.rule">
+        <field name="name">Occupants: All Users</field>
+        <field name="model_id" ref="model_property_occupant"/>
+        <field name="domain_force">[]</field>
+        <field name="groups" eval="[(4, ref('group_property_user'))]"/>
+    </record>
+
     <!-- Tenant Manager specific rules -->
     <record id="property_tenant_rule_tenant_manager" model="ir.rule">
         <field name="name">Tenants: Tenant Manager Access</field>
@@ -96,6 +104,13 @@
     <record id="property_agreement_rule_tenant_manager" model="ir.rule">
         <field name="name">Agreements: Tenant Manager Access</field>
         <field name="model_id" ref="model_property_agreement"/>
+        <field name="domain_force">[]</field>
+        <field name="groups" eval="[(4, ref('group_property_tenant_manager'))]"/>
+    </record>
+
+    <record id="property_occupant_rule_tenant_manager" model="ir.rule">
+        <field name="name">Occupants: Tenant Manager Access</field>
+        <field name="model_id" ref="model_property_occupant"/>
         <field name="domain_force">[]</field>
         <field name="groups" eval="[(4, ref('group_property_tenant_manager'))]"/>
     </record>

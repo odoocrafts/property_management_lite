@@ -24,6 +24,13 @@ class PropertyAgreement(models.Model):
     # Other Charges
     other_charges_ids = fields.One2many('property.agreement.charges', 'agreement_id', 'Other Charges')
     
+    # Occupants
+    occupant_ids = fields.One2many('property.occupant', 'agreement_id', 'Occupants')
+    occupants_count = fields.Integer('Total Occupants', compute='_compute_occupants_count', store=True)
+    occupants_names = fields.Char('Occupants', compute='_compute_occupants_names', store=True)
+    primary_occupant_id = fields.Many2one('property.occupant', 'Primary Occupant', 
+                                         compute='_compute_primary_occupant', store=True)
+    
     # Dummy fields to avoid view validation error during upgrade
     charge_id = fields.Many2one('property.other.charges', 'Dummy Charge', help="Temporary field for view validation")
     charge_name = fields.Char('Dummy Charge Name', help="Temporary field for view validation")
@@ -188,6 +195,27 @@ class PropertyAgreement(models.Model):
                 record.pending_amount = max(0, expected_amount - record.total_collected)
             else:
                 record.pending_amount = 0
+    
+    @api.depends('occupant_ids')
+    def _compute_occupants_count(self):
+        for record in self:
+            record.occupants_count = len(record.occupant_ids.filtered('active'))
+    
+    @api.depends('occupant_ids', 'occupant_ids.name', 'occupant_ids.active')
+    def _compute_occupants_names(self):
+        for record in self:
+            active_occupants = record.occupant_ids.filtered('active')
+            if active_occupants:
+                names = ', '.join(active_occupants.mapped('name'))
+                record.occupants_names = names
+            else:
+                record.occupants_names = False
+    
+    @api.depends('occupant_ids', 'occupant_ids.is_primary', 'occupant_ids.active')
+    def _compute_primary_occupant(self):
+        for record in self:
+            primary = record.occupant_ids.filtered(lambda o: o.is_primary and o.active)
+            record.primary_occupant_id = primary[0] if primary else False
     
     @api.constrains('start_date', 'end_date')
     def _check_dates(self):

@@ -53,11 +53,25 @@
               sequence="10"
               groups="group_property_user,group_property_officer,group_property_manager,group_property_admin,group_property_tenant_manager"/>
 
+    <menuitem id="menu_property_agents" 
+              name="Agents" 
+              parent="menu_tenant_management" 
+              action="action_property_agents" 
+              sequence="15"
+              groups="group_property_user,group_property_officer,group_property_manager,group_property_admin"/>
+
     <menuitem id="menu_property_agreements" 
               name="Agreements" 
               parent="menu_tenant_management" 
               action="action_property_agreement" 
               sequence="20"
+              groups="group_property_user,group_property_officer,group_property_manager,group_property_admin,group_property_tenant_manager"/>
+
+    <menuitem id="menu_property_occupants" 
+              name="Room Occupants" 
+              parent="menu_tenant_management" 
+              action="action_property_occupant" 
+              sequence="25"
               groups="group_property_user,group_property_officer,group_property_manager,group_property_admin,group_property_tenant_manager"/>
               
     <menuitem id="menu_property_other_charges" 

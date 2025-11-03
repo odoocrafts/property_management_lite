@@ -16,12 +16,4 @@
             </p>
         </field>
     </record>
-
-    <!-- Menu Item for Agents -->
-    <record id="menu_property_agents" model="ir.ui.menu">
-        <field name="name">Agents</field>
-        <field name="parent_id" ref="menu_tenant_management"/>
-        <field name="action" ref="action_property_agents"/>
-        <field name="sequence">15</field>
-    </record>
 </odoo>

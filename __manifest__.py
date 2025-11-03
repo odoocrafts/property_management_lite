@@ -76,6 +76,7 @@ Optimized for Dubai real estate market with AED currency support.
         'views/statement_views.xml',
         'views/tenant_views.xml',
         'views/agreement_views.xml',
+        'views/occupant_views.xml',
         'views/other_charges_views.xml',
         'views/agent_views.xml',
         
