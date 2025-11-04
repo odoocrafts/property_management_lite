@@ -4,6 +4,8 @@ from datetime import timedelta
 from datetime import date, timedelta
 import logging
 
+_logger = logging.getLogger(__name__)
+
 
 class AccountInvoice(models.Model):
     _inherit = 'account.move'
@@ -99,26 +101,53 @@ class AccountInvoice(models.Model):
         """Cron job to create monthly invoices"""
         today = fields.Date.today()
         
+        _logger.info(f"========== INVOICE GENERATION STARTED ==========")
+        _logger.info(f"Current date: {today}, Day: {today.day}")
+        
         # Find all active agreements with auto-generate enabled
         active_agreements = self.env['property.agreement'].search([
             ('state', '=', 'active'),
             ('auto_generate_invoices', '=', True)
         ])
         
-        _logger = logging.getLogger(__name__)
-        _logger.info(f"Running invoice generation for {len(active_agreements)} active agreements")
+        _logger.info(f"Found {len(active_agreements)} active agreements with auto-generate enabled")
         
         invoices_created = 0
         for agreement in active_agreements:
             try:
+                _logger.info(f"Processing agreement: {agreement.name} (ID: {agreement.id})")
+                _logger.info(f"  - Payment frequency: {agreement.payment_frequency}")
+                _logger.info(f"  - Invoice day: {agreement.invoice_day}")
+                _logger.info(f"  - Auto-generate: {agreement.auto_generate_invoices}")
+                
                 # Check if invoice should be generated
-                if agreement.payment_frequency == 'monthly' and today.day == agreement.invoice_day:
-                    self._create_monthly_invoice(agreement, today)
-                    invoices_created += 1
+                # Generate if today is invoice day OR if we passed invoice day but haven't generated yet this month
+                if agreement.payment_frequency == 'monthly':
+                    # Check if invoice already exists for current month
+                    first_day_of_month = today.replace(day=1)
+                    existing_invoice = self.search([
+                        ('agreement_id', '=', agreement.id),
+                        ('invoice_type', '=', 'rent'),
+                        ('invoice_date', '>=', first_day_of_month),
+                        ('invoice_date', '<=', today),
+                        ('state', '!=', 'cancel')
+                    ], limit=1)
+                    
+                    if not existing_invoice and today.day >= agreement.invoice_day:
+                        _logger.info(f"  - Generating invoice for agreement {agreement.name} (missed or current invoice day)")
+                        self._create_monthly_invoice(agreement, today)
+                        invoices_created += 1
+                    elif existing_invoice:
+                        _logger.info(f"  - Skipping: Invoice already exists for this month (Invoice: {existing_invoice.name})")
+                    else:
+                        _logger.info(f"  - Skipping: Invoice day {agreement.invoice_day} not yet reached (today is {today.day})")
+                else:
+                    _logger.info(f"  - Skipping: payment_frequency is {agreement.payment_frequency}, not monthly")
             except Exception as e:
-                _logger.error(f"Error creating invoice for agreement {agreement.name}: {str(e)}")
+                _logger.error(f"Error creating invoice for agreement {agreement.name}: {str(e)}", exc_info=True)
         
         _logger.info(f"Successfully created {invoices_created} invoices")
+        _logger.info(f"========== INVOICE GENERATION COMPLETED ==========")
         return True
 
     def _create_monthly_invoice(self, agreement, invoice_date):
