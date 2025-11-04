@@ -19,6 +19,9 @@ class PropertyRoom(models.Model):
     # Current Tenant & Agreement
     current_tenant_id = fields.Many2one('property.tenant', 'Current Tenant')
     current_agreement_id = fields.Many2one('property.agreement', 'Current Agreement')
+    current_occupants_ids = fields.One2many('property.occupant', compute='_compute_current_occupants', 
+                                            string='Room Occupants')
+    occupants_count = fields.Integer('Occupants Count', compute='_compute_current_occupants')
     
     # Room Details
     area = fields.Float('Area (Sq.Ft.)')
@@ -32,6 +35,25 @@ class PropertyRoom(models.Model):
                                      help="Monthly parking charges for this room")
     parking_deposit = fields.Monetary('Parking Remote Deposit', currency_field='currency_id',
                                      help="One-time parking remote deposit")
+    
+    # Other Charges (per room)
+    cleaning_charges = fields.Monetary('Cleaning Charges', currency_field='currency_id',
+                                      help="Monthly cleaning charges for this room")
+    extra_person_charges = fields.Monetary('Extra Person Charges', currency_field='currency_id',
+                                          help="Charges for additional person in room")
+    maintenance_charges = fields.Monetary('Maintenance Charges', currency_field='currency_id',
+                                         help="Monthly maintenance charges")
+    utility_charges = fields.Monetary('Utility Charges', currency_field='currency_id',
+                                     help="Monthly utility charges if not included")
+    
+    # Other Charges from Master Data
+    other_charge_ids = fields.Many2many('property.other.charges', 
+                                       'room_other_charge_rel', 
+                                       'room_id', 
+                                       'charge_id',
+                                       string='Additional Charges',
+                                       domain="[('active', '=', True)]",
+                                       help="Select applicable charges from master list")
     
     # Status
     status = fields.Selection([
@@ -78,6 +100,12 @@ class PropertyRoom(models.Model):
     last_collection_date = fields.Date('Last Collection', compute='_compute_financial_stats')
     pending_amount = fields.Monetary('Pending Amount', compute='_compute_financial_stats', currency_field='currency_id')
     
+    # Security deposit and outstanding dues for current tenant
+    security_deposit = fields.Monetary('Security Deposit', compute='_compute_tenant_financials', currency_field='currency_id',
+                                       help="Security deposit of current tenant")
+    outstanding_amount = fields.Monetary('Outstanding Dues', compute='_compute_tenant_financials', currency_field='currency_id',
+                                         help="Outstanding dues of current tenant")
+    
     # Images
     image = fields.Image('Room Image', max_width=1920, max_height=1920)
     image_ids = fields.One2many('ir.attachment', 'res_id', 'Additional Images', 
@@ -120,6 +148,34 @@ class PropertyRoom(models.Model):
                 record.pending_amount = 0  # Simplified for now
             else:
                 record.pending_amount = 0
+    
+    def _compute_tenant_financials(self):
+        """Compute security deposit and outstanding dues for current tenant"""
+        for record in self:
+            if record.current_agreement_id:
+                record.security_deposit = record.current_agreement_id.deposit_amount
+            else:
+                record.security_deposit = 0
+            
+            if record.current_tenant_id:
+                # Get outstanding dues for current tenant
+                outstanding_dues = self.env['property.outstanding.dues'].search([
+                    ('tenant_id', '=', record.current_tenant_id.id),
+                    ('agreement_id', '=', record.current_agreement_id.id if record.current_agreement_id else False)
+                ], limit=1)
+                record.outstanding_amount = outstanding_dues.outstanding_balance if outstanding_dues else 0
+            else:
+                record.outstanding_amount = 0
+    
+    def _compute_current_occupants(self):
+        """Compute occupants for current agreement"""
+        for record in self:
+            if record.current_agreement_id:
+                record.current_occupants_ids = record.current_agreement_id.occupant_ids
+                record.occupants_count = len(record.current_agreement_id.occupant_ids)
+            else:
+                record.current_occupants_ids = False
+                record.occupants_count = 0
     
     @api.constrains('property_id', 'flat_id', 'room_number')
     def _check_room_number_unique(self):
@@ -187,7 +243,52 @@ class PropertyRoom(models.Model):
         }
     
     def write(self, vals):
-        """Override write to invalidate parent computed fields when active status changes"""
+        """Override write to invalidate parent computed fields and auto-create agreements"""
+        # Auto-create agreement when tenant is assigned to room
+        if 'current_tenant_id' in vals and vals['current_tenant_id']:
+            for record in self:
+                # Check if tenant already has active agreement for this room
+                existing_agreement = self.env['property.agreement'].search([
+                    ('tenant_id', '=', vals['current_tenant_id']),
+                    ('room_id', '=', record.id),
+                    ('state', '=', 'active')
+                ], limit=1)
+                
+                if not existing_agreement:
+                    # Create new agreement
+                    tenant = self.env['property.tenant'].browse(vals['current_tenant_id'])
+                    from datetime import date
+                    from dateutil.relativedelta import relativedelta
+                    
+                    start_date = date.today()
+                    end_date = start_date + relativedelta(years=1)
+                    
+                    # Calculate total extra charges from room
+                    extra_charges = (record.cleaning_charges or 0) + \
+                                  (record.extra_person_charges or 0) + \
+                                  (record.maintenance_charges or 0) + \
+                                  (record.utility_charges or 0)
+                    
+                    agreement_vals = {
+                        'tenant_id': tenant.id,
+                        'room_id': record.id,
+                        'start_date': start_date,
+                        'end_date': end_date,
+                        'rent_amount': record.rent_amount,
+                        'deposit_amount': record.deposit_amount,
+                        'parking_charges': record.parking_charges,
+                        'parking_deposit': record.parking_deposit,
+                        'extra_charges': extra_charges,
+                        'state': 'active',
+                        'auto_generate_invoices': True,
+                        'auto_post_invoices': False,
+                        'invoice_day': 1,
+                    }
+                    
+                    new_agreement = self.env['property.agreement'].create(agreement_vals)
+                    vals['current_agreement_id'] = new_agreement.id
+                    vals['status'] = 'occupied'
+        
         result = super().write(vals)
         
         # If active field is being changed, invalidate parent flat and property computed fields

@@ -155,7 +155,13 @@ class PropertyCollection(models.Model):
                 due_date = next_month_first - timedelta(days=1)
             vals['due_date'] = due_date
         
-        return super().create(vals)
+        collection = super().create(vals)
+        
+        # Auto-create statement entry for this collection
+        if collection.tenant_id and collection.status in ['collected', 'verified']:
+            self.env['property.statement'].sudo().create_from_collection(collection)
+        
+        return collection
     
     @api.onchange('date', 'collection_type')
     def _onchange_date_collection_type(self):

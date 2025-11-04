@@ -125,7 +125,8 @@ class PropertyTenant(models.Model):
     def _compute_current_room_info(self):
         for record in self:
             if record.current_room_id:
-                record.current_room_number = f"{record.current_room_id.room_number}"
+                # Show full room details: Property-Flat-Room format
+                record.current_room_number = record.current_room_id.name or f"{record.current_room_id.room_number}"
             else:
                 record.current_room_number = ""
     

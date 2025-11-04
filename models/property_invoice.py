@@ -2,6 +2,7 @@ from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError, UserError
 from datetime import timedelta
 from datetime import date, timedelta
+import logging
 
 
 class AccountInvoice(models.Model):
@@ -98,13 +99,27 @@ class AccountInvoice(models.Model):
         """Cron job to create monthly invoices"""
         today = fields.Date.today()
         
-        # Find all active agreements
-        active_agreements = self.env['property.agreement'].search([('state', '=', 'active')])
+        # Find all active agreements with auto-generate enabled
+        active_agreements = self.env['property.agreement'].search([
+            ('state', '=', 'active'),
+            ('auto_generate_invoices', '=', True)
+        ])
         
+        _logger = logging.getLogger(__name__)
+        _logger.info(f"Running invoice generation for {len(active_agreements)} active agreements")
+        
+        invoices_created = 0
         for agreement in active_agreements:
-            # Check if invoice should be generated
-            if agreement.payment_frequency == 'monthly' and today.day == agreement.invoice_day:
-                self._create_monthly_invoice(agreement, today)
+            try:
+                # Check if invoice should be generated
+                if agreement.payment_frequency == 'monthly' and today.day == agreement.invoice_day:
+                    self._create_monthly_invoice(agreement, today)
+                    invoices_created += 1
+            except Exception as e:
+                _logger.error(f"Error creating invoice for agreement {agreement.name}: {str(e)}")
+        
+        _logger.info(f"Successfully created {invoices_created} invoices")
+        return True
 
     def _create_monthly_invoice(self, agreement, invoice_date):
         """Create monthly invoice for agreement"""

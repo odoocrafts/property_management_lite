@@ -75,10 +75,39 @@
                         </group>
                     </group>
                     
+                    <group name="other_charges" string="Other Charges">
+                        <group>
+                            <field name="cleaning_charges"/>
+                            <field name="extra_person_charges"/>
+                        </group>
+                        <group>
+                            <field name="maintenance_charges"/>
+                            <field name="utility_charges"/>
+                        </group>
+                    </group>
+                    
+                    <group name="additional_charges" string="Additional Charges from Master List">
+                        <field name="other_charge_ids" nolabel="1" widget="many2many_tags"/>
+                    </group>
+                    
                     <group name="current_tenant" string="Current Tenant" invisible="status != 'occupied'">
                         <group>
                             <field name="current_tenant_id"/>
                             <field name="current_agreement_id"/>
+                            <label for="occupants_count" string="Room Occupants"/>
+                            <div>
+                                <field name="occupants_count" class="oe_inline"/> person(s)
+                                <button name="%(action_property_occupant)d" 
+                                        type="action" 
+                                        string="View Occupants" 
+                                        class="oe_link"
+                                        context="{'default_agreement_id': current_agreement_id, 'search_default_agreement_id': current_agreement_id}"
+                                        invisible="occupants_count == 0"/>
+                            </div>
+                        </group>
+                        <group>
+                            <field name="security_deposit" widget="monetary"/>
+                            <field name="outstanding_amount" widget="monetary"/>
                         </group>
                     </group>
                     
@@ -108,6 +137,19 @@
                     </group>
                     
                     <notebook>
+                        <page string="Occupants" name="occupants" invisible="status != 'occupied'">
+                            <field name="current_occupants_ids">
+                                <list editable="bottom" create="false" delete="false">
+                                    <field name="is_primary" widget="boolean_toggle"/>
+                                    <field name="name"/>
+                                    <field name="occupant_type"/>
+                                    <field name="mobile"/>
+                                    <field name="email" optional="hide"/>
+                                    <field name="move_in_date"/>
+                                    <field name="move_out_date" optional="hide"/>
+                                </list>
+                            </field>
+                        </page>
                         <page string="Images" name="images">
                             <field name="image_ids">
                                 <list>

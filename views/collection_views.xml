@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <list string="Collections" decoration-success="status=='verified'" decoration-info="status=='collected'" decoration-warning="status=='draft'" editable="bottom" create="true">
                 <field name="date" required="1"/>
-                <field name="tenant_id" required="1" domain="[('current_room_id', '!=', False)]" 
+                <field name="tenant_id" required="1"
                        options="{'no_create': True, 'no_edit': True}"/>
                 <field name="room_id" domain="[('current_tenant_id', '=', tenant_id)]" 
                        options="{'no_create': True}" readonly="1"/>
@@ -141,9 +141,8 @@
                             <field name="reference_number"/>
                         </group>
                         <group name="tenant_info">
-                            <field name="tenant_id" domain="[('current_room_id', '!=', False)]" 
-                                   options="{'no_create': True, 'no_edit': True}"/>
-                            <field name="room_id" domain="[('current_tenant_id', '=', tenant_id)]" 
+                            <field name="tenant_id"
+                                   options="{'no_create': True, 'no_edit': True}"/>\n                            <field name="room_id" domain="[('current_tenant_id', '=', tenant_id)]" 
                                    options="{'no_create': True}"/>
                             <field name="property_id" readonly="1"/>
                             <field name="agreement_id" domain="[('tenant_id', '=', tenant_id), ('room_id', '=', room_id), ('state', '=', 'active')]" 
