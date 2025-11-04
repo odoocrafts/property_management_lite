@@ -8,7 +8,7 @@
             <list string="Collections" decoration-success="status=='verified'" decoration-info="status=='collected'" decoration-warning="status=='draft'" editable="bottom" create="true">
                 <field name="date" required="1"/>
                 <field name="tenant_id" required="1"
-                       options="{'no_create': True, 'no_edit': True}"/>
+                       options="{'no_create': True, 'no_edit': True, 'limit': 1000}"/>
                 <field name="room_id" domain="[('current_tenant_id', '=', tenant_id)]" 
                        options="{'no_create': True}" readonly="1"/>
                 <field name="property_id" readonly="1"/>
@@ -142,10 +142,11 @@
                         </group>
                         <group name="tenant_info">
                             <field name="tenant_id"
-                                   options="{'no_create': True, 'no_edit': True}"/>\n                            <field name="room_id" domain="[('current_tenant_id', '=', tenant_id)]" 
+                                   options="{'no_create': True, 'no_edit': True, 'limit': 1000}"/>
+                            <field name="room_id" domain="[('current_tenant_id', '=', tenant_id)]" 
                                    options="{'no_create': True}"/>
                             <field name="property_id" readonly="1"/>
-                            <field name="agreement_id" domain="[('tenant_id', '=', tenant_id), ('room_id', '=', room_id), ('state', '=', 'active')]" 
+                            <field name="agreement_id" domain="[('tenant_id', '=', tenant_id), ('room_id', '=', room_id)]" 
                                    options="{'no_create': True}"/>
                             <field name="other_charge_id" invisible="collection_type != 'other_charges'" 
                                    domain="[('active', '=', True)]" options="{'no_create': True}"/>

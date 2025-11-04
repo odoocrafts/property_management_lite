@@ -274,7 +274,7 @@ class PropertyCollection(models.Model):
             return {
                 'domain': {
                     'room_id': [('current_tenant_id', '=', self.tenant_id.id)],
-                    'agreement_id': [('tenant_id', '=', self.tenant_id.id), ('state', '=', 'active')]
+                    'agreement_id': [('tenant_id', '=', self.tenant_id.id)]
                 }
             }
         else:

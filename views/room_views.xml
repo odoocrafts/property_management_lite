@@ -94,16 +94,7 @@
                         <group>
                             <field name="current_tenant_id"/>
                             <field name="current_agreement_id"/>
-                            <label for="occupants_count" string="Room Occupants"/>
-                            <div>
-                                <field name="occupants_count" class="oe_inline"/> person(s)
-                                <button name="%(action_property_occupant)d" 
-                                        type="action" 
-                                        string="View Occupants" 
-                                        class="oe_link"
-                                        context="{'default_agreement_id': current_agreement_id, 'search_default_agreement_id': current_agreement_id}"
-                                        invisible="occupants_count == 0"/>
-                            </div>
+                            <field name="occupants_count" string="Room Occupants"/>
                         </group>
                         <group>
                             <field name="security_deposit" widget="monetary"/>
